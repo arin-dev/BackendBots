@@ -85,7 +85,7 @@ end_date = format_date(end_date)
 # print(end_date)
 
 
-# Searching Flight ID
+# Searching for Flights
 
 flightID_url = "https://sky-scanner3.p.rapidapi.com/flights/auto-complete"
 flightID_headers = {
@@ -106,7 +106,6 @@ toID = flightID_response.json()['data'][0]['presentation']['skyId']
 # print(fromID)
 # print(toID)
 
-## Searching for Flights
 
 flight_url = "https://sky-scanner3.p.rapidapi.com/flights/search-roundtrip"
 flight_querystring = {"fromEntityId":fromID, "toEntityId":toID, "departDate":start_date, "returnDate":end_date, "currency":"USD"}
