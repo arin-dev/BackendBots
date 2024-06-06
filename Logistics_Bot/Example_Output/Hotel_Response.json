@@ -1,0 +1,3309 @@
+{
+    "data": {
+        "results": {
+            "priceType": "PRICE_PER_NIGHT",
+            "pricePolicy": "Taxes and fees not included",
+            "searchSummary": {
+                "total": 619,
+                "filteredTotal": 619,
+                "inboundTotal": 619,
+                "resultsSummary": "Taxes and fees not included | 619 results sorted by Best",
+                "sortBy": "-relevance",
+                "entity": {
+                    "entityId": "90713167",
+                    "entityType": "District",
+                    "name": "The Palm Jumeirah",
+                    "coordinates": {
+                        "latitude": 25.118343,
+                        "longitude": 55.133713
+                    },
+                    "levelOfEntityType": "PoliticalTypes"
+                },
+                "location": [
+                    {
+                        "entityId": "213481151",
+                        "entityType": "District",
+                        "name": "Jumeirah"
+                    },
+                    {
+                        "entityId": "27540839",
+                        "entityType": "City",
+                        "name": "Dubai"
+                    },
+                    {
+                        "entityId": "44291200",
+                        "entityType": "FirstLevelNationAdministrativeDivision",
+                        "name": "Dubai"
+                    },
+                    {
+                        "entityId": "29475216",
+                        "entityType": "Nation",
+                        "name": "United Arab Emirates"
+                    }
+                ]
+            },
+            "mapBoundary": {
+                "north": 25.142999290000002,
+                "east": 55.1566488,
+                "south": 25.098225781,
+                "west": 55.1086212
+            },
+            "hotelsRegion": {
+                "latitude": 25.116798000000003,
+                "longitude": 55.146417,
+                "longitudeDelta": 0.02490600000000586,
+                "latitudeDelta": 0.026443999999998795
+            },
+            "hotelCards": [
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIxNjEzNjkwMjcifQ==",
+                    "name": "Aloft Palm Jumeirah",
+                    "stars": "4",
+                    "distance": "1.41 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "1.24 miles from The View at the Palm",
+                    "coordinates": {
+                        "latitude": 25.125369,
+                        "longitude": 55.15487
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1352328336/1352328336_WxH.jpg",
+                        "https://content.skyscnr.com/available/1352328418/1352328418_WxH.jpg",
+                        "https://content.skyscnr.com/available/1232857670/1232857670_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 4.6,
+                        "imageUrl": "",
+                        "scoreDesc": "Excellent",
+                        "total": 55,
+                        "mostPopularWith": "Great for families"
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 4.5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 4.5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": null,
+                    "minPriceDbookPartnerId": null,
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$65",
+                        "rawPrice": 65,
+                        "partnerId": "h_tt",
+                        "partnerType": "OTA",
+                        "partnerName": "Algotels",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_tt.png",
+                        "isOfficial": false,
+                        "funnelType": "meta",
+                        "cug": {
+                            "rawType": "general",
+                            "type": "general",
+                            "discountBadge": "4% off",
+                            "label": null,
+                            "originalPrice": "$68",
+                            "discountPercentage": 4
+                        },
+                        "discount": null,
+                        "amenities": [
+                            {
+                                "key": "free_cancellation",
+                                "text": "Free cancellation"
+                            },
+                            {
+                                "key": "breakfast_included",
+                                "text": "Breakfast included"
+                            }
+                        ]
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "161369027"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIyMDUxMzEyODcifQ==",
+                    "name": "Adagio Premium The Palm",
+                    "stars": "4",
+                    "distance": "0.89 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "0.42 miles from The View at the Palm",
+                    "coordinates": {
+                        "latitude": 25.108122,
+                        "longitude": 55.142452
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1339721823/1339721823_WxH.jpg",
+                        "https://content.skyscnr.com/available/1534937900/1534937900_WxH.jpg",
+                        "https://content.skyscnr.com/available/1339721655/1339721655_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 5,
+                        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-64600-4.svg",
+                        "scoreDesc": "Outstanding",
+                        "total": 589,
+                        "mostPopularWith": null
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": null,
+                    "minPriceDbookPartnerId": null,
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$69",
+                        "rawPrice": 69,
+                        "partnerId": "h_fd",
+                        "partnerType": "OTA",
+                        "partnerName": "Vio.com",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_fd.png",
+                        "isOfficial": false,
+                        "funnelType": "meta",
+                        "cug": null,
+                        "discount": null,
+                        "amenities": []
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "205131287"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIyMDM4NTM0MTAifQ==",
+                    "name": "C Central Resort the Palm",
+                    "stars": "5",
+                    "distance": "1.53 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "1.18 miles from Dolphin Bay",
+                    "coordinates": {
+                        "latitude": 25.139299,
+                        "longitude": 55.1416
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1364367848/1364367848_WxH.jpg",
+                        "https://content.skyscnr.com/available/1389460038/1389460038_WxH.jpg",
+                        "https://content.skyscnr.com/available/1303053407/1303053407_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 4.5,
+                        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+                        "scoreDesc": "Excellent",
+                        "total": 2277,
+                        "mostPopularWith": null
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 4.5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 4.5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": null,
+                    "minPriceDbookPartnerId": null,
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$73",
+                        "rawPrice": 73,
+                        "partnerId": "h_zh",
+                        "partnerType": "OTA",
+                        "partnerName": "ZenHotels",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_zh.png",
+                        "isOfficial": false,
+                        "funnelType": "meta",
+                        "cug": null,
+                        "discount": null,
+                        "amenities": [
+                            {
+                                "key": "free_cancellation",
+                                "text": "Free cancellation"
+                            }
+                        ]
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "203853410"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIyMTYyNzQwNDgifQ==",
+                    "name": "Royal Central Hotel the Palm",
+                    "stars": "5",
+                    "distance": "1.34 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "1.20 miles from The View at the Palm",
+                    "coordinates": {
+                        "latitude": 25.125898,
+                        "longitude": 55.153424
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1394035580/1394035580_WxH.jpg",
+                        "https://content.skyscnr.com/available/1394035312/1394035312_WxH.jpg",
+                        "https://content.skyscnr.com/available/1462266182/1462266182_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 4.5,
+                        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+                        "scoreDesc": "Excellent",
+                        "total": 2234,
+                        "mostPopularWith": "Great for couples"
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 4.5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 4.5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": "ewogICJhZHVsdHMiOiAyLAogICJhdXRob3JpemF0aW9uX2luZm8iOiBbCiAgICB7CiAgICAgICJDb2RlIjogIlB1YmxpY1BhcmFtZXRlciIsCiAgICAgICJWYWx1ZSI6ICJINHNJQUFBQUFBQUFBR1dSM1d2Q01CVEYvNWU4em82a24rcWJINU1WaEJYVXAzV00yS1l1R0h2bE5oMkkrTC92SmxYMklCVGEvRTZhYzNMUGxjM3EzbGcyWllLTjJBTGFUbmRXdGRXbFFBMm83WVdVa0pSOHZuc0hxOHhLRzZ1UTRMVmtNMTJYYkNyQ2xHZWpraTErVkhYTTI2VzBpbWpKUWg3R0FVOER3VXYya0Q5Nis2d25ndzU5YS9HeWdIcVFkNXNCSTNUZHJsUG80V3EyM3J3TnZPOHNuQlFXQ0dlRjlrTHlKMFY2TEJma2NnQjBtSS8rY2U0RHgvSHRpK0FhS21rR005ViszLzBLSTIwRGVQSll0aldDdXlRSm0rR3lrUmpIaVR0eUF6MVc2bW5iem04alpveVdiYVY2dDc0TkF5eWd5NWMwT3U4V3lQT1o4SnFDemhEMXJ6UmJmVkp1Mm8rNWlDM25VLys4Y3M1ZitKaSs2STlDWVFjdDFWT3BvUWFrSS9LbGQrV2g4Q21rNjVSSTZKeWxybDI5cmlaYTZmUGNRSFc4anp1djE5UTN5V2xLbW9HRER5aklMK1JaSmdJWGhxYzhvVmNVUllITTZpUnIwa1pGb29uM1l6a1JjVE91azBqRmt5YXQrSjdkL2dCazNELzFVQUlBQUE9PSIKICAgIH0sCiAgICB7CiAgICAgICJDb2RlIjogIk1pblByaWNlX1BhcnRuZXJfZGF0YSIsCiAgICAgICJWYWx1ZSI6ICJINHNJQUFBQUFBQUFBRTJRelU3RE1CQ0UzOFhuTkZyL3JKMzBocUFIYmdqRUxSYzNzWU9seElsU0J4VlZlWGZXZ1FwTzFud3pzN3Z5alkwaHZpeWhkYy9SVCt6SWJrMG1jeWJMTkkwTk94S3huLzFPU0JrdVN5bUxocVZrcjZRckZDV1N6T0hRRVJDSUNqVlhKa09iM0R6WXVCdVFTMU95dzMyVUJxbExiVUJ5MkwwMFgrWThRT21xVkJwcUZQZzdZKzgzREFSdkdDSGJyVVBLeVMzWHd1Z3V5WTY1eWcwM0tEUnRCMVRaVzJ4N0w5TVNFR0FNUHdnUUNqUWdQVkxLZ3pVZEdxKzlrOXlyYzJWcnJuelZvWFNxOXJxRmM4TTJWakFmcnE5MHlTbW1rTDdvVTlpMGhENUVPenl1eStKaVM0dzluSjRvZVRkTzEvYkR4dDdSV1dWdE9NZUN0ZXNsVGVPL3h2dGJidnpndjd3cGhheHIzTFp2eGU4bkFwNEJBQUE9IgogICAgfSwKICAgIHsKICAgICAgIkNvZGUiOiAiRml4Q2hhbmdlUmF0ZSIsCiAgICAgICJWYWx1ZSI6ICJINHNJQUFBQUFBQUFBS3RXOGkvS1RNL01TOHh4TGkwcVNzMUxybFN5VW5KMGRWSFNVZkxOekFzb3lreE9EY3JQendVS0dwbWFtcGlhR1pxWUE2WFE5YmhXSkdjazVxV25BcFVaNmxtYUd4cWFBaFU1bHhhWDVPZW1GaUVaSEJyc2drVUNTYmU1bnBHeHBhV3BVaTBBNU5yVWlwZ0FBQUE9IgogICAgfQogIF0sCiAgIm1pbmlfcHJpY2Vfcm9vbV9pZCI6ICIyNTU0NTYxNDciLAogICJyYXRlX2lkIjogIjI1NTQ1NjE0NyIKfQ==",
+                    "minPriceDbookPartnerId": "d_ct",
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$81",
+                        "rawPrice": 81,
+                        "partnerId": "d_ct",
+                        "partnerType": "OTA",
+                        "partnerName": "Trip.com",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/d_ct.png",
+                        "isOfficial": false,
+                        "funnelType": "dbook",
+                        "cug": {
+                            "rawType": "general",
+                            "type": "general",
+                            "discountBadge": "46% off",
+                            "label": null,
+                            "originalPrice": "$149",
+                            "discountPercentage": 46
+                        },
+                        "discount": null,
+                        "amenities": [
+                            {
+                                "key": "free_cancellation",
+                                "text": "Free cancellation"
+                            }
+                        ]
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "216274048"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIxNjAyMDA5OTUifQ==",
+                    "name": "Dukes The Palm, a Royal Hideaway Hotel",
+                    "stars": "5",
+                    "distance": "0.49 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "0.15 miles from The View at the Palm",
+                    "coordinates": {
+                        "latitude": 25.112348,
+                        "longitude": 55.137964
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1466898906/1466898906_WxH.jpg",
+                        "https://content.skyscnr.com/available/1543674521/1543674521_WxH.jpg",
+                        "https://content.skyscnr.com/available/1543674667/1543674667_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 4.5,
+                        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+                        "scoreDesc": "Excellent",
+                        "total": 6944,
+                        "mostPopularWith": null
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 4.5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 4.5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": null,
+                    "minPriceDbookPartnerId": null,
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$96",
+                        "rawPrice": 96,
+                        "partnerId": "h_df",
+                        "partnerType": "IBE",
+                        "partnerName": "Derbysoft CPA",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_df.png",
+                        "isOfficial": true,
+                        "funnelType": "meta",
+                        "cug": null,
+                        "discount": null,
+                        "amenities": [
+                            {
+                                "key": "breakfast_included",
+                                "text": "Breakfast included"
+                            }
+                        ]
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "160200995"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIxNTcwODgzMzcifQ==",
+                    "name": "The Retreat Palm Dubai MGallery by Sofitel",
+                    "stars": "5",
+                    "distance": "1.54 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "1.23 miles from Dolphin Bay",
+                    "coordinates": {
+                        "latitude": 25.139212,
+                        "longitude": 55.142465
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1352152700/1352152700_WxH.jpg",
+                        "https://content.skyscnr.com/available/1352152644/1352152644_WxH.jpg",
+                        "https://content.skyscnr.com/available/1544457704/1544457704_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 4.5,
+                        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+                        "scoreDesc": "Excellent",
+                        "total": 4811,
+                        "mostPopularWith": "Great for couples"
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 4.5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 4.5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": null,
+                    "minPriceDbookPartnerId": null,
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$84",
+                        "rawPrice": 84,
+                        "partnerId": "h_tt",
+                        "partnerType": "OTA",
+                        "partnerName": "Algotels",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_tt.png",
+                        "isOfficial": false,
+                        "funnelType": "meta",
+                        "cug": {
+                            "rawType": "general",
+                            "type": "general",
+                            "discountBadge": "18% off",
+                            "label": null,
+                            "originalPrice": "$102",
+                            "discountPercentage": 18
+                        },
+                        "discount": null,
+                        "amenities": []
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "157088337"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIyMTM1ODgyMTEifQ==",
+                    "name": "NH Collection Dubai The Palm",
+                    "stars": "4",
+                    "distance": "0.56 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "0.17 miles from The View at the Palm",
+                    "coordinates": {
+                        "latitude": 25.111529,
+                        "longitude": 55.138583
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1383679216/1383679216_WxH.jpg",
+                        "https://content.skyscnr.com/available/1383679055/1383679055_WxH.jpg",
+                        "https://content.skyscnr.com/available/1303510639/1303510639_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 4.5,
+                        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+                        "scoreDesc": "Excellent",
+                        "total": 943,
+                        "mostPopularWith": null
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": null,
+                    "minPriceDbookPartnerId": null,
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$87",
+                        "rawPrice": 87,
+                        "partnerId": "h_fd",
+                        "partnerType": "OTA",
+                        "partnerName": "Vio.com",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_fd.png",
+                        "isOfficial": false,
+                        "funnelType": "meta",
+                        "cug": null,
+                        "discount": null,
+                        "amenities": [
+                            {
+                                "key": "breakfast_included",
+                                "text": "Breakfast included"
+                            }
+                        ]
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "213588211"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIxMTYwODk5NTQifQ==",
+                    "name": "Atlantis, the Palm",
+                    "stars": "5",
+                    "distance": "1.33 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "0.54 miles from Dolphin Bay",
+                    "coordinates": {
+                        "latitude": 25.130443,
+                        "longitude": 55.11715
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1395422445/1395422445_WxH.jpg",
+                        "https://content.skyscnr.com/available/1545743749/1545743749_WxH.jpg",
+                        "https://content.skyscnr.com/available/1545743703/1545743703_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 4.5,
+                        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+                        "scoreDesc": "Excellent",
+                        "total": 7655,
+                        "mostPopularWith": null
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": null,
+                    "minPriceDbookPartnerId": null,
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$245",
+                        "rawPrice": 245,
+                        "partnerId": "h_tt",
+                        "partnerType": "OTA",
+                        "partnerName": "Algotels",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_tt.png",
+                        "isOfficial": false,
+                        "funnelType": "meta",
+                        "cug": {
+                            "rawType": "general",
+                            "type": "general",
+                            "discountBadge": "20% off",
+                            "label": null,
+                            "originalPrice": "$307",
+                            "discountPercentage": 20
+                        },
+                        "discount": null,
+                        "amenities": []
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "116089954"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIxODUyMDk2NzEifQ==",
+                    "name": "Royal Central Hotel & Resort",
+                    "stars": "5",
+                    "distance": "1.29 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "1.16 miles from The View at the Palm",
+                    "coordinates": {
+                        "latitude": 25.12602,
+                        "longitude": 55.15247
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1546871688/1546871688_WxH.jpg",
+                        "https://content.skyscnr.com/available/1546871434/1546871434_WxH.jpg",
+                        "https://content.skyscnr.com/available/1546871470/1546871470_WxH.jpg"
+                    ],
+                    "reviewsSummary": null,
+                    "confidentMessages": [],
+                    "minPriceDbookRoomId": null,
+                    "minPriceDbookPartnerId": null,
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$81",
+                        "rawPrice": 81,
+                        "partnerId": "h_pi",
+                        "partnerType": "OTA",
+                        "partnerName": "Prestigia",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_pi.png",
+                        "isOfficial": false,
+                        "funnelType": "meta",
+                        "cug": null,
+                        "discount": null,
+                        "amenities": []
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "185209671"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIxMzc0MjYzMTIifQ==",
+                    "name": "Fairmont The Palm",
+                    "stars": "5",
+                    "distance": "0.72 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "0.25 miles from The View at the Palm",
+                    "coordinates": {
+                        "latitude": 25.11027,
+                        "longitude": 55.14102
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1380728657/1380728657_WxH.jpg",
+                        "https://content.skyscnr.com/available/1380728747/1380728747_WxH.jpg",
+                        "https://content.skyscnr.com/available/1503566497/1503566497_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 4.5,
+                        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+                        "scoreDesc": "Excellent",
+                        "total": 12072,
+                        "mostPopularWith": null
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 4.5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 4.5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": null,
+                    "minPriceDbookPartnerId": null,
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$111",
+                        "rawPrice": 111,
+                        "partnerId": "h_fd",
+                        "partnerType": "OTA",
+                        "partnerName": "Vio.com",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_fd.png",
+                        "isOfficial": false,
+                        "funnelType": "meta",
+                        "cug": null,
+                        "discount": null,
+                        "amenities": []
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "137426312"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIyMTI3MDczNjQifQ==",
+                    "name": "Voco Dubai the Palm",
+                    "stars": "4",
+                    "distance": "0.94 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "0.47 miles from The View at the Palm",
+                    "coordinates": {
+                        "latitude": 25.107576,
+                        "longitude": 55.142997
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1143819467/1143819467_WxH.jpg",
+                        "https://content.skyscnr.com/available/1219403522/1219403522_WxH.jpg",
+                        "https://content.skyscnr.com/available/1192479293/1192479293_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 5,
+                        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-64600-4.svg",
+                        "scoreDesc": "Outstanding",
+                        "total": 547,
+                        "mostPopularWith": null
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": "ewogICJhZHVsdHMiOiAyLAogICJhdXRob3JpemF0aW9uX2luZm8iOiBbCiAgICB7CiAgICAgICJDb2RlIjogIlB1YmxpY1BhcmFtZXRlciIsCiAgICAgICJWYWx1ZSI6ICJINHNJQUFBQUFBQUFBR1dSWDB2RE1CVEZ2MHRlWGVVbS9UZjNOamZGd3NEQzNKTVZDV21td2F4MzNLYkNrSDEzYjFxSEQ0TkNtOTlKYzA3dStSSExkdkJCTElRVU03SENybmQ5c0owNTFlU1FYRGl4b2xpcDduZFBHS3gvZEQ1WVl2alRpS1ZyRzdHUXFvQnkxb2pWcHpWZlZiZld3VEp0aEFLVkpWQWtFaHB4a1orSGNLM25rNDVERitpMHduYVNkOXNKRS9iOXJyYzB3c2ZsWnZzdzhhRVBlTEJVRXg0dGhSUExyeHpwc2x5eHl3ZFN4REQ3eDlVWU9Ndk9id3czYUxTZnpHejMvdWRYZXgzMlNJY1I2NjRsakpka1lUdGROcFh6TEk5SGJuRWdZNisyN2NadHpMeDN1ak4yaU92ek5NQWErMnJOb3h2ZEVuMDhNdDV3MENXUis5Yit4UjFzblBabEx2SUZpZ1VBUDdjQWNBTnovdUkvYWtzOWRseVBzVk1OeEVkVTY5RVZsQnhUNk5ncEV4V2R0V3RqdmJFbVhybmp2VWZ6OVRmdXF0MXczeXdYQldzZVA4YUFrdjBVbEtWTVloZ29JT2RYbXFhSkxyVTJhVjd1NzdJeW01dGlybFJlR0FXbWxmc015cjA0L3dKa0IvNE5VQUlBQUE9PSIKICAgIH0sCiAgICB7CiAgICAgICJDb2RlIjogIk1pblByaWNlX1BhcnRuZXJfZGF0YSIsCiAgICAgICJWYWx1ZSI6ICJINHNJQUFBQUFBQUFBR1dRelc2RFFBeUUzOFZuZ3RiN0M3bW1PZlJXdGVxTmk3V0JkQ1ZZRU5sVVZCSHZYaTh0cC9qbXp6T2prUjh3aFBnMkI5Kyt4bTZFSXp5YVRLWk01bkVjR2pneW9lL3JSbmh6UnBhcWFDQWxXbmhGUkYwcXh5Q3J3eVVqbzJTbFZHMU1wcFRhcWFlNFhZeXdOV29qWlBhUGlmbzlWRG1McFVFcnBEUmI5blNiR0l0U2JQT2ZzMlUwSUNRMndJZ3U5ejR4a1d1MmhLRzlKUnF5RFIxeVMydFJLNTI5YVNhL201SGpwSEFPRDFKSUxhemdObG9wZFNCSDVKVnhYYTJkcnJ5dHVJcjFVdmdMZGxxNHJvRVZDdWpDOHM1TnpqR0Y5TU92Z1hFTzF4Q3BQOTNudVkyZUdYeCt2TEJ5UDV3WC8wWHgydkxuU3FucTJoVGc3N2MwRGsrT1AveWtYOWRmL1JCbU9xUUJBQUE9IgogICAgfSwKICAgIHsKICAgICAgIkNvZGUiOiAiRml4Q2hhbmdlUmF0ZSIsCiAgICAgICJWYWx1ZSI6ICJINHNJQUFBQUFBQUFBS3RXOGkvS1RNL01TOHh4TGkwcVNzMUxybFN5VWdvTmRsSFNVZkxOekFzb3lreE9EY3JQendVS0dwb2FHMWtZRzF1YW1nTGwwRFc1VmlSbkpPYWxwd0xWbWVzWkdWdGFnaFE1bHhhWDVPZW1GbUdZakM2QlJYY3RBSWZaNmpPWkFBQUEiCiAgICB9CiAgXSwKICAibWluaV9wcmljZV9yb29tX2lkIjogIjE1MzI4MzM5NTUiLAogICJyYXRlX2lkIjogIjE1MzI4MzM5NTUiCn0=",
+                    "minPriceDbookPartnerId": "d_ct",
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$95",
+                        "rawPrice": 95,
+                        "partnerId": "d_ct",
+                        "partnerType": "OTA",
+                        "partnerName": "Trip.com",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/d_ct.png",
+                        "isOfficial": false,
+                        "funnelType": "dbook",
+                        "cug": null,
+                        "discount": null,
+                        "amenities": [
+                            {
+                                "key": "breakfast_included",
+                                "text": "Breakfast included"
+                            }
+                        ]
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "212707364"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIyMTI0MjAxNjEifQ==",
+                    "name": "Taj Exotica Resort & Spa, The Palm, Dubai",
+                    "stars": "5",
+                    "distance": "1.35 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "1.17 miles from The View at the Palm",
+                    "coordinates": {
+                        "latitude": 25.124583,
+                        "longitude": 55.15419
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1390008487/1390008487_WxH.jpg",
+                        "https://content.skyscnr.com/available/1554265119/1554265119_WxH.jpg",
+                        "https://content.skyscnr.com/available/1390008436/1390008436_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 5,
+                        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-64600-4.svg",
+                        "scoreDesc": "Outstanding",
+                        "total": 1799,
+                        "mostPopularWith": "Great for couples"
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 4.5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 4.5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": null,
+                    "minPriceDbookPartnerId": null,
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$119",
+                        "rawPrice": 119,
+                        "partnerId": "h_pi",
+                        "partnerType": "OTA",
+                        "partnerName": "Prestigia",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_pi.png",
+                        "isOfficial": false,
+                        "funnelType": "meta",
+                        "cug": null,
+                        "discount": null,
+                        "amenities": []
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "212420161"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIyMDUyODQxNDYifQ==",
+                    "name": "Anantara The Palm Dubai Resort",
+                    "stars": "5",
+                    "distance": "1.46 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "1.38 miles from The View at the Palm",
+                    "coordinates": {
+                        "latitude": 25.12925,
+                        "longitude": 55.15365
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1455805898/1455805898_WxH.jpg",
+                        "https://content.skyscnr.com/available/1455805544/1455805544_WxH.jpg",
+                        "https://content.skyscnr.com/available/1553211512/1553211512_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 4.5,
+                        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+                        "scoreDesc": "Excellent",
+                        "total": 12077,
+                        "mostPopularWith": "Great for families"
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 4.5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 4.5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": null,
+                    "minPriceDbookPartnerId": null,
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$127",
+                        "rawPrice": 127,
+                        "partnerId": "h_bc",
+                        "partnerType": "OTA",
+                        "partnerName": "Booking.com",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_bc.png",
+                        "isOfficial": false,
+                        "funnelType": "meta",
+                        "cug": null,
+                        "discount": null,
+                        "amenities": []
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "205284146"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIyMTMwNzg5NjgifQ==",
+                    "name": "Wyndham Residences The Palm",
+                    "stars": "5",
+                    "distance": "1.46 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "1.36 miles from Dolphin Bay",
+                    "coordinates": {
+                        "latitude": 25.1201,
+                        "longitude": 55.1104
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1248428527/1248428527_WxH.jpg",
+                        "https://content.skyscnr.com/available/1365328716/1365328716_WxH.jpg",
+                        "https://content.skyscnr.com/available/1540187621/1540187621_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 4.5,
+                        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-64600-4.svg",
+                        "scoreDesc": "Excellent",
+                        "total": 448,
+                        "mostPopularWith": null
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 4.5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 4.5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": null,
+                    "minPriceDbookPartnerId": null,
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$100",
+                        "rawPrice": 100,
+                        "partnerId": "h_zh",
+                        "partnerType": "OTA",
+                        "partnerName": "ZenHotels",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_zh.png",
+                        "isOfficial": false,
+                        "funnelType": "meta",
+                        "cug": null,
+                        "discount": null,
+                        "amenities": [
+                            {
+                                "key": "free_cancellation",
+                                "text": "Free cancellation"
+                            },
+                            {
+                                "key": "breakfast_included",
+                                "text": "Breakfast included"
+                            }
+                        ]
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "213078968"
+                },
+                {
+                    "id": "eyJlbnRpdHlJZCI6IjkwNzEzMTY3IiwiaWQiOiIxNTQ1NDM5NzAifQ==",
+                    "name": "Hilton Dubai Palm Jumeirah",
+                    "stars": "5",
+                    "distance": "1.22 miles from The Palm Jumeirah",
+                    "relevantPoiDistance": "0.73 miles from The View at the Palm",
+                    "coordinates": {
+                        "latitude": 25.10566,
+                        "longitude": 55.147283
+                    },
+                    "pivot": false,
+                    "images": [
+                        "https://content.skyscnr.com/available/1450968435/1450968435_WxH.jpg",
+                        "https://content.skyscnr.com/available/992501778/992501778_WxH.jpg",
+                        "https://content.skyscnr.com/available/1484592859/1484592859_WxH.jpg"
+                    ],
+                    "reviewsSummary": {
+                        "score": 5,
+                        "imageUrl": "https://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-64600-4.svg",
+                        "scoreDesc": "Outstanding",
+                        "total": 1527,
+                        "mostPopularWith": null
+                    },
+                    "confidentMessages": [
+                        {
+                            "type": "location",
+                            "score": 5,
+                            "icon": "thumbs-up",
+                            "message": "Hotel location is rated 5/5"
+                        }
+                    ],
+                    "minPriceDbookRoomId": null,
+                    "minPriceDbookPartnerId": null,
+                    "inbound": true,
+                    "lowestPrice": {
+                        "price": "$150",
+                        "rawPrice": 150,
+                        "partnerId": "h_fd",
+                        "partnerType": "OTA",
+                        "partnerName": "Vio.com",
+                        "partnerLogo": "https://www.skyscanner.com/images/websites/220x80/h_fd.png",
+                        "isOfficial": false,
+                        "funnelType": "meta",
+                        "cug": null,
+                        "discount": null,
+                        "amenities": []
+                    },
+                    "otherPrices": [],
+                    "isUpSorted": false,
+                    "hotelId": "154543970"
+                }
+            ],
+            "filters": [
+                {
+                    "type": "price_buckets",
+                    "title": "Price",
+                    "values": [
+                        {
+                            "id": "PR_BK_0",
+                            "label": "PR_BK_0",
+                            "minPrice": 0,
+                            "maxPrice": 2200,
+                            "count": 534,
+                            "uniqueId": "price_buckets_PR_BK_0"
+                        },
+                        {
+                            "id": "PR_BK_1",
+                            "label": "PR_BK_1",
+                            "minPrice": 2200,
+                            "maxPrice": 4400,
+                            "count": 42,
+                            "uniqueId": "price_buckets_PR_BK_1"
+                        },
+                        {
+                            "id": "PR_BK_2",
+                            "label": "PR_BK_2",
+                            "minPrice": 4400,
+                            "maxPrice": 6600,
+                            "count": 19,
+                            "uniqueId": "price_buckets_PR_BK_2"
+                        },
+                        {
+                            "id": "PR_BK_3",
+                            "label": "PR_BK_3",
+                            "minPrice": 6600,
+                            "maxPrice": 8800,
+                            "count": 5,
+                            "uniqueId": "price_buckets_PR_BK_3"
+                        },
+                        {
+                            "id": "PR_BK_4",
+                            "label": "PR_BK_4",
+                            "minPrice": 8800,
+                            "maxPrice": 11000,
+                            "count": 2,
+                            "uniqueId": "price_buckets_PR_BK_4"
+                        },
+                        {
+                            "id": "PR_BK_5",
+                            "label": "PR_BK_5",
+                            "minPrice": 11000,
+                            "maxPrice": null,
+                            "count": 17,
+                            "uniqueId": "price_buckets_PR_BK_5"
+                        }
+                    ]
+                },
+                {
+                    "title": "Book with peace of mind",
+                    "type": "confident_type",
+                    "values": [
+                        {
+                            "id": "free_cancellation",
+                            "uniqueId": "cancellation_free_cancellation",
+                            "count": 213,
+                            "label": "Free cancellation"
+                        },
+                        {
+                            "id": "RoomRates_option_payOnArrival",
+                            "uniqueId": "pay_type_RoomRates_option_payOnArrival",
+                            "count": 28,
+                            "label": "Pay on arrival"
+                        }
+                    ]
+                },
+                {
+                    "type": "stars",
+                    "title": "Star rating",
+                    "values": [
+                        {
+                            "id": "5",
+                            "label": "5 stars",
+                            "icon": "star",
+                            "count": 36,
+                            "uniqueId": "stars_5"
+                        },
+                        {
+                            "id": "4",
+                            "label": "4 stars",
+                            "icon": "star",
+                            "count": 10,
+                            "uniqueId": "stars_4"
+                        },
+                        {
+                            "id": "3",
+                            "label": "3 stars",
+                            "icon": "star",
+                            "count": 13,
+                            "uniqueId": "stars_3"
+                        },
+                        {
+                            "id": "2",
+                            "label": "2 stars",
+                            "icon": "star",
+                            "count": 3,
+                            "uniqueId": "stars_2"
+                        },
+                        {
+                            "id": "1",
+                            "label": "1 star",
+                            "icon": "star",
+                            "count": 0,
+                            "uniqueId": "stars_1"
+                        },
+                        {
+                            "id": "no_stars",
+                            "label": "Unrated",
+                            "icon": null,
+                            "count": 557,
+                            "uniqueId": "stars_no_stars"
+                        }
+                    ]
+                },
+                {
+                    "type": "meal_plan",
+                    "title": "Meal plan",
+                    "values": [
+                        {
+                            "id": "breakfast_included",
+                            "label": "Breakfast included",
+                            "count": 41,
+                            "uniqueId": "meal_plan_breakfast_included"
+                        },
+                        {
+                            "id": "RoomRates_label_mealsNotIncluded",
+                            "label": "Meals not included",
+                            "count": 606,
+                            "uniqueId": "meal_plan_RoomRates_label_mealsNotIncluded"
+                        }
+                    ]
+                },
+                {
+                    "type": "rating",
+                    "title": "Guest rating",
+                    "values": [
+                        {
+                            "id": "3",
+                            "label": "3+ Satisfactory",
+                            "count": 3,
+                            "uniqueId": "rating_3"
+                        },
+                        {
+                            "id": "3.5",
+                            "label": "3.5+ Good",
+                            "count": 4,
+                            "uniqueId": "rating_3.5"
+                        },
+                        {
+                            "id": "4",
+                            "label": "4+ Very Good",
+                            "count": 2,
+                            "uniqueId": "rating_4"
+                        },
+                        {
+                            "id": "4.5",
+                            "label": "4.5+ Excellent",
+                            "count": 20,
+                            "uniqueId": "rating_4.5"
+                        },
+                        {
+                            "id": "5",
+                            "label": "5+ Outstanding",
+                            "count": 19,
+                            "uniqueId": "rating_5"
+                        }
+                    ]
+                },
+                {
+                    "type": "guest_type",
+                    "title": "Popular with",
+                    "values": [
+                        {
+                            "id": "business",
+                            "label": "Business travelers",
+                            "count": 0,
+                            "uniqueId": "guest_type_business"
+                        },
+                        {
+                            "id": "couple",
+                            "label": "Couples",
+                            "count": 10,
+                            "uniqueId": "guest_type_couple"
+                        },
+                        {
+                            "id": "family",
+                            "label": "Families",
+                            "count": 3,
+                            "uniqueId": "guest_type_family"
+                        },
+                        {
+                            "id": "solo",
+                            "label": "Solo travelers",
+                            "count": 0,
+                            "uniqueId": "guest_type_solo"
+                        }
+                    ]
+                },
+                {
+                    "type": "chain",
+                    "title": "Hotel chain",
+                    "values": [
+                        {
+                            "id": "MTEzOTE0ODk1LDkwNzE4NTg5",
+                            "label": "Accor Hotels",
+                            "count": 2,
+                            "uniqueId": "chain_113914895,90718589"
+                        },
+                        {
+                            "id": "OTA3MTg3ODIsOTA3MTg0MjI=",
+                            "label": "Hilton",
+                            "count": 2,
+                            "uniqueId": "chain_90718782,90718422"
+                        },
+                        {
+                            "id": "OTA3MTg2MTM=",
+                            "label": "Taj",
+                            "count": 1,
+                            "uniqueId": "chain_90718613"
+                        },
+                        {
+                            "id": "OTA3MTg2NDE=",
+                            "label": "Wyndham Hotel Group",
+                            "count": 1,
+                            "uniqueId": "chain_90718641"
+                        },
+                        {
+                            "id": "OTA3MTg4MDU=",
+                            "label": "Global Hotel Alliance",
+                            "count": 1,
+                            "uniqueId": "chain_90718805"
+                        },
+                        {
+                            "id": "OTA3MTg0ODU=",
+                            "label": "Marriott International",
+                            "count": 1,
+                            "uniqueId": "chain_90718485"
+                        },
+                        {
+                            "id": "OTA3MTkzNTM=",
+                            "label": "Jumeirah Group",
+                            "count": 1,
+                            "uniqueId": "chain_90719353"
+                        }
+                    ]
+                },
+                {
+                    "type": "cancellation",
+                    "title": "Cancellation policy",
+                    "values": [
+                        {
+                            "id": "free_cancellation",
+                            "label": "Free cancellation",
+                            "count": 213,
+                            "uniqueId": "cancellation_free_cancellation"
+                        },
+                        {
+                            "id": "refundable",
+                            "label": "Refundable",
+                            "count": 10,
+                            "uniqueId": "cancellation_refundable"
+                        },
+                        {
+                            "id": "non_refundable",
+                            "label": "Non-Refundable",
+                            "count": 513,
+                            "uniqueId": "cancellation_non_refundable"
+                        }
+                    ]
+                },
+                {
+                    "type": "amenities",
+                    "title": "Amenities",
+                    "values": [
+                        {
+                            "id": "WifiService",
+                            "label": "WiFi",
+                            "icon": "wifi",
+                            "count": 585,
+                            "uniqueId": "amenities_WifiService"
+                        },
+                        {
+                            "id": "Parking",
+                            "label": "Parking",
+                            "icon": "parking",
+                            "count": 537,
+                            "uniqueId": "amenities_Parking"
+                        },
+                        {
+                            "id": "AirConditioning",
+                            "label": "Air conditioning",
+                            "icon": "aircon",
+                            "count": 582,
+                            "uniqueId": "amenities_AirConditioning"
+                        },
+                        {
+                            "id": "AirportShuttleService",
+                            "label": "Airport Shuttle",
+                            "icon": "bus",
+                            "count": 77,
+                            "uniqueId": "amenities_AirportShuttleService"
+                        },
+                        {
+                            "id": "Pool",
+                            "label": "Pool",
+                            "icon": "long-arrow-right",
+                            "count": 521,
+                            "uniqueId": "amenities_Pool"
+                        },
+                        {
+                            "id": "FitnessCenter",
+                            "label": "Fitness Center",
+                            "icon": "health-fitness",
+                            "count": 370,
+                            "uniqueId": "amenities_FitnessCenter"
+                        },
+                        {
+                            "id": "Spa",
+                            "label": "Spa",
+                            "icon": "hotels--jacuzzi",
+                            "count": 87,
+                            "uniqueId": "amenities_Spa"
+                        },
+                        {
+                            "id": "FrontDesk24hService",
+                            "label": "24-hour Front Desk Service",
+                            "icon": "services",
+                            "count": 145,
+                            "uniqueId": "amenities_FrontDesk24hService"
+                        },
+                        {
+                            "id": "Restaurant",
+                            "label": "Restaurant",
+                            "icon": "meal",
+                            "count": 104,
+                            "uniqueId": "amenities_Restaurant"
+                        },
+                        {
+                            "id": "NonSmokingService",
+                            "label": "Non-smoking",
+                            "icon": "hotels--smoking",
+                            "count": 555,
+                            "uniqueId": "amenities_NonSmokingService"
+                        },
+                        {
+                            "id": "Bathtub",
+                            "label": "Bathtub",
+                            "icon": "onsen",
+                            "count": 20,
+                            "uniqueId": "amenities_Bathtub"
+                        },
+                        {
+                            "id": "Laundry",
+                            "label": "Laundry",
+                            "icon": "cloakroom",
+                            "count": 163,
+                            "uniqueId": "amenities_Laundry"
+                        },
+                        {
+                            "id": "Kitchen",
+                            "label": "Kitchen",
+                            "icon": "food",
+                            "count": 44,
+                            "uniqueId": "amenities_Kitchen"
+                        },
+                        {
+                            "id": "PetsAllowedService",
+                            "label": "Pets allowed",
+                            "icon": "hotels--pets-allowed",
+                            "count": 70,
+                            "uniqueId": "amenities_PetsAllowedService"
+                        },
+                        {
+                            "id": "Television",
+                            "label": "Television",
+                            "icon": "media",
+                            "count": 41,
+                            "uniqueId": "amenities_Television"
+                        },
+                        {
+                            "id": "BabySittingService",
+                            "label": "Baby-sitting",
+                            "icon": "baby-carriage",
+                            "count": 57,
+                            "uniqueId": "amenities_BabySittingService"
+                        },
+                        {
+                            "id": "Lift",
+                            "label": "Elevator",
+                            "icon": "swap--vertical",
+                            "count": 454,
+                            "uniqueId": "amenities_Lift"
+                        },
+                        {
+                            "id": "RoomWithASeaView",
+                            "label": "Rooms with ocean views",
+                            "icon": "view",
+                            "count": 8,
+                            "uniqueId": "amenities_RoomWithASeaView"
+                        },
+                        {
+                            "id": "DisabledFacility",
+                            "label": "Accessible",
+                            "icon": "hotels--disabled-facilities",
+                            "count": 47,
+                            "uniqueId": "amenities_DisabledFacility"
+                        },
+                        {
+                            "id": "InternetAccessService",
+                            "label": "Internet access",
+                            "icon": "globe",
+                            "count": 552,
+                            "uniqueId": "amenities_InternetAccessService"
+                        },
+                        {
+                            "id": "OutdoorSwimmingPool",
+                            "label": "Outdoor pool",
+                            "icon": "long-arrow-right",
+                            "count": 439,
+                            "uniqueId": "amenities_OutdoorSwimmingPool"
+                        },
+                        {
+                            "id": "FirstAidRoom",
+                            "label": "First-aid room",
+                            "icon": "long-arrow-right",
+                            "count": 273,
+                            "uniqueId": "amenities_FirstAidRoom"
+                        },
+                        {
+                            "id": "RoomService",
+                            "label": "Room service",
+                            "icon": "services",
+                            "count": 191,
+                            "uniqueId": "amenities_RoomService"
+                        },
+                        {
+                            "id": "SafeDepositBox",
+                            "label": "Safe deposit box",
+                            "icon": "lock",
+                            "count": 193,
+                            "uniqueId": "amenities_SafeDepositBox"
+                        },
+                        {
+                            "id": "UVSunbeds",
+                            "label": "Tanning beds",
+                            "icon": "long-arrow-right",
+                            "count": 188,
+                            "uniqueId": "amenities_UVSunbeds"
+                        },
+                        {
+                            "id": "PrivateBeach",
+                            "label": "Private beach",
+                            "icon": "long-arrow-right",
+                            "count": 180,
+                            "uniqueId": "amenities_PrivateBeach"
+                        },
+                        {
+                            "id": "SmokingArea",
+                            "label": "Smoking areas",
+                            "icon": "long-arrow-right",
+                            "count": 142,
+                            "uniqueId": "amenities_SmokingArea"
+                        },
+                        {
+                            "id": "ConciergeService",
+                            "label": "Concierge",
+                            "icon": "luggageall",
+                            "count": 131,
+                            "uniqueId": "amenities_ConciergeService"
+                        },
+                        {
+                            "id": "SunUmbrella",
+                            "label": "Beach umbrellas",
+                            "icon": "long-arrow-right",
+                            "count": 149,
+                            "uniqueId": "amenities_SunUmbrella"
+                        },
+                        {
+                            "id": "IroningService",
+                            "label": "Iron",
+                            "icon": "cloakroom",
+                            "count": 111,
+                            "uniqueId": "amenities_IroningService"
+                        },
+                        {
+                            "id": "Bar",
+                            "label": "Bar",
+                            "icon": "bar",
+                            "count": 115,
+                            "uniqueId": "amenities_Bar"
+                        },
+                        {
+                            "id": "Garden",
+                            "label": "Garden",
+                            "icon": "long-arrow-right",
+                            "count": 161,
+                            "uniqueId": "amenities_Garden"
+                        },
+                        {
+                            "id": "LuggageStorage",
+                            "label": "Luggage storage",
+                            "icon": "luggageall",
+                            "count": 70,
+                            "uniqueId": "amenities_LuggageStorage"
+                        },
+                        {
+                            "id": "ChildrenPool",
+                            "label": "Children's Pool",
+                            "icon": "long-arrow-right",
+                            "count": 101,
+                            "uniqueId": "amenities_ChildrenPool"
+                        },
+                        {
+                            "id": "CurrencyExchangeService",
+                            "label": "Currency exchange",
+                            "icon": "long-arrow-right",
+                            "count": 57,
+                            "uniqueId": "amenities_CurrencyExchangeService"
+                        },
+                        {
+                            "id": "Sauna",
+                            "label": "Sauna",
+                            "icon": "onsen",
+                            "count": 96,
+                            "uniqueId": "amenities_Sauna"
+                        },
+                        {
+                            "id": "WiFiInDesignatedAreas",
+                            "label": "WiFi in common areas",
+                            "icon": "long-arrow-right",
+                            "count": 48,
+                            "uniqueId": "amenities_WiFiInDesignatedAreas"
+                        },
+                        {
+                            "id": "ExpressCheckinService",
+                            "label": "Express check-in",
+                            "icon": "fast-track",
+                            "count": 107,
+                            "uniqueId": "amenities_ExpressCheckinService"
+                        },
+                        {
+                            "id": "BeautySalon",
+                            "label": "Beauty salon",
+                            "icon": "long-arrow-right",
+                            "count": 74,
+                            "uniqueId": "amenities_BeautySalon"
+                        },
+                        {
+                            "id": "CarRental",
+                            "label": "Car rental",
+                            "icon": "cars",
+                            "count": 79,
+                            "uniqueId": "amenities_CarRental"
+                        },
+                        {
+                            "id": "ExpressCheckoutService",
+                            "label": "Express check-out",
+                            "icon": "fast-track",
+                            "count": 105,
+                            "uniqueId": "amenities_ExpressCheckoutService"
+                        },
+                        {
+                            "id": "Fax",
+                            "label": "Fax",
+                            "icon": "long-arrow-right",
+                            "count": 46,
+                            "uniqueId": "amenities_Fax"
+                        },
+                        {
+                            "id": "MassageService",
+                            "label": "Massage",
+                            "icon": "long-arrow-right",
+                            "count": 55,
+                            "uniqueId": "amenities_MassageService"
+                        },
+                        {
+                            "id": "ChildrenFacility",
+                            "label": "Children's play area",
+                            "icon": "long-arrow-right",
+                            "count": 55,
+                            "uniqueId": "amenities_ChildrenFacility"
+                        },
+                        {
+                            "id": "TrouserPress",
+                            "label": "Pants press",
+                            "icon": "long-arrow-right",
+                            "count": 79,
+                            "uniqueId": "amenities_TrouserPress"
+                        },
+                        {
+                            "id": "MeetingRoom",
+                            "label": "Meeting facilities",
+                            "icon": "business",
+                            "count": 48,
+                            "uniqueId": "amenities_MeetingRoom"
+                        },
+                        {
+                            "id": "ValetParkingService",
+                            "label": "Valet parking",
+                            "icon": "long-arrow-right",
+                            "count": 48,
+                            "uniqueId": "amenities_ValetParkingService"
+                        },
+                        {
+                            "id": "BanquetingService",
+                            "label": "Banquet service",
+                            "icon": "long-arrow-right",
+                            "count": 42,
+                            "uniqueId": "amenities_BanquetingService"
+                        },
+                        {
+                            "id": "MultilingualStaffService",
+                            "label": "Multilingual staff",
+                            "icon": "long-arrow-right",
+                            "count": 55,
+                            "uniqueId": "amenities_MultilingualStaffService"
+                        },
+                        {
+                            "id": "Photocopier",
+                            "label": "Photocopier",
+                            "icon": "long-arrow-right",
+                            "count": 42,
+                            "uniqueId": "amenities_Photocopier"
+                        },
+                        {
+                            "id": "BusinessCenter",
+                            "label": "Business center",
+                            "icon": "long-arrow-right",
+                            "count": 49,
+                            "uniqueId": "amenities_BusinessCenter"
+                        },
+                        {
+                            "id": "TourService",
+                            "label": "Tours",
+                            "icon": "long-arrow-right",
+                            "count": 49,
+                            "uniqueId": "amenities_TourService"
+                        },
+                        {
+                            "id": "TicketOffice",
+                            "label": "Ticket office",
+                            "icon": "ticket",
+                            "count": 31,
+                            "uniqueId": "amenities_TicketOffice"
+                        },
+                        {
+                            "id": "PoolBar",
+                            "label": "Poolside bar",
+                            "icon": "long-arrow-right",
+                            "count": 58,
+                            "uniqueId": "amenities_PoolBar"
+                        },
+                        {
+                            "id": "WheelChairAccess",
+                            "label": "Wheelchair accessible",
+                            "icon": "hotels--disabled-facilities",
+                            "count": 34,
+                            "uniqueId": "amenities_WheelChairAccess"
+                        },
+                        {
+                            "id": "Playground",
+                            "label": "Playground",
+                            "icon": "long-arrow-right",
+                            "count": 86,
+                            "uniqueId": "amenities_Playground"
+                        },
+                        {
+                            "id": "CashMachine",
+                            "label": "ATM",
+                            "icon": "long-arrow-right",
+                            "count": 59,
+                            "uniqueId": "amenities_CashMachine"
+                        },
+                        {
+                            "id": "Heating",
+                            "label": "Heat",
+                            "icon": "estimated",
+                            "count": 84,
+                            "uniqueId": "amenities_Heating"
+                        },
+                        {
+                            "id": "SteamRoom",
+                            "label": "Steam Room",
+                            "icon": "hotels--jacuzzi",
+                            "count": 48,
+                            "uniqueId": "amenities_SteamRoom"
+                        },
+                        {
+                            "id": "ShuttleService",
+                            "label": "Shuttle service",
+                            "icon": "long-arrow-right",
+                            "count": 42,
+                            "uniqueId": "amenities_ShuttleService"
+                        },
+                        {
+                            "id": "BicycleRentalService",
+                            "label": "Bicycle rental",
+                            "icon": "long-arrow-right",
+                            "count": 60,
+                            "uniqueId": "amenities_BicycleRentalService"
+                        },
+                        {
+                            "id": "ElectricVehicleChargingStation",
+                            "label": "Electric vehicle (EV) charging station",
+                            "icon": "electric",
+                            "count": 55,
+                            "uniqueId": "amenities_ElectricVehicleChargingStation"
+                        },
+                        {
+                            "id": "Hairdressers",
+                            "label": "Hairdressers",
+                            "icon": "long-arrow-right",
+                            "count": 29,
+                            "uniqueId": "amenities_Hairdressers"
+                        },
+                        {
+                            "id": "Nightclub",
+                            "label": "Nightclub",
+                            "icon": "long-arrow-right",
+                            "count": 42,
+                            "uniqueId": "amenities_Nightclub"
+                        },
+                        {
+                            "id": "GameRoom",
+                            "label": "Gameroom",
+                            "icon": "long-arrow-right",
+                            "count": 37,
+                            "uniqueId": "amenities_GameRoom"
+                        },
+                        {
+                            "id": "Shower",
+                            "label": "Shower",
+                            "icon": "onsen",
+                            "count": 35,
+                            "uniqueId": "amenities_Shower"
+                        },
+                        {
+                            "id": "WeddingFacility",
+                            "label": "Wedding facilities",
+                            "icon": "long-arrow-right",
+                            "count": 19,
+                            "uniqueId": "amenities_WeddingFacility"
+                        },
+                        {
+                            "id": "ATM",
+                            "label": "ATM",
+                            "icon": "long-arrow-right",
+                            "count": 22,
+                            "uniqueId": "amenities_ATM"
+                        },
+                        {
+                            "id": "Cafe",
+                            "label": "Caf\u00e9",
+                            "icon": "cafe",
+                            "count": 18,
+                            "uniqueId": "amenities_Cafe"
+                        },
+                        {
+                            "id": "DivingService",
+                            "label": "Diving",
+                            "icon": "long-arrow-right",
+                            "count": 41,
+                            "uniqueId": "amenities_DivingService"
+                        },
+                        {
+                            "id": "Snorkeling",
+                            "label": "Snorkeling",
+                            "icon": "long-arrow-right",
+                            "count": 37,
+                            "uniqueId": "amenities_Snorkeling"
+                        },
+                        {
+                            "id": "TennisCourt",
+                            "label": "Tennis court",
+                            "icon": "long-arrow-right",
+                            "count": 48,
+                            "uniqueId": "amenities_TennisCourt"
+                        },
+                        {
+                            "id": "WaterSportsService",
+                            "label": "Watersports",
+                            "icon": "long-arrow-right",
+                            "count": 57,
+                            "uniqueId": "amenities_WaterSportsService"
+                        },
+                        {
+                            "id": "LobbyBar",
+                            "label": "Lobby bar",
+                            "icon": "long-arrow-right",
+                            "count": 15,
+                            "uniqueId": "amenities_LobbyBar"
+                        },
+                        {
+                            "id": "WakeUpCallService",
+                            "label": "Wake-up call",
+                            "icon": "call-back",
+                            "count": 15,
+                            "uniqueId": "amenities_WakeUpCallService"
+                        },
+                        {
+                            "id": "TableTennis",
+                            "label": "Table tennis",
+                            "icon": "duration",
+                            "count": 17,
+                            "uniqueId": "amenities_TableTennis"
+                        },
+                        {
+                            "id": "BottledWaterService",
+                            "label": "Complimentary bottled water",
+                            "icon": "flask",
+                            "count": 26,
+                            "uniqueId": "amenities_BottledWaterService"
+                        },
+                        {
+                            "id": "Barbeque",
+                            "label": "Grill",
+                            "icon": "long-arrow-right",
+                            "count": 59,
+                            "uniqueId": "amenities_Barbeque"
+                        },
+                        {
+                            "id": "NonsmokingFloor",
+                            "label": "Non-smoking floor",
+                            "icon": "long-arrow-right",
+                            "count": 12,
+                            "uniqueId": "amenities_NonsmokingFloor"
+                        },
+                        {
+                            "id": "EntertainmentRooms",
+                            "label": "Entertainment rooms",
+                            "icon": "long-arrow-right",
+                            "count": 19,
+                            "uniqueId": "amenities_EntertainmentRooms"
+                        },
+                        {
+                            "id": "HairDryer",
+                            "label": "Hairdryer",
+                            "icon": "long-arrow-right",
+                            "count": 47,
+                            "uniqueId": "amenities_HairDryer"
+                        },
+                        {
+                            "id": "Teahouse",
+                            "label": "Teahouse",
+                            "icon": "long-arrow-right",
+                            "count": 23,
+                            "uniqueId": "amenities_Teahouse"
+                        },
+                        {
+                            "id": "IndoorSwimmingPool",
+                            "label": "Indoor pool",
+                            "icon": "long-arrow-right",
+                            "count": 26,
+                            "uniqueId": "amenities_IndoorSwimmingPool"
+                        },
+                        {
+                            "id": "CoffeeMaker",
+                            "label": "Coffee-maker",
+                            "icon": "long-arrow-right",
+                            "count": 33,
+                            "uniqueId": "amenities_CoffeeMaker"
+                        },
+                        {
+                            "id": "Telephone",
+                            "label": "Telephone",
+                            "icon": "phone-call",
+                            "count": 19,
+                            "uniqueId": "amenities_Telephone"
+                        },
+                        {
+                            "id": "ExecutiveFloor",
+                            "label": "Executive floor",
+                            "icon": "long-arrow-right",
+                            "count": 10,
+                            "uniqueId": "amenities_ExecutiveFloor"
+                        },
+                        {
+                            "id": "Billiards",
+                            "label": "Pool Table",
+                            "icon": "long-arrow-right",
+                            "count": 17,
+                            "uniqueId": "amenities_Billiards"
+                        },
+                        {
+                            "id": "Desk",
+                            "label": "Desk",
+                            "icon": "paperclip",
+                            "count": 20,
+                            "uniqueId": "amenities_Desk"
+                        },
+                        {
+                            "id": "GolfAmenity",
+                            "label": "Golf Course",
+                            "icon": "long-arrow-right",
+                            "count": 28,
+                            "uniqueId": "amenities_GolfAmenity"
+                        },
+                        {
+                            "id": "BathrobeService",
+                            "label": "Bathrobe",
+                            "icon": "adult",
+                            "count": 11,
+                            "uniqueId": "amenities_BathrobeService"
+                        },
+                        {
+                            "id": "Shop",
+                            "label": "Shops",
+                            "icon": "long-arrow-right",
+                            "count": 10,
+                            "uniqueId": "amenities_Shop"
+                        },
+                        {
+                            "id": "Balcony",
+                            "label": "Balcony",
+                            "icon": "weather",
+                            "count": 26,
+                            "uniqueId": "amenities_Balcony"
+                        },
+                        {
+                            "id": "MiniBar",
+                            "label": "Minibar",
+                            "icon": "bar",
+                            "count": 18,
+                            "uniqueId": "amenities_MiniBar"
+                        },
+                        {
+                            "id": "Microwave",
+                            "label": "Microwave",
+                            "icon": "food",
+                            "count": 38,
+                            "uniqueId": "amenities_Microwave"
+                        },
+                        {
+                            "id": "Library",
+                            "label": "Library",
+                            "icon": "long-arrow-right",
+                            "count": 6,
+                            "uniqueId": "amenities_Library"
+                        },
+                        {
+                            "id": "SunbathingArea",
+                            "label": "Sunbathing area",
+                            "icon": "long-arrow-right",
+                            "count": 5,
+                            "uniqueId": "amenities_SunbathingArea"
+                        },
+                        {
+                            "id": "Minigolf",
+                            "label": "Minigolf",
+                            "icon": "long-arrow-right",
+                            "count": 5,
+                            "uniqueId": "amenities_Minigolf"
+                        },
+                        {
+                            "id": "SatelliteTV",
+                            "label": "Satellite TV",
+                            "icon": "long-arrow-right",
+                            "count": 12,
+                            "uniqueId": "amenities_SatelliteTV"
+                        },
+                        {
+                            "id": "BowlingAlley",
+                            "label": "Bowling alley",
+                            "icon": "long-arrow-right",
+                            "count": 23,
+                            "uniqueId": "amenities_BowlingAlley"
+                        },
+                        {
+                            "id": "Fireplace",
+                            "label": "Fireplace",
+                            "icon": "long-arrow-right",
+                            "count": 20,
+                            "uniqueId": "amenities_Fireplace"
+                        },
+                        {
+                            "id": "DiningRoom",
+                            "label": "Dining room",
+                            "icon": "long-arrow-right",
+                            "count": 16,
+                            "uniqueId": "amenities_DiningRoom"
+                        },
+                        {
+                            "id": "HorseRidingService",
+                            "label": "Horseback riding",
+                            "icon": "long-arrow-right",
+                            "count": 23,
+                            "uniqueId": "amenities_HorseRidingService"
+                        },
+                        {
+                            "id": "Lounge",
+                            "label": "Lounge",
+                            "icon": "long-arrow-right",
+                            "count": 17,
+                            "uniqueId": "amenities_Lounge"
+                        },
+                        {
+                            "id": "StationShuttleService",
+                            "label": "Station shuttle",
+                            "icon": "long-arrow-right",
+                            "count": 4,
+                            "uniqueId": "amenities_StationShuttleService"
+                        },
+                        {
+                            "id": "BasketballCourt",
+                            "label": "Basketball court",
+                            "icon": "long-arrow-right",
+                            "count": 3,
+                            "uniqueId": "amenities_BasketballCourt"
+                        },
+                        {
+                            "id": "ExecutiveLounge",
+                            "label": "Executive lounge",
+                            "icon": "long-arrow-right",
+                            "count": 9,
+                            "uniqueId": "amenities_ExecutiveLounge"
+                        },
+                        {
+                            "id": "SkiStorage",
+                            "label": "Ski storage",
+                            "icon": "long-arrow-right",
+                            "count": 13,
+                            "uniqueId": "amenities_SkiStorage"
+                        },
+                        {
+                            "id": "Karaoke",
+                            "label": "Karaoke",
+                            "icon": "long-arrow-right",
+                            "count": 7,
+                            "uniqueId": "amenities_Karaoke"
+                        },
+                        {
+                            "id": "Solarium",
+                            "label": "Solarium",
+                            "icon": "weather",
+                            "count": 5,
+                            "uniqueId": "amenities_Solarium"
+                        },
+                        {
+                            "id": "SquashCourt",
+                            "label": "Squash",
+                            "icon": "long-arrow-right",
+                            "count": 2,
+                            "uniqueId": "amenities_SquashCourt"
+                        },
+                        {
+                            "id": "HotSpring",
+                            "label": "Hot Spring Bath (Onsen) ",
+                            "icon": "long-arrow-right",
+                            "count": 1,
+                            "uniqueId": "amenities_HotSpring"
+                        },
+                        {
+                            "id": "ConnectingRoomsService",
+                            "label": "Connecting rooms",
+                            "icon": "long-arrow-right",
+                            "count": 9,
+                            "uniqueId": "amenities_ConnectingRoomsService"
+                        },
+                        {
+                            "id": "VideogameService",
+                            "label": "Videogame console",
+                            "icon": "media",
+                            "count": 15,
+                            "uniqueId": "amenities_VideogameService"
+                        },
+                        {
+                            "id": "Chapel",
+                            "label": "Chapel",
+                            "icon": "long-arrow-right",
+                            "count": 5,
+                            "uniqueId": "amenities_Chapel"
+                        },
+                        {
+                            "id": "Casino",
+                            "label": "Casino",
+                            "icon": "long-arrow-right",
+                            "count": 1,
+                            "uniqueId": "amenities_Casino"
+                        },
+                        {
+                            "id": "BreakfastToGo",
+                            "label": "Breakfast to-go",
+                            "icon": "long-arrow-right",
+                            "count": 1,
+                            "uniqueId": "amenities_BreakfastToGo"
+                        },
+                        {
+                            "id": "ShoePolishingService",
+                            "label": "Shoe polishing",
+                            "icon": "long-arrow-right",
+                            "count": 1,
+                            "uniqueId": "amenities_ShoePolishingService"
+                        },
+                        {
+                            "id": "TouristInformationOffice",
+                            "label": "Tourist information",
+                            "icon": "information",
+                            "count": 1,
+                            "uniqueId": "amenities_TouristInformationOffice"
+                        }
+                    ]
+                },
+                {
+                    "type": "property_type",
+                    "title": "Accommodation type",
+                    "values": [
+                        {
+                            "id": "Hotel",
+                            "label": "Hotel",
+                            "count": 72,
+                            "uniqueId": "property_type_Hotel"
+                        },
+                        {
+                            "id": "ResidenceHotel",
+                            "label": "Residence",
+                            "count": 0,
+                            "uniqueId": "property_type_ResidenceHotel"
+                        },
+                        {
+                            "id": "Hostel",
+                            "label": "Hostel",
+                            "count": 0,
+                            "uniqueId": "property_type_Hostel"
+                        },
+                        {
+                            "id": "GuestHouse",
+                            "label": "Guest House",
+                            "count": 0,
+                            "uniqueId": "property_type_GuestHouse"
+                        },
+                        {
+                            "id": "PrivateHome",
+                            "label": "Private home",
+                            "count": 0,
+                            "uniqueId": "property_type_PrivateHome"
+                        },
+                        {
+                            "id": "CountryHouse",
+                            "label": "Country House",
+                            "count": 0,
+                            "uniqueId": "property_type_CountryHouse"
+                        },
+                        {
+                            "id": "TemporaryResidence",
+                            "label": "TemporaryResidence",
+                            "count": 0,
+                            "uniqueId": "property_type_TemporaryResidence"
+                        },
+                        {
+                            "id": "Resort",
+                            "label": "Resort",
+                            "count": 10,
+                            "uniqueId": "property_type_Resort"
+                        },
+                        {
+                            "id": "UniqueStays",
+                            "label": "Unique stays",
+                            "count": 1,
+                            "uniqueId": "property_type_UniqueStays"
+                        },
+                        {
+                            "id": "HolidayRentals",
+                            "label": "Vacation rentals",
+                            "count": 28,
+                            "uniqueId": "property_type_HolidayRentals"
+                        },
+                        {
+                            "id": "Apartment",
+                            "label": "Apartment",
+                            "count": 508,
+                            "uniqueId": "property_type_Apartment"
+                        }
+                    ]
+                },
+                {
+                    "type": "district",
+                    "title": "Neighborhoods",
+                    "values": [
+                        {
+                            "id": "213481151",
+                            "label": "Jumeirah",
+                            "count": 619,
+                            "uniqueId": "district_213481151"
+                        }
+                    ]
+                },
+                {
+                    "type": "poi",
+                    "title": "Distance",
+                    "values": [
+                        {
+                            "poiType": "Airport",
+                            "poiName": "Airport",
+                            "poiOptions": [
+                                {
+                                    "id": 95673506,
+                                    "name": "Dubai",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.3657479,
+                                        25.2531454
+                                    ],
+                                    "image": null,
+                                    "subType": "Airport"
+                                },
+                                {
+                                    "id": 193676678,
+                                    "name": "Jebel Ali SPB",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.023611,
+                                        24.988889
+                                    ],
+                                    "image": null,
+                                    "subType": "Airport"
+                                },
+                                {
+                                    "id": 128668423,
+                                    "name": "Dubai Al Maktoum International",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.172222,
+                                        24.886111
+                                    ],
+                                    "image": null,
+                                    "subType": "Airport"
+                                }
+                            ]
+                        },
+                        {
+                            "poiType": "Landmark",
+                            "poiName": "Landmark",
+                            "poiOptions": [
+                                {
+                                    "id": 206569784,
+                                    "name": "Burj Khalifa",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.2743764,
+                                        25.197197
+                                    ],
+                                    "image": "https://content.skyscnr.com/POI/206569784/2870258/2870258_WxH.jpg",
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206567662,
+                                    "name": "Dubai World Trade Centre",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.2888063,
+                                        25.2271847
+                                    ],
+                                    "image": null,
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206531107,
+                                    "name": "Dubai International Convention & Exhibition Center",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.2877771,
+                                        25.2244396
+                                    ],
+                                    "image": null,
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206567672,
+                                    "name": "Jumeira Public Beach",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.1936469499,
+                                        25.147122543
+                                    ],
+                                    "image": "https://content.skyscnr.com/POI/206567672/1734841/1734841_WxH.jpg",
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206569779,
+                                    "name": "Dubai Gold Souk",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.2968867709,
+                                        25.2694990826
+                                    ],
+                                    "image": "https://content.skyscnr.com/POI/206569779/1738832/1738832_WxH.jpg",
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206569808,
+                                    "name": "Dubai Creek",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.29754,
+                                        25.265356
+                                    ],
+                                    "image": "https://content.skyscnr.com/POI/206569808/2870233/2870233_WxH.jpg",
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206569528,
+                                    "name": "The Dubai Fountain",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.2768403,
+                                        25.195703
+                                    ],
+                                    "image": "https://content.skyscnr.com/POI/206569528/1738286/1738286_WxH.jpg",
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206697027,
+                                    "name": "Dubai International Financial Centre",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.2821538895,
+                                        25.2143091423
+                                    ],
+                                    "image": null,
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206531065,
+                                    "name": "Dolphin Bay",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.123086,
+                                        25.136085
+                                    ],
+                                    "image": null,
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206872105,
+                                    "name": "Museum of The Future",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.2819328,
+                                        25.2192034
+                                    ],
+                                    "image": null,
+                                    "subType": "Museum"
+                                },
+                                {
+                                    "id": 211028903,
+                                    "name": "Terminal 1 of Dubai International Airport",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.352397,
+                                        25.248598
+                                    ],
+                                    "image": null,
+                                    "subType": "TransitwayPlaza"
+                                },
+                                {
+                                    "id": 206566162,
+                                    "name": "Marina Beach",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.1317381693,
+                                        25.0779964383
+                                    ],
+                                    "image": null,
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206531072,
+                                    "name": "Al Bastakiya",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.2998815328,
+                                        25.264353259700002
+                                    ],
+                                    "image": null,
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206571066,
+                                    "name": "Madinat Jumeirah",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.183466,
+                                        25.1330986
+                                    ],
+                                    "image": null,
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206569775,
+                                    "name": "Dubai Museum",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.2973324586,
+                                        25.2635790676
+                                    ],
+                                    "image": null,
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 214205395,
+                                    "name": "The View at the Palm",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.139781,
+                                        25.1137014
+                                    ],
+                                    "image": null,
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206571076,
+                                    "name": "Dhow Wharfage",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.3216094065,
+                                        25.2559800115
+                                    ],
+                                    "image": null,
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 207383755,
+                                    "name": "At the top Burj Khalifa",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.2743764,
+                                        25.197197
+                                    ],
+                                    "image": "https://content.skyscnr.com/POI/207383755/2870531/2870531_WxH.jpg",
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206698909,
+                                    "name": "Skydive Dubai",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.1378525,
+                                        25.0909144
+                                    ],
+                                    "image": null,
+                                    "subType": "TouristAttraction"
+                                },
+                                {
+                                    "id": 206706798,
+                                    "name": "University of Wollongong in Dubai",
+                                    "type": "Landmark",
+                                    "coordinate": [
+                                        55.162755,
+                                        25.1018385
+                                    ],
+                                    "image": null,
+                                    "subType": "TouristAttraction"
+                                }
+                            ]
+                        },
+                        {
+                            "poiType": "Entertainment",
+                            "poiName": "Entertainment",
+                            "poiOptions": [
+                                {
+                                    "id": 208538146,
+                                    "name": "Dubai Tennis Stadium",
+                                    "type": "Entertainment",
+                                    "coordinate": [
+                                        55.3424161,
+                                        25.2433356
+                                    ],
+                                    "image": null,
+                                    "subType": "Stadium"
+                                },
+                                {
+                                    "id": 219293721,
+                                    "name": "Super Star Kids",
+                                    "type": "Entertainment",
+                                    "coordinate": [
+                                        55.175819,
+                                        24.9982176
+                                    ],
+                                    "image": null,
+                                    "subType": "AmusementPark"
+                                },
+                                {
+                                    "id": 219343182,
+                                    "name": "Serena - Bella casa kids play area",
+                                    "type": "Entertainment",
+                                    "coordinate": [
+                                        55.2893068,
+                                        25.0367863
+                                    ],
+                                    "image": null,
+                                    "subType": "AmusementPark"
+                                },
+                                {
+                                    "id": 219346773,
+                                    "name": "Piccoli",
+                                    "type": "Entertainment",
+                                    "coordinate": [
+                                        55.3469971,
+                                        25.1446066
+                                    ],
+                                    "image": null,
+                                    "subType": "AmusementPark"
+                                },
+                                {
+                                    "id": 219351790,
+                                    "name": "360 Play - Adventure Land Alghurair Center",
+                                    "type": "Entertainment",
+                                    "coordinate": [
+                                        55.3175004,
+                                        25.2673689
+                                    ],
+                                    "image": null,
+                                    "subType": "AmusementPark"
+                                },
+                                {
+                                    "id": 219358900,
+                                    "name": "Tufting Time",
+                                    "type": "Entertainment",
+                                    "coordinate": [
+                                        55.2282859,
+                                        25.1046088
+                                    ],
+                                    "image": null,
+                                    "subType": "AmusementPark"
+                                },
+                                {
+                                    "id": 219383876,
+                                    "name": "Kids' Theatre",
+                                    "type": "Entertainment",
+                                    "coordinate": [
+                                        55.3066155,
+                                        25.0696741
+                                    ],
+                                    "image": null,
+                                    "subType": "AmusementPark"
+                                },
+                                {
+                                    "id": 219401919,
+                                    "name": "Oktopus Park by We Play",
+                                    "type": "Entertainment",
+                                    "coordinate": [
+                                        55.3048704,
+                                        25.0655571
+                                    ],
+                                    "image": null,
+                                    "subType": "AmusementPark"
+                                },
+                                {
+                                    "id": 219426037,
+                                    "name": "Bricobilandia Dubai Festival City Mall",
+                                    "type": "Entertainment",
+                                    "coordinate": [
+                                        55.352362,
+                                        25.2213322
+                                    ],
+                                    "image": null,
+                                    "subType": "AmusementPark"
+                                },
+                                {
+                                    "id": 219441208,
+                                    "name": "Tiny Town Play Lounge",
+                                    "type": "Entertainment",
+                                    "coordinate": [
+                                        55.1452937,
+                                        25.0763358
+                                    ],
+                                    "image": null,
+                                    "subType": "AmusementPark"
+                                },
+                                {
+                                    "id": 219479913,
+                                    "name": "TSC Cluster 3 playground",
+                                    "type": "Entertainment",
+                                    "coordinate": [
+                                        55.2797589,
+                                        25.0321181
+                                    ],
+                                    "image": null,
+                                    "subType": "AmusementPark"
+                                },
+                                {
+                                    "id": 219496638,
+                                    "name": "Playground",
+                                    "type": "Entertainment",
+                                    "coordinate": [
+                                        55.4056543,
+                                        25.1709401
+                                    ],
+                                    "image": null,
+                                    "subType": "AmusementPark"
+                                }
+                            ]
+                        },
+                        {
+                            "poiType": "Beach",
+                            "poiName": "Beach",
+                            "poiOptions": [
+                                {
+                                    "id": 104128774,
+                                    "name": "Jumeirah Open Beach",
+                                    "type": "Beach",
+                                    "coordinate": [
+                                        55.2601575851,
+                                        25.2309540632
+                                    ],
+                                    "image": "https://content.skyscnr.com/POI/104128774/1556175/1556175_WxH.jpg",
+                                    "subType": "Beach"
+                                },
+                                {
+                                    "id": 114041205,
+                                    "name": "Burj Al Arab",
+                                    "type": "Beach",
+                                    "coordinate": [
+                                        55.1884670451,
+                                        25.1383671178
+                                    ],
+                                    "image": null,
+                                    "subType": "Beach"
+                                }
+                            ]
+                        },
+                        {
+                            "poiType": "Transportation",
+                            "poiName": "Transportation",
+                            "poiOptions": [
+                                {
+                                    "id": 208541668,
+                                    "name": "Media City1",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.1519584656,
+                                        25.0944919586
+                                    ],
+                                    "image": null,
+                                    "subType": "BusStation"
+                                },
+                                {
+                                    "id": 205752487,
+                                    "name": "Dubai Internet City",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.173283,
+                                        25.10172
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                },
+                                {
+                                    "id": 205752496,
+                                    "name": "Baniyas Square",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.307682,
+                                        25.269173
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                },
+                                {
+                                    "id": 205752483,
+                                    "name": "Financial Centre",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.275543,
+                                        25.211346
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                },
+                                {
+                                    "id": 205752508,
+                                    "name": "Creek",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.339036,
+                                        25.218958
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                },
+                                {
+                                    "id": 205752459,
+                                    "name": "Deira City Centre",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.33019,
+                                        25.253983
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                },
+                                {
+                                    "id": 205752478,
+                                    "name": "World Trade Centre",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.28523,
+                                        25.225592
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                },
+                                {
+                                    "id": 205752462,
+                                    "name": "Al Rigga",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.325336,
+                                        25.262629
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                },
+                                {
+                                    "id": 205752479,
+                                    "name": "Ibn Battuta",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.117374,
+                                        25.046616
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                },
+                                {
+                                    "id": 208542784,
+                                    "name": "Mina Seyahi",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.1485443115,
+                                        25.0910968781
+                                    ],
+                                    "image": null,
+                                    "subType": "BusStation"
+                                },
+                                {
+                                    "id": 205752465,
+                                    "name": "Union",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.314808,
+                                        25.26631
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                },
+                                {
+                                    "id": 205752480,
+                                    "name": "Mall of the Emirates",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.200012,
+                                        25.121124
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                },
+                                {
+                                    "id": 205752484,
+                                    "name": "Sharaf DG",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.190716,
+                                        25.114958
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                },
+                                {
+                                    "id": 205752468,
+                                    "name": "BurJuman",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.30412,
+                                        25.254927
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                },
+                                {
+                                    "id": 205752481,
+                                    "name": "Emirates Towers",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.279915,
+                                        25.217833
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                },
+                                {
+                                    "id": 208349991,
+                                    "name": "Sheikh Rashid Passenger Terminal",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.2799987793,
+                                        25.271900177
+                                    ],
+                                    "image": null,
+                                    "subType": "Harbor"
+                                },
+                                {
+                                    "id": 205752467,
+                                    "name": "Burj Khalifa/Dubai Mall",
+                                    "type": "Transportation",
+                                    "coordinate": [
+                                        55.269283,
+                                        25.202053
+                                    ],
+                                    "image": null,
+                                    "subType": "MetroStation"
+                                }
+                            ]
+                        },
+                        {
+                            "poiType": "Shopping",
+                            "poiName": "Shopping",
+                            "poiOptions": [
+                                {
+                                    "id": 208353387,
+                                    "name": "The Dubai Mall",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.27871,
+                                        25.1976419
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 208346502,
+                                    "name": "Concourse\u00a0B\uff08Liquor\u00a0Shop\uff09",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.359588,
+                                        25.245413
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 208363012,
+                                    "name": "T1 Arrivals Shop 1",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.3530483121,
+                                        25.2489070608
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 207972246,
+                                    "name": "Global Village",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.3040153646,
+                                        25.0695526035
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 207972540,
+                                    "name": "Ibn Battuta Mall",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.1202965,
+                                        25.0445481
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 208342875,
+                                    "name": "Dubai Marina Mall",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.140505,
+                                        25.07643
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 217809693,
+                                    "name": "City Walk",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.2625253,
+                                        25.2074895
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 207972131,
+                                    "name": "City Centre Deira",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.3328027,
+                                        25.2519659
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 207971394,
+                                    "name": "Souk Madinat Jumeira",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.186701268,
+                                        25.1333523818
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 217809592,
+                                    "name": "Al Ghurair Centre",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.3175004,
+                                        25.2673689
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 208349906,
+                                    "name": "JBR The Walk",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.135896,
+                                        25.07992
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 208363055,
+                                    "name": "T3 Arrivals Shop 4",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.3600569242,
+                                        25.245517948
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 208349669,
+                                    "name": "Dubai Outlet Mall",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.399323,
+                                        25.07355
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 207971410,
+                                    "name": "Spice Souk",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.296897799999996,
+                                        25.2673543
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 207980800,
+                                    "name": "Arabian Desert General Trading LLC",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.3337685952,
+                                        25.2528393203
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 208342896,
+                                    "name": "Mirdif City Centre",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.407796,
+                                        25.216317
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 211778116,
+                                    "name": "Bloomingdale's ((Dubai)",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.278994,
+                                        25.197726
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 208365397,
+                                    "name": "CA First Class Lounge",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.3809889,
+                                        25.2381919
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 211681269,
+                                    "name": "Dubai Duty Free Shop",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.005779,
+                                        24.916479
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                },
+                                {
+                                    "id": 208363111,
+                                    "name": "CB East\uff08DDF Akaru N Events POD\uff09",
+                                    "type": "Shopping",
+                                    "coordinate": [
+                                        55.3602074801,
+                                        25.2455216995
+                                    ],
+                                    "image": null,
+                                    "subType": "ShoppingMall"
+                                }
+                            ]
+                        },
+                        {
+                            "poiType": "Education",
+                            "poiName": "Education",
+                            "poiOptions": [
+                                {
+                                    "id": 209463242,
+                                    "name": "University of Dubai",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.4146537781,
+                                        25.1063556671
+                                    ],
+                                    "image": null,
+                                    "subType": "UniversityBuilding"
+                                },
+                                {
+                                    "id": 209550578,
+                                    "name": "The British University in Dubai - BUiD",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.4100914001,
+                                        25.1251392365
+                                    ],
+                                    "image": null,
+                                    "subType": "UniversityBuilding"
+                                },
+                                {
+                                    "id": 209432643,
+                                    "name": "Dubai International Academic City",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.4095726013,
+                                        25.1248645782
+                                    ],
+                                    "image": null,
+                                    "subType": "UniversityBuilding"
+                                },
+                                {
+                                    "id": 209567664,
+                                    "name": "LCC",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.3124923706,
+                                        25.2484760284
+                                    ],
+                                    "image": null,
+                                    "subType": "UniversityBuilding"
+                                },
+                                {
+                                    "id": 209434927,
+                                    "name": "Al Ghurair University",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.4069290161,
+                                        25.1105041504
+                                    ],
+                                    "image": null,
+                                    "subType": "UniversityBuilding"
+                                },
+                                {
+                                    "id": 209560079,
+                                    "name": "Al Falah University",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.3497161865,
+                                        25.2362174988
+                                    ],
+                                    "image": null,
+                                    "subType": "UniversityBuilding"
+                                },
+                                {
+                                    "id": 209541348,
+                                    "name": "The American College Of Dubai",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.3493766785,
+                                        25.2355155945
+                                    ],
+                                    "image": null,
+                                    "subType": "UniversityBuilding"
+                                },
+                                {
+                                    "id": 219300536,
+                                    "name": "Dubai Exhibition Centre North Hall",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.1478552,
+                                        24.9627657
+                                    ],
+                                    "image": null,
+                                    "subType": "ExhibitionCenterBuilding"
+                                },
+                                {
+                                    "id": 219321997,
+                                    "name": "Trendz Exhibition Centre Deira Dubai",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.3008978,
+                                        25.2764129
+                                    ],
+                                    "image": null,
+                                    "subType": "ExhibitionCenterBuilding"
+                                },
+                                {
+                                    "id": 219438097,
+                                    "name": "Sudan Pavilion",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.1488454,
+                                        24.9595151
+                                    ],
+                                    "image": null,
+                                    "subType": "ExhibitionCenterBuilding"
+                                },
+                                {
+                                    "id": 219441216,
+                                    "name": "Hall 7",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.2878053,
+                                        25.2229469
+                                    ],
+                                    "image": null,
+                                    "subType": "ExhibitionCenterBuilding"
+                                },
+                                {
+                                    "id": 219444423,
+                                    "name": "Republic of Guinea-Bissau Pavilion",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.1516341,
+                                        24.9648649
+                                    ],
+                                    "image": null,
+                                    "subType": "ExhibitionCenterBuilding"
+                                },
+                                {
+                                    "id": 219530273,
+                                    "name": "Dubai World Trade Centre- Exhibitions Centre",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.2875123,
+                                        25.2224258
+                                    ],
+                                    "image": null,
+                                    "subType": "ExhibitionCenterBuilding"
+                                },
+                                {
+                                    "id": 219547402,
+                                    "name": "Vision Pavilion",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.1529528,
+                                        24.9597343
+                                    ],
+                                    "image": null,
+                                    "subType": "ExhibitionCenterBuilding"
+                                },
+                                {
+                                    "id": 219640947,
+                                    "name": "Madinat Jumeirah Conference & Events Centre",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.1873588,
+                                        25.1352005
+                                    ],
+                                    "image": null,
+                                    "subType": "ExhibitionCenterBuilding"
+                                },
+                                {
+                                    "id": 219697512,
+                                    "name": "Fort Island",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.1866972,
+                                        25.1343289
+                                    ],
+                                    "image": null,
+                                    "subType": "ExhibitionCenterBuilding"
+                                },
+                                {
+                                    "id": 219741121,
+                                    "name": "Iran Pavilion",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.1476566,
+                                        24.9566254
+                                    ],
+                                    "image": null,
+                                    "subType": "ExhibitionCenterBuilding"
+                                },
+                                {
+                                    "id": 219772652,
+                                    "name": "Elegant Star Decor Middle East FZ LLC",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.1855828,
+                                        25.0347
+                                    ],
+                                    "image": null,
+                                    "subType": "ExhibitionCenterBuilding"
+                                },
+                                {
+                                    "id": 209403896,
+                                    "name": "Emirates Training College building A",
+                                    "type": "Education",
+                                    "coordinate": [
+                                        55.3429527283,
+                                        25.2409000397
+                                    ],
+                                    "image": null,
+                                    "subType": "UniversityBuilding"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "discount_types",
+                    "title": "Deals",
+                    "values": [
+                        {
+                            "id": "cug",
+                            "count": 34,
+                            "label": "Show discounts",
+                            "uniqueId": "discount_types_cug"
+                        }
+                    ]
+                }
+            ],
+            "hotelsCoordinates": [
+                {
+                    "id": "161369027",
+                    "latitude": 25.125369,
+                    "longitude": 55.15487,
+                    "price": "$65"
+                },
+                {
+                    "id": "205131287",
+                    "latitude": 25.108122,
+                    "longitude": 55.142452,
+                    "price": "$69"
+                },
+                {
+                    "id": "203853410",
+                    "latitude": 25.139299,
+                    "longitude": 55.1416,
+                    "price": "$73"
+                },
+                {
+                    "id": "216274048",
+                    "latitude": 25.125898,
+                    "longitude": 55.153424,
+                    "price": "$81"
+                },
+                {
+                    "id": "160200995",
+                    "latitude": 25.112348,
+                    "longitude": 55.137964,
+                    "price": "$96"
+                },
+                {
+                    "id": "157088337",
+                    "latitude": 25.139212,
+                    "longitude": 55.142465,
+                    "price": "$84"
+                },
+                {
+                    "id": "213588211",
+                    "latitude": 25.111529,
+                    "longitude": 55.138583,
+                    "price": "$87"
+                },
+                {
+                    "id": "116089954",
+                    "latitude": 25.130443,
+                    "longitude": 55.11715,
+                    "price": "$245"
+                },
+                {
+                    "id": "185209671",
+                    "latitude": 25.12602,
+                    "longitude": 55.15247,
+                    "price": "$81"
+                },
+                {
+                    "id": "137426312",
+                    "latitude": 25.11027,
+                    "longitude": 55.14102,
+                    "price": "$111"
+                },
+                {
+                    "id": "212707364",
+                    "latitude": 25.107576,
+                    "longitude": 55.142997,
+                    "price": "$95"
+                },
+                {
+                    "id": "212420161",
+                    "latitude": 25.124583,
+                    "longitude": 55.15419,
+                    "price": "$119"
+                },
+                {
+                    "id": "205284146",
+                    "latitude": 25.12925,
+                    "longitude": 55.15365,
+                    "price": "$127"
+                },
+                {
+                    "id": "213078968",
+                    "latitude": 25.1201,
+                    "longitude": 55.1104,
+                    "price": "$100"
+                },
+                {
+                    "id": "154543970",
+                    "latitude": 25.10566,
+                    "longitude": 55.147283,
+                    "price": "$150"
+                }
+            ],
+            "sortOptions": [
+                {
+                    "optionName": "Best",
+                    "type": "-relevance"
+                },
+                {
+                    "optionName": "Price (high to low)",
+                    "type": "-price"
+                },
+                {
+                    "optionName": "Price (low to high)",
+                    "type": "price"
+                },
+                {
+                    "optionName": "Distance from downtown",
+                    "type": "distance"
+                },
+                {
+                    "optionName": "Guest rating",
+                    "type": "-rating"
+                },
+                {
+                    "optionName": "Stars (5 to 1)",
+                    "type": "-stars"
+                },
+                {
+                    "optionName": "Stars (1 to 5)",
+                    "type": "stars"
+                }
+            ],
+            "travelInfos": [],
+            "partnerList": [
+                "Booking.com",
+                "Trip.com",
+                "Hotels.com",
+                "Hyatt",
+                "Expedia",
+                "IHG"
+            ]
+        },
+        "status": {
+            "completionPercentage": 100,
+            "searchId": "6ad3f8174e33a79fdfeabe7cb54a3f57ffbba3932eb0629f61bab5806cc82298",
+            "requestId": "8597237f-5e61-4cca-9dfd-0ebec457f44d",
+            "fastSearchStatus": "COMPLETED",
+            "finalStatus": "COMPLETED"
+        },
+        "error": null,
+        "correlationId": "a393c499-4c80-4356-abd5-bacfc548af35"
+    },
+    "meta": {
+        "currentPage": 1,
+        "limit": 15,
+        "totalRecords": 619,
+        "totalPage": 42
+    },
+    "status": true,
+    "message": "Successful"
+}
