@@ -1,0 +1,146 @@
+{
+    "data": [
+        {
+            "hierarchy": "Dubai|Dubai|United Arab Emirates",
+            "location": "25.11834394784245, 55.13371254276372",
+            "score": 0,
+            "entityName": "The Palm Jumeirah",
+            "entityId": "90713167",
+            "entityType": "District",
+            "highlight": {
+                "entityName": "The <em>Palm </em>Jumeirah",
+                "hierarchy": "<em>Dubai</em>|Dubai|United Arab Emirates"
+            },
+            "class": "District",
+            "pois": null
+        },
+        {
+            "hierarchy": "Dubai|Dubai|United Arab Emirates",
+            "location": "25.2531454, 55.3657479",
+            "score": 0,
+            "entityName": "Dubai (DXB)",
+            "entityId": "95673506",
+            "entityType": "airport",
+            "highlight": {
+                "entityName": "<em>Dubai</em> (DXB)",
+                "hierarchy": "<em>Dubai</em>|Dubai|United Arab Emirates"
+            },
+            "class": "Airport",
+            "pois": null
+        },
+        {
+            "hierarchy": "Dubai|United Arab Emirates",
+            "location": "25.13678353682617, 55.30052976035437",
+            "score": 0,
+            "entityName": "Dubai",
+            "entityId": "27540839",
+            "entityType": "city",
+            "highlight": {
+                "entityName": "<em>Dubai</em>",
+                "hierarchy": "<em>Dubai</em>|United Arab Emirates"
+            },
+            "class": "City",
+            "pois": null
+        },
+        {
+            "hierarchy": "Dubai|Dubai|United Arab Emirates",
+            "location": "25.25179052776034, 55.29213965025139",
+            "score": 0,
+            "entityName": "Bur Dubai",
+            "entityId": "213481140",
+            "entityType": "District",
+            "highlight": {
+                "entityName": "Bur<em> Dubai</em>",
+                "hierarchy": "<em>Dubai</em>|Dubai|United Arab Emirates"
+            },
+            "class": "District",
+            "pois": null
+        },
+        {
+            "hierarchy": "Dubai|Dubai|United Arab Emirates",
+            "location": "25.115887, 55.13722",
+            "score": 0,
+            "entityName": "Palm Islands",
+            "entityId": "212295626",
+            "entityType": "Tourist Attraction",
+            "highlight": {
+                "entityName": "<em>Palm Island</em>s",
+                "hierarchy": "<em>Dubai</em>|Dubai|United Arab Emirates"
+            },
+            "class": "TouristAttraction",
+            "pois": null
+        },
+        {
+            "hierarchy": "Dubai|Dubai|United Arab Emirates",
+            "location": "25.088385630388203, 55.2185938593375",
+            "score": 0,
+            "entityName": "Al Barsha ",
+            "entityId": "90713168",
+            "entityType": "District",
+            "highlight": {
+                "entityName": "Al Barsha ",
+                "hierarchy": "<em>Dubai</em>|Dubai|United Arab Emirates"
+            },
+            "class": "District",
+            "pois": null
+        },
+        {
+            "hierarchy": "Dubai|Dubai|United Arab Emirates",
+            "location": "25.275772148714463, 55.32888073285115",
+            "score": 0,
+            "entityName": "Deira",
+            "entityId": "213481133",
+            "entityType": "District",
+            "highlight": {
+                "entityName": "Deira",
+                "hierarchy": "<em>Dubai</em>|Dubai|United Arab Emirates"
+            },
+            "class": "District",
+            "pois": null
+        },
+        {
+            "hierarchy": "Dubai|Dubai|United Arab Emirates",
+            "location": "25.130443, 55.11715",
+            "score": 0,
+            "entityName": "Atlantis, the Palm",
+            "entityId": "116089954",
+            "entityType": "hotel",
+            "highlight": {
+                "entityName": "At<em>lan</em>tis, the <em>Palm</em>",
+                "hierarchy": "<em>Dubai</em>|Dubai|United Arab Emirates"
+            },
+            "class": "Hotel",
+            "pois": null
+        },
+        {
+            "hierarchy": "Dubai|Dubai|United Arab Emirates",
+            "location": "25.126785156551072, 55.17052252084264",
+            "score": 0,
+            "entityName": "Jumeirah",
+            "entityId": "213481151",
+            "entityType": "District",
+            "highlight": {
+                "entityName": "Jumeirah",
+                "hierarchy": "<em>Dubai</em>|Dubai|United Arab Emirates"
+            },
+            "class": "District",
+            "pois": null
+        },
+        {
+            "hierarchy": "Dubai|Dubai|United Arab Emirates",
+            "location": "24.886111, 55.172222",
+            "score": 0,
+            "entityName": "Dubai Al Maktoum International (DWC)",
+            "entityId": "128668423",
+            "entityType": "airport",
+            "highlight": {
+                "entityName": "<em>Dubai</em> Al Maktou<em>m I</em>nternational (DWC)",
+                "hierarchy": "<em>Dubai</em>|Dubai|United Arab Emirates"
+            },
+            "class": "Airport",
+            "pois": null
+        }
+    ],
+    "status": true,
+    "message": "Successful"
+}

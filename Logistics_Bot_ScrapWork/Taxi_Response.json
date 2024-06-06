@@ -1,0 +1,279 @@
+{
+    "data": {
+      "quotes_count": 0,
+      "groups_count": 0,
+      "providers": {
+        "enjo": {
+          "rating": 4.2,
+          "optimised_for_mobile": true,
+          "reviews": 3430,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Enjoy",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/enjo.png"
+        },
+        "hlcr": {
+          "rating": 3.8,
+          "optimised_for_mobile": false,
+          "reviews": 9687,
+          "facilitated_booking_enabled": false,
+          "provider_name": "HolidayCars.com",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/hlcr.png"
+        },
+        "hlau": {
+          "rating": 4.1,
+          "optimised_for_mobile": true,
+          "reviews": 35037,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Holiday Autos",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/hlau.png"
+        },
+        "aueu": {
+          "rating": 4.5,
+          "optimised_for_mobile": true,
+          "reviews": 6020,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Auto Europe",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/aueu.png"
+        },
+        "expa": {
+          "rating": 4.5,
+          "optimised_for_mobile": true,
+          "reviews": 233601,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Expedia",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/expa.png"
+        },
+        "orbc": {
+          "rating": 4.7,
+          "optimised_for_mobile": true,
+          "reviews": 1225,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Orbit Car Hire EHF",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/orbc.png"
+        },
+        "vipd": {
+          "rating": 4.7,
+          "optimised_for_mobile": true,
+          "reviews": 16247,
+          "facilitated_booking_enabled": false,
+          "provider_name": "VIPCars",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/vipd.png"
+        },
+        "vipc": {
+          "rating": 4.7,
+          "optimised_for_mobile": true,
+          "reviews": 16247,
+          "facilitated_booking_enabled": false,
+          "provider_name": "VIPCars",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/vipc.png"
+        },
+        "edca": {
+          "rating": 2.1875,
+          "optimised_for_mobile": true,
+          "reviews": 619,
+          "facilitated_booking_enabled": false,
+          "provider_name": "eDreams",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/edca.png"
+        },
+        "caus": {
+          "rating": 4.3,
+          "optimised_for_mobile": false,
+          "reviews": 11482,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Car Rental 8 Exclusive",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/caus.png"
+        },
+        "gotr": {
+          "rating": 3.0,
+          "optimised_for_mobile": false,
+          "reviews": 271,
+          "facilitated_booking_enabled": false,
+          "provider_name": "GotRentalCars",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/gotr.png"
+        },
+        "hrus": {
+          "rating": 3.9214015152,
+          "optimised_for_mobile": true,
+          "reviews": 2000,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Hertz",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/hrus.png"
+        },
+        "thri": {
+          "rating": 3.857421875,
+          "optimised_for_mobile": true,
+          "reviews": 5000,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Thrifty",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/thri.png"
+        },
+        "ecob": {
+          "rating": 4.1,
+          "optimised_for_mobile": true,
+          "reviews": 6605,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Economy Bookings",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/ecob.png"
+        },
+        "rtcl": {
+          "rating": null,
+          "optimised_for_mobile": true,
+          "reviews": null,
+          "facilitated_booking_enabled": false,
+          "provider_name": "RentCarla",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/rtcl.png"
+        },
+        "strf": {
+          "rating": 4.6,
+          "optimised_for_mobile": true,
+          "reviews": 6751,
+          "facilitated_booking_enabled": false,
+          "provider_name": "StressFreeCarRental",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/strf.png"
+        },
+        "reca": {
+          "rating": 3.9,
+          "optimised_for_mobile": true,
+          "reviews": 8795,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Rentingcarz",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/reca.png"
+        },
+        "sixt": {
+          "rating": 4.0043331626,
+          "optimised_for_mobile": true,
+          "reviews": 10000,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Sixt",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/sixt.png"
+        },
+        "dscv": {
+          "rating": 4.6,
+          "optimised_for_mobile": true,
+          "reviews": 151678,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Discover Cars",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/dscv.png"
+        },
+        "zrus": {
+          "rating": 3.7721994536,
+          "optimised_for_mobile": true,
+          "reviews": 10000,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Dollar",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/zrus.png"
+        },
+        "kloo": {
+          "rating": 4.4,
+          "optimised_for_mobile": false,
+          "reviews": 4261,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Klook.com",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/kloo.png"
+        },
+        "rcbr": {
+          "rating": 4.6,
+          "optimised_for_mobile": true,
+          "reviews": 72267,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Rentcars.com",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/rcbr.png"
+        },
+        "budg": {
+          "rating": 4.2113095238,
+          "optimised_for_mobile": true,
+          "reviews": 10000,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Budget",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/budg.png"
+        },
+        "trjv": {
+          "rating": 3.9,
+          "optimised_for_mobile": true,
+          "reviews": 113953,
+          "facilitated_booking_enabled": false,
+          "provider_name": "rentalcars.com",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/trjv.png"
+        },
+        "wscr": {
+          "rating": 4.6,
+          "optimised_for_mobile": true,
+          "reviews": 10507,
+          "facilitated_booking_enabled": false,
+          "provider_name": "Wisecars",
+          "errored": false,
+          "in_progress": true,
+          "logo": "http://logos.skyscnr.com/images/websites/wscr.png"
+        }
+      },
+      "query": {
+        "lang": "en",
+        "do_dt": "2024-06-10T12:05",
+        "ccy": "USD",
+        "age": 30,
+        "pu_dt": "2024-06-10T10:05",
+        "ucy": "US",
+        "chnl": "android"
+      },
+      "locations": {},
+      "search_id": "gen-8890d3c5-29d8-4d12-8780-a04bbd3b9b2a",
+      "carList": []
+    },
+    "status": true,
+    "message": "Successful",
+    "meta": {
+      "currentPage": 1,
+      "limit": 0,
+      "totalRecords": 0,
+      "totalPage": 0,
+      "isComplete": false
+    }
+  }
