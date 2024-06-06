@@ -162,3 +162,5 @@ cython_debug/
 #.idea/
 
 Logistics_Bot/.env
+Logistics_Bot/Example_Output/
+
