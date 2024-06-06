@@ -60,7 +60,6 @@ def extract_travel_information(text):
     start_location_airport_code = lines[5].split("Start location airport code:")[1].strip()
     end_location_airport_code = lines[6].split("End location airport code:")[1].strip()
 
-    
     return start_location, end_location, start_date, end_date, crew_members, start_location_airport_code, end_location_airport_code
 
 start_location, end_location, start_date, end_date, crew_members, start_location_airport_code, end_location_airport_code = extract_travel_information(user_input)
@@ -78,6 +77,7 @@ start_date = format_date(start_date)
 end_date = format_date(end_date)
 
 
+
 ## Searching for Flights
 
 flight_url = "https://sky-scanner3.p.rapidapi.com/flights/search-roundtrip"
@@ -87,6 +87,7 @@ flight_headers = {
 	"X-RapidAPI-Host": "sky-scanner3.p.rapidapi.com"
 }
 flight_response = requests.get(flight_url, headers=flight_headers, params=flight_querystring)
+
 
 
 ## Searching for Hotels
@@ -109,6 +110,9 @@ hotel_headers = {
 }
 hotel_response = requests.get(hotel_url, headers=hotel_headers, params=hotel_querystring)
 
+
+
+## Searching for taxi
 
 # taxiID_url = "https://sky-scanner3.p.rapidapi.com/cars/auto-complete"
 # taxiID_querystring = {"query":end_location}
