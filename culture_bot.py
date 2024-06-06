@@ -5,41 +5,24 @@ from openai import OpenAI
 OPENAI_API_KEY = "give_ur_api_key"
 
 def with_country_name(country_name):
-
-
-
     llm = ChatOpenAI(model="gpt-4o", temperature=0, api_key=OPENAI_API_KEY)
-
-
 
     messages = [
         ("system", f"You are the cultural assistant that briefs the tourist about the culture and rules of {country_name}."),
         ("human", f"Show me the rules and culture of {country_name}"),
     ]
+
     output=llm.invoke(messages)
 
-
     prompt = ChatPromptTemplate.from_messages(
-        {
-            (
-                "system",
-                f"You are a helpful assistant that Shows me the rules and basic culture of {country_name}.",
-            ),
-            ("human", f"{country_name}"),
-        }
+        {("system",f"You are a helpful assistant that Shows me the rules and basic culture of {country_name}.",),
+        ("human", f"{country_name}"),}
     )
 
     chain = prompt | llm
     chain.invoke(
-        {
-            "input": {"country_name"},
-        }
+        {"input": {"country_name"},}
     )
-
-
-
-    
-
 
     client = OpenAI(
         api_key = OPENAI_API_KEY
@@ -57,4 +40,3 @@ def with_country_name(country_name):
 
     response = response.choices[0].message.content
     return response
-

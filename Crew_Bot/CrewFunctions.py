@@ -3,7 +3,6 @@ import os
 from dotenv import load_dotenv
 import sqlite3
 import json
-from pprint import pprint
 
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.prompts import ChatPromptTemplate
@@ -23,7 +22,9 @@ OPENAI_API_KEY = import_env_var("OPENAI_API_KEY")
 api_key = OPENAI_API_KEY
 
 # # Initialize the ChatOpenAI instance
+# For LLM
 llm = ChatOpenAI(model="gpt-4o", temperature=0.2, api_key=api_key)
+# For LLM that returns json
 llm_json = ChatOpenAI(model="gpt-4o", temperature=0.2, api_key=api_key).bind(response_format={"type": "json_object"})
 
 
@@ -43,8 +44,24 @@ def filter_crew_members(roleJobTitle, location, db):
     conn = sqlite3.connect(db)
     c = conn.cursor()
     c.execute(f"SELECT * FROM \'{dbname}\' WHERE roleJobTitle = \'{roleJobTitle}\' AND location = \'{location}\'")
-    filtered_data = c.fetchall()
+    raw_user_details = c.fetchall()
     conn.close()
+    print(raw_user_details)
+    filtered_data = []
+    for raw_user_detail in raw_user_details:
+        filtered_data.append({
+            "name": raw_user_detail[0],
+            "userid": raw_user_detail[1],
+            "crewType": raw_user_detail[2],
+            "roleJobTitle": raw_user_detail[3],
+            "services": raw_user_detail[4].split(', '),
+            "tags": raw_user_detail[5].split(', '),
+            "expertise": raw_user_detail[6].split(', '),
+            "yoe": raw_user_detail[7],
+            "minRatePerDay": raw_user_detail[8],
+            "maxRatePerDay": raw_user_detail[9],
+            "location": raw_user_detail[10]
+        })
     return filtered_data
 
 
@@ -104,5 +121,3 @@ def get_selected_crews(filtered_crew, number_needed, hiring_role, detailed_desc)
     response = llm_json.invoke(messages)
     selected_crews = json.loads(response.content)
     return selected_crews
-
-random_path = './'

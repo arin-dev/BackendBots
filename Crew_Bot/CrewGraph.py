@@ -1,28 +1,14 @@
-from functions import *
+from CrewFunctions import *
 from langgraph.graph import END, StateGraph
 from typing import TypedDict, List, Annotated
 
-class State(TypedDict):
-    num_steps : int
-    project_detail_from_customer : str
-    detailed_desc : str
-    roleJobTitles : List[str]
-    crew_requirements : List[dict]
-    queries : List[str]
-    selected_crews : List[dict]
-
-    # @NODES
-    # description of the project
+# @NODES
+# description of the project
 def detailed_desc_getter(State):
     num_steps = int(State['num_steps'])
     num_steps += 1
 
     project_detail_from_customer = State["project_detail_from_customer"]
-    # print("\n ########################################################################################################################## \n")
-    # print("------------------DETAILED DESCRIPTION GETTER----------------")
-    # pprint("project_detail_from_customer:")
-    # pprint(project_detail_from_customer, width=140, indent=10)
-    # print("num_steps:", num_steps)
 
     detailed_desc = get_detailed_desc(project_detail_from_customer)
     # pprint("detailed_desc:")
@@ -35,8 +21,6 @@ def unique_roles_getter(State):
     num_steps = int(State['num_steps'])
     num_steps += 1
 
-    # print("\n ########################################################################################################################## \n")
-    # print("------------------UNIQUE ROLES GETTER----------------")
     roleJobTitles = get_unique_roles('./DEMO_DB/crewdata.db')
     # print("roleJobTitles:", roleJobTitles)
     return {"roleJobTitles" : roleJobTitles, "num_steps" : num_steps}
@@ -49,8 +33,6 @@ def crew_requirement_getter(State):
     detailed_desc = State["detailed_desc"]
     roleJobTitles = State["roleJobTitles"]
 
-    # print("\n ########################################################################################################################## \n")
-    # print("------------------CREW REQUIREMENT GETTER----------------")
     crew_requirements = get_crew_requirements(detailed_desc, roleJobTitles)
     # pprint("crew_requirements:")
     # pprint(crew_requirements, width=140, indent=10)
@@ -63,8 +45,6 @@ def queries_getter(State):
     num_steps += 1
     crew_requirements = State["crew_requirements"]
 
-    # print("\n ########################################################################################################################## \n")
-    # print("------------------QUERIES GETTER----------------")
     queries = get_queries(crew_requirements)
     # pprint("queries:")
     # pprint(queries, width=140, indent=10)
@@ -83,8 +63,6 @@ def crew_selection(State):
     detailed_desc = State["detailed_desc"]
     crew_requirements = State["crew_requirements"]
 
-    # print("\n ########################################################################################################################## \n")
-    # print("------------------CREW SELECTION----------------")
     selected_crews = []
     for crew in crew_requirements:
         filtered_crew = filter_crew_members(crew["roleJobTitle"], 'Dubai', './DEMO_DB/crewdata.db')
@@ -101,8 +79,7 @@ def crew_selection(State):
     
 def state_printer(state):
     """print the state"""
-    # print("\n ########################################################################################################################## \n")
-    # print("------------------STATE PRINTER----------------")
+
     print("num_steps:", state["num_steps"])
     print("project_detail_from_customer:", state["project_detail_from_customer"])
     print("detailed_desc:", state["detailed_desc"])
@@ -112,7 +89,7 @@ def state_printer(state):
     return
 
 
-def run_workflow(state: State, project_detail_from_customer: str):
+def CrewGraph(State: dict, project_detail_from_customer: str):
 
     workflow = StateGraph(State)
 
@@ -138,12 +115,3 @@ def run_workflow(state: State, project_detail_from_customer: str):
 
     var = app.invoke(inputs)
     return var["selected_crews"]
-
-project_detail_from_customer = "A short film to be shot in Delhi with only 2 actors and 1 camera man and 1 director and 1 make up artist, no extra crew needed"
-
-
-output = run_workflow(State, project_detail_from_customer)
-
-# import json
-# with open('output.json', 'w') as f:
-#     json.dump(output, f, indent=4)
