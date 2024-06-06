@@ -1,0 +1,85 @@
+{
+    "status": true,
+    "message": "Successful",
+    "data": {
+      "itineraries": [
+        {
+          "price": "$859",
+          "departure": {
+            "date": "2024-06-10",
+            "time": "02:45:00"
+          },
+          "arrival": {
+            "date": "2024-06-10",
+            "time": "09:10:00"
+          },
+          "origin": "Singapore (SIN)",
+          "destination": "Dubai (DXB)",
+          "tags": [
+            "shortest"
+          ]
+        },
+        {
+          "price": "$778",
+          "departure": {
+            "date": "2024-06-10",
+            "time": "02:45:00"
+          },
+          "arrival": {
+            "date": "2024-06-10",
+            "time": "09:10:00"
+          },
+          "origin": "Singapore (SIN)",
+          "destination": "Dubai (DXB)",
+          "tags": [
+            "second_shortest"
+          ]
+        },
+        {
+          "price": "$734",
+          "departure": {
+            "date": "2024-06-10",
+            "time": "19:45:00"
+          },
+          "arrival": {
+            "date": "2024-06-11",
+            "time": "04:00:00"
+          },
+          "origin": "Singapore (SIN)",
+          "destination": "Dubai (DXB)",
+          "tags": [
+            "third_cheapest"
+          ]
+        },
+        {
+          "price": "$815",
+          "departure": {
+            "date": "2024-06-10",
+            "time": "19:45:00"
+          },
+          "arrival": {
+            "date": "2024-06-11",
+            "time": "04:00:00"
+          },
+          "origin": "Singapore (SIN)",
+          "destination": "Dubai (DXB)",
+          "tags": [
+            "third_shortest"
+          ]
+        },
+        {
+          "price": "$754",
+          "departure": {
+            "date": "2024-06-10",
+            "time": "02:45:00"
+          },
+          "arrival": {
+            "date": "2024-06-10",
+            "time": "09:10:00"
+          },
+          "origin": "Singapore (SIN)",
+          "destination": "Dubai (DXB)"
+        }
+      ]
+    }
+  }
