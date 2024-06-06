@@ -4,6 +4,8 @@ import openai
 import requests
 from datetime import datetime
 from dotenv import load_dotenv
+from reformat_flight_data import process_flight_data
+from reformat_hotel_data import extract_hotel_data
 
 load_dotenv()
 
@@ -87,6 +89,7 @@ flight_headers = {
 	"X-RapidAPI-Host": "sky-scanner3.p.rapidapi.com"
 }
 flight_response = requests.get(flight_url, headers=flight_headers, params=flight_querystring)
+simplified_flight_response = process_flight_data(flight_response.json())    #returns a JSON format data (format given in Example_Output/Flight_Data.json)
 
 
 
@@ -109,7 +112,7 @@ hotel_headers = {
 	"X-RapidAPI-Host": "sky-scanner3.p.rapidapi.com"
 }
 hotel_response = requests.get(hotel_url, headers=hotel_headers, params=hotel_querystring)
-
+simplified_hotel_response = extract_hotel_data(hotel_response.json())   #returns a JSON format data (format given in Example_Output/Hotel_Data.json)
 
 
 ## Searching for taxi

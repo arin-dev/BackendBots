@@ -1,0 +1,92 @@
+{
+    "searchSummary": {
+        "total": 555,
+        "resultsSummary": "Taxes and fees not included | 555 results sorted by Best"
+    },
+    "hotelsRegion": {
+        "latitude": 25.116491500000002,
+        "longitude": 55.146417
+    },
+    "hotelCards": [
+        {
+            "name": "Taj Exotica Resort & Spa, The Palm, Dubai",
+            "stars": "5",
+            "distance": "1.35 miles from The Palm Jumeirah",
+            "reviewsSummary": {
+                "score": 5,
+                "scoreDesc": "Outstanding",
+                "total": 1799
+            },
+            "lowestPrice": "$54",
+            "images": [
+                "https://content.skyscnr.com/available/1390008487/1390008487_WxH.jpg",
+                "https://content.skyscnr.com/available/1554265119/1554265119_WxH.jpg",
+                "https://content.skyscnr.com/available/1390008436/1390008436_WxH.jpg"
+            ]
+        },
+        {
+            "name": "Jumeirah Zabeel Saray",
+            "stars": "5",
+            "distance": "1.51 miles from The Palm Jumeirah",
+            "reviewsSummary": {
+                "score": 4.5,
+                "scoreDesc": "Excellent",
+                "total": 9617
+            },
+            "lowestPrice": "$64",
+            "images": [
+                "https://content.skyscnr.com/available/1363093800/1363093800_WxH.jpg",
+                "https://content.skyscnr.com/available/1363093623/1363093623_WxH.jpg",
+                "https://content.skyscnr.com/available/1534929890/1534929890_WxH.jpg"
+            ]
+        },
+        {
+            "name": "Aloft Palm Jumeirah",
+            "stars": "4",
+            "distance": "1.41 miles from The Palm Jumeirah",
+            "reviewsSummary": {
+                "score": 4.6,
+                "scoreDesc": "Excellent",
+                "total": 55
+            },
+            "lowestPrice": "$65",
+            "images": [
+                "https://content.skyscnr.com/available/1352328336/1352328336_WxH.jpg",
+                "https://content.skyscnr.com/available/1352328418/1352328418_WxH.jpg",
+                "https://content.skyscnr.com/available/1232857670/1232857670_WxH.jpg"
+            ]
+        },
+        {
+            "name": "Marriott Resort Palm Jumeirah, Dubai",
+            "stars": "5",
+            "distance": "1.09 miles from The Palm Jumeirah",
+            "reviewsSummary": {
+                "score": 5,
+                "scoreDesc": "Outstanding",
+                "total": 1826
+            },
+            "lowestPrice": "$68",
+            "images": [
+                "https://content.skyscnr.com/available/1501322789/1501322789_WxH.jpg",
+                "https://content.skyscnr.com/available/1460074400/1460074400_WxH.jpg",
+                "https://content.skyscnr.com/available/1555535766/1555535766_WxH.jpg"
+            ]
+        },
+        {
+            "name": "Dukes The Palm, a Royal Hideaway Hotel",
+            "stars": "5",
+            "distance": "0.49 miles from The Palm Jumeirah",
+            "reviewsSummary": {
+                "score": 4.5,
+                "scoreDesc": "Excellent",
+                "total": 6944
+            },
+            "lowestPrice": "$94",
+            "images": [
+                "https://content.skyscnr.com/available/1466898906/1466898906_WxH.jpg",
+                "https://content.skyscnr.com/available/1543674521/1543674521_WxH.jpg",
+                "https://content.skyscnr.com/available/1543674667/1543674667_WxH.jpg"
+            ]
+        }
+    ]
+}
