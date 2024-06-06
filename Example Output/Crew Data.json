@@ -1,0 +1,20 @@
+[
+    {
+        "Director": {
+            "UserId": "ahmed.saeed@gmail.com",
+            "Preferred_because": "Ahmed Saeed has extensive experience in production planning, which is crucial for a minimalistic crew setup. His skills in coordination and visual storytelling will ensure a cohesive and efficient production process, which is essential for the intimate and focused narrative of the short film."
+        }
+    },
+    {
+        "Camera Operator": {
+            "UserId": "rahul.verma@gmail.com",
+            "Preferred_because": "Rahul Verma has the required skills in Camera Operation and Frame Composition, which are crucial for an intimate and focused narrative. His experience and technical skills align well with the minimalistic crew setup, ensuring efficiency and consistency in the production process."
+        }
+    },
+    {
+        "Makeup Artist and Hair Stylist": {
+            "UserId": "sofia.anis@example.com",
+            "Preferred_because": "Sofia Anis has a strong background in both makeup artistry and hairstyling, with specific expertise in makeup techniques, hairstyling techniques, and cosmetic knowledge. Her skills are well-rounded and versatile, making her an ideal fit for the minimalistic and focused nature of the short film project. Additionally, her experience and high skill level will ensure consistency and quality throughout the production process."
+        }
+    }
+]
