@@ -100,7 +100,8 @@ fromID = flightID_response.json()['data'][0]['presentation']['skyId']
 flightID_querystring = {"query":end_location}
 flightID_response = requests.get(flightID_url, headers=flightID_headers, params=flightID_querystring)
 toID = flightID_response.json()['data'][0]['presentation']['skyId']
-
+with open("flightID.json", 'w', encoding='utf-8') as flightID_file:
+    json.dump(flightID_response.json(), flightID_file, indent=4)
 
 # print(flightID_response)
 # print(fromID)
@@ -138,7 +139,8 @@ hotelID_headers = {
 }
 hotelID_response = requests.get(hotelID_url, headers=hotelID_headers, params=hotelID_querystring)
 # print(hotelID_response.json())
-
+with open("hotelID.json", 'w', encoding='utf-8') as hotelID_file:
+    json.dump(hotelID_response.json(), hotelID_file, indent=4)
 
 entity_ID = hotelID_response.json()['data'][0]['entityId']
 
@@ -157,3 +159,26 @@ with open("hotel.json", 'w', encoding='utf-8') as hotel_file:
 
 pdf_generator = HotelPDFGenerator(hotel_response.json())
 pdf_generator.generate_pdf()
+
+
+# taxiID_url = "https://sky-scanner3.p.rapidapi.com/cars/auto-complete"
+# taxiID_querystring = {"query":end_location}
+# taxiID_headers = {
+# 	"x-rapidapi-key": x_rapid_api_Key,
+# 	"x-rapidapi-host": "sky-scanner3.p.rapidapi.com"
+# }
+# taxiID_response = requests.get(taxiID_url, headers=taxiID_headers, params=taxiID_querystring)
+
+# taxiID = taxiID_response.json()['data'][0]['entity_id']
+
+
+# url = "https://sky-scanner3.p.rapidapi.com/cars/search"
+
+# querystring = {"pickUpEntityId":"95673506",  "pickUpDate":"2024-06-10", "pickUpTime":"10:05", "dropOffDate":"2024-06-10", "dropOffTime":"12:05"}
+
+# headers = {
+# 	"x-rapidapi-key": "39928d39b5mshb293a861cfaa496p10e454jsn2e3831639968",
+# 	"x-rapidapi-host": "sky-scanner3.p.rapidapi.com"
+# }
+
+# response = requests.get(url, headers=headers, params=querystring)
