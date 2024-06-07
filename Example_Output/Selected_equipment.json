@@ -1,0 +1,250 @@
+[
+  {
+    "name": "Dell XPS 15",
+    "model": "Intel Core i9",
+    "brand": "ProMedia Rentals",
+    "number_needed": 2,
+    "Preferred_because": "Stunning 4K Ultra HD display, Powerful performance for multitasking, Slim and lightweight design",
+    "provider_email": "contact@promediarentals.com"
+  },
+  {
+    "name": "High-Speed Internet",
+    "model": "Connectivity and Streaming Equipment",
+    "brand": "FiberNet Solutions",
+    "number_needed": 1,
+    "Preferred_because": "FiberNet Solutions offers a guaranteed bandwidth of 1 Gbps and low latency, which is crucial for ensuring seamless collaboration between the 3D modelers, animators, and special effects artists. The 24/7 technical support will also be beneficial in addressing any connectivity issues promptly, ensuring the project remains on schedule.",
+    "provider_email": "support@fibernetsolutions.com"
+  },
+  {
+    "name": "Teleprompter",
+    "model": "Prompter People Flex 17",
+    "brand": "Prompter People",
+    "number_needed": 1,
+    "Preferred_because": "The Prompter People Flex 17 teleprompter is preferred because it features a remote control for speed and direction, wide-angle beamsplitter glass, and a quick-release camera mount. These features will be beneficial for the Teleprompter Operator, Youssef Khalil, who has extensive experience in teleprompter calibration and text editing. The 17-inch screen size is also suitable for ensuring clear visibility of the script during the animation process.",
+    "provider_email": "info@soundwaverentals.com"
+  },
+  {
+    "name": "Walkie-talkies",
+    "model": "Motorola CP200d",
+    "brand": "Motorola",
+    "number_needed": 10,
+    "Preferred_because": "The Motorola CP200d is rugged and designed for outdoor use, which is beneficial for the crew working in various interstellar locations. Its voice-activated transmission and long battery life ensure reliable communication throughout the project. The availability of 16 units allows us to procure the required 10 pieces without any issues.",
+    "provider_email": "info@audiomasterrentals.com"
+  },
+  {
+    "name": "Camera Switcher",
+    "model": "ATEM Television Studio",
+    "brand": "Blackmagic",
+    "number_needed": 1,
+    "Preferred_because": "The ATEM Television Studio by Blackmagic is preferred because it supports multiple camera feeds (up to 8), which is essential for managing the dynamic and immersive scenes required for the 3D animated movie. Additionally, it offers SDI and HDMI inputs, making it versatile for different camera setups. Its compatibility with Ethernet and USB ensures seamless integration with the existing technical infrastructure managed by the Technical Director, Jinwoo Park.",
+    "provider_email": "contact@promediarentals.com"
+  },
+  {
+    "name": "Streaming Encoder",
+    "model": "Connectivity and Streaming Equipment",
+    "brand": "ProMedia Rentals",
+    "number_needed": 1,
+    "Preferred_because": "The ProMedia Rentals Streaming Encoder offers high-definition live streaming, support for multiple streaming platforms, and built-in WiFi and Ethernet. These features are crucial for ensuring smooth and high-quality streaming of the complex 3D animated movie. Additionally, the availability dates align well with the project timeline, and the price is competitive.",
+    "provider_email": "contact@promediarentals.com"
+  },
+  {
+    "name": "broadcast_camera",
+    "model": "XF705",
+    "brand": "Canon",
+    "number_needed": 1,
+    "Preferred_because": "The Canon XF705 is a high-definition camera that meets the project's requirements for capturing motion sequences in 4K at 60 fps. It is lightweight (3.8 kg) and has a battery life of 6 hours, making it suitable for extended shooting sessions. Additionally, it comes with essential accessories like a lens cap, battery pack, charger, handheld grip, and shoulder mount, which will be useful for the camera operator, Dmitri Ivanov, who has extensive experience with complex shots. The Canon XF705's specifications and ease of use make it a suitable choice for this project.",
+    "provider_email": "rentals@vision.com"
+  },
+  {
+    "name": "Tripods and Mounts",
+    "model": "GT3543LS",
+    "brand": "Gitzo",
+    "number_needed": 1,
+    "Preferred_because": "The Gitzo GT3543LS tripod is lightweight (1.8 kg) and has a high load capacity (21 kg), making it suitable for the dynamic and immersive scenes required in a 3D animated movie. Its carbon fiber construction ensures durability and stability, which are essential for capturing high-quality shots.",
+    "provider_email": "info@mediagearrentals.com"
+  },
+  {
+    "name": "HDMI/SDI Cables",
+    "model": "Cabling",
+    "brand": "ProMedia Rentals",
+    "number_needed": 2,
+    "Preferred_because": "High-quality copper, 3 meters length, 18 Gbps speed. Suitable for short-distance high-speed data transfer, which is essential for connecting cameras and other equipment in a controlled environment.",
+    "provider_email": "contact@promediarentals.com"
+  },
+  {
+    "name": "Lavalier Mics",
+    "model": "EW 100 G4",
+    "brand": "Sennheiser",
+    "number_needed": 2,
+    "Preferred_because": "The Sennheiser EW 100 G4 Lavalier Mics are preferred because they offer a wide frequency range (80 Hz - 18 kHz) and 8 hours of battery life, which is suitable for long recording sessions. Additionally, the lightweight transmitter (200 g) and comprehensive set of accessories (lavalier microphone, bodypack transmitter, receiver, mic clip) make it a versatile choice for capturing clear audio during voice-over sessions.",
+    "provider_email": "contact@promediarentals.com"
+  },
+  {
+    "name": "Handheld Mics",
+    "model": "SM58",
+    "brand": "Shure",
+    "number_needed": 1,
+    "Preferred_because": "The Shure SM58 is a reliable and industry-standard microphone known for its durability and sound quality. It is suitable for capturing clear and crisp audio, which is essential for the sound engineer to create an immersive audio experience for the 3D animated movie.",
+    "provider_email": "info@mediagearrentals.com"
+  },
+  {
+    "name": "Boom Mics",
+    "model": "NTG3",
+    "brand": "Rode",
+    "number_needed": 1,
+    "Preferred_because": "The Rode NTG3 is a reliable and high-quality boom mic that captures ambient sound and dialogue effectively. It is lightweight (163 g) and comes with a windshield and shock mount, making it suitable for dynamic and immersive scenes in a 3D animated movie. Additionally, it fits well with the expertise of our Sound Engineer, Ahmed Al-Salem, who has extensive experience in sound design and sound editing.",
+    "provider_email": "rentals@vision.com"
+  },
+  {
+    "name": "Audio Mixer",
+    "model": "X32",
+    "brand": "Behringer",
+    "number_needed": 1,
+    "Preferred_because": "The Behringer X32 is a versatile and reliable audio mixer that supports both analog and digital inputs, making it suitable for the diverse audio needs of a 3D animated movie project. It has 32 channels, which is sufficient for managing multiple audio inputs from different interstellar locations and special effects. Additionally, it is available during the required project timeline.",
+    "provider_email": "contact@promediarentals.com"
+  },
+  {
+    "name": "XLR Cables",
+    "model": "Cabling",
+    "brand": "ProMedia Rentals",
+    "number_needed": 5,
+    "Preferred_because": "ProMedia Rentals offers XLR cables at a competitive price of 8 USD each, which is cost-effective for the project. The 3-meter length is sufficient for connecting microphones and audio equipment within the studio setup, ensuring high-quality audio transmission.",
+    "provider_email": "contact@promediarentals.com"
+  },
+  {
+    "name": "LED Lights",
+    "model": "Light Storm LS C300d Mark II",
+    "brand": "Aputure",
+    "number_needed": 1,
+    "Preferred_because": "This model provides high brightness (130,000 lux @ 1m) and daylight-balanced lighting (5500K), which is essential for creating visually stunning and dynamic lighting effects in a 3D animated movie. It is also lightweight (2.2 kg) and comes with a power adapter and light stand mount, making it easy to set up and use.",
+    "provider_email": "contact@promediarentals.com"
+  },
+  {
+    "name": "Softboxes and Diffusers",
+    "model": "70x100cm Softbox",
+    "brand": "Neewer",
+    "number_needed": 1,
+    "Preferred_because": "The Neewer 70x100cm Softbox is lightweight (1.5 kg) and comes with a speedring, inner diffuser, outer diffuser, and carrying bag, making it easy to transport and set up. Its rectangular shape and Bowens mount make it versatile for various lighting setups, which is crucial for creating dynamic and visually stunning lighting effects in a 3D animated movie.",
+    "provider_email": "contact@promediarentals.com"
+  },
+  {
+    "name": "Lighting Stands and Rigging",
+    "model": "Heavy-Duty Air-Cushioned Light Stand",
+    "brand": "Impact",
+    "number_needed": 4,
+    "Preferred_because": "The Impact Heavy-Duty Air-Cushioned Light Stand is preferred due to its robust build and ability to handle up to 10 kg, which is essential for the dynamic lighting setups required for the 3D animated movie. Its air-cushioned feature ensures safety and ease of use, making it suitable for the Lighting Technician and other crew members who may need to adjust the lighting. Additionally, its height range of 110 - 366 cm provides flexibility for various scene requirements.",
+    "provider_email": "info@mediagearrentals.com"
+  },
+  {
+    "name": "Graphics Computer",
+    "model": "Alienware Aurora R12",
+    "brand": "Dell",
+    "number_needed": 1,
+    "Preferred_because": "The Alienware Aurora R12 is equipped with high-performance gaming-grade components, including an Intel Core i9-11900KF processor, 32 GB DDR4 RAM, and an NVIDIA GeForce RTX 3080 graphics card. This makes it ideal for creating and integrating complex graphics and visual effects required for the 3D animated movie. Its advanced thermal control ensures sustained performance, which is crucial for long rendering sessions.",
+    "provider_email": "contact@promediarentals.com"
+  },
+  {
+    "equipment": [
+      {
+        "name": "Graphics Software",
+        "model": "Software",
+        "brand": "SoundWave Rentals",
+        "number_needed": 1,
+        "Preferred_because": "This software offers 3D modeling, animation, and rendering, sculpting and texturing tools, and VFX and compositing, which are essential for creating a visually stunning and engaging 3D animated movie centered around a spaceship.",
+        "provider_email": "info@soundwaverentals.com"
+      },
+      {
+        "name": "Graphics Software",
+        "model": "Software",
+        "brand": "ProMedia Rentals",
+        "number_needed": 1,
+        "Preferred_because": "This software provides professional video editing and color correction, Fairlight audio post-production tools, and Fusion visual effects, which are crucial for enhancing the visual experience and ensuring high-quality production.",
+        "provider_email": "contact@promediarentals.com"
+      },
+      {
+        "name": "Graphics Software",
+        "model": "Software",
+        "brand": "MediaGear Rentals",
+        "number_needed": 1,
+        "Preferred_because": "This software includes vector illustration and page layout, photo editing and bitmap-to-vector tracing, and font management and filtering, which are useful for creating detailed and immersive backgrounds and animating the spaceship.",
+        "provider_email": "info@mediagearrentals.com"
+      }
+    ]
+  },
+  {
+    "name": "External Recorders",
+    "model": "Recording Equipment",
+    "brand": "ProMedia Rentals",
+    "number_needed": 1,
+    "Preferred_because": "The ProMedia Rentals external recorder supports up to 4Kp60 10-bit HDR, which is essential for capturing high-quality video and audio for a visually stunning 3D animated movie. Its 5\" IPS touchscreen display and HDR monitoring and recording capabilities make it a versatile and powerful tool for our project.",
+    "provider_email": "contact@promediarentals.com"
+  },
+  {
+    "name": "Storage Devices",
+    "model": "Recording Equipment",
+    "brand": "Vision Rentals",
+    "number_needed": 1,
+    "Preferred_because": "This device offers a high read/write speed (up to 2000 MB/s) and a large storage capacity (2 TB), which is essential for handling large 3D animation files and special effects. The IP55-rated water and dust resistance ensure durability in various environments.",
+    "provider_email": "rentals@vision.com"
+  },
+  {
+    "name": "Rigging and Staging",
+    "model": "Setup and Support",
+    "brand": "MediaGear Rentals",
+    "number_needed": 1,
+    "Preferred_because": "The MediaGear Rentals equipment offers a fold-away crank handle for easy adjustment and is made of black steel for durability. It can be used as a junior boom, which is essential for setting up scenes and props in a 3D animated movie. The adjustable height from 52.8\" to 130.7\" provides flexibility for various shot compositions and setups, making it suitable for the dynamic and immersive scenes required in the project.",
+    "provider_email": "info@mediagearrentals.com"
+  },
+  {
+    "name": "Transport Cases",
+    "model": "Setup and Support",
+    "brand": "AudioMaster Rentals",
+    "number_needed": 2,
+    "Preferred_because": "Wheeled design for easy transportation, Waterproof and impact-resistant shell, Ergonomic handle for comfortable carrying",
+    "provider_email": "info@audiomasterrentals.com"
+  },
+  {
+    "name": "Backup Power",
+    "model": "CyberPower CP1500PFCLCD",
+    "brand": "CyberPower",
+    "number_needed": 1,
+    "Preferred_because": "The CyberPower CP1500PFCLCD offers pure sine wave output, which is essential for protecting sensitive electronics used by the 3D modelers, animators, and special effects artists. Its multifunction LCD panel and automatic voltage regulation (AVR) make it user-friendly and reliable for the technical crew.",
+    "provider_email": "contact@promediarentals.com"
+  },
+  {
+    "equipment": [
+      {
+        "name": "Speakers and Monitors",
+        "model": "EON615",
+        "brand": "JBL",
+        "number_needed": 1,
+        "Preferred_because": "The JBL EON615 is a reliable and high-quality speaker that will provide clear and powerful audio playback, which is essential for the sound design and editing tasks in the project. Its availability during the project timeline and its compatibility with the crew's needs make it a suitable choice.",
+        "provider_email": "contact@promediarentals.com"
+      },
+      {
+        "name": "Speakers and Monitors",
+        "model": "Thump15A",
+        "brand": "Mackie",
+        "number_needed": 1,
+        "Preferred_because": "The Mackie Thump15A offers a wide frequency range and powerful output, which will be beneficial for monitoring the intricate audio details required for the 3D animated movie. Its availability and the included accessories (power cable, speaker stand) make it a practical choice for the project.",
+        "provider_email": "rentals@vision.com"
+      }
+    ]
+  },
+  {
+    "name": "Ethernet Cables",
+    "model": "Cabling",
+    "brand": "ProMedia Rentals",
+    "number_needed": 5,
+    "Preferred_because": "ProMedia Rentals offers high-quality copper Cat 6 Ethernet cables that are 5 meters long, which are suitable for the project's wired internet connections. The length is adequate for the setup, and the quality ensures reliable connectivity. Additionally, ProMedia Rentals has a good reputation and offers competitive pricing.",
+    "provider_email": "contact@promediarentals.com"
+  },
+  {
+    "name": "Intercom System",
+    "model": "Communication Equipment",
+    "brand": "ProMedia Rentals",
+    "number_needed": 1,
+    "Preferred_because": "The ProMedia Rentals Intercom System offers full-duplex communication, noise-canceling technology, and individual channel monitoring, which are essential for seamless communication between the various departments involved in the 3D animated movie project. This will ensure that the Producer, Director, Technical Director, and other key crew members can coordinate effectively, enhancing the overall efficiency and quality of the production.",
+    "provider_email": "contact@promediarentals.com"
+  }
+]

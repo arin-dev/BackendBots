@@ -148,7 +148,18 @@ def get_unique_equipments(db):
 
 
 def get_equipment_requirements(crew_requirements, detailed_desc, name):
-    prompt_equipment_requirement_getter = f"You are an experienced film production assistant and an expert in planning and organizing film crews. Your task is to provide comprehensive list of equipment required to complete a film production project based on the details provided by the user. This includes identifying all essential equipment, detailing their primary responsibilities, and specifying the number of individuals needed for each specific role. Here is the crew requirement : {crew_requirements}. Now you need to provide the equipment required for the project that well fitted to the crew requirement.Note that if the project is to be done in multiple locations, we might need equipment at multiple locations or we might transport equipment between locations. Understand the requirement and give output accordingly. Output must be in JSON format and should contain only following fields :[name, brand, model, Specification, number_needed, provider_email]"
+    prompt_equipment_requirement_getter = f"""You are an experienced film production assistant and an expert in planning and organizing film crews. Your task is to provide a comprehensive list of the equipment required to complete a film production project based on the details provided by the user. This includes identifying all essential equipment, detailing their primary responsibilities, and specifying the number of individuals needed for each specific role. Here is the crew requirement: {crew_requirements}. Now you need to provide the equipment required for the project that is well-suited to the crew requirements. Note that if the project is to be done in multiple locations, we might need equipment at multiple locations or we might transport equipment between locations. Understand the requirements and give output accordingly.
+    
+    Each crew member's role requires specific equipment. Here are some examples of the role-to-equipment mapping:
+
+    - Producer: ["Laptops/Computers", "High-Speed Internet"]
+    - Director: ["Teleprompter", "Laptops/Computers", "Walkie-talkies"]
+    - Technical Director: ["Camera Switcher", "Streaming Encoder", "High-Speed Internet"]
+    - Camera Operator: ["broadcast_camera", "Tripods and Mounts", "HDMI/SDI Cables"]
+    - Sound Engineer: ["Lavalier Mics", "Handheld Mics", "Boom Mics", "Audio Mixer", "XLR Cables"]
+
+    Based on these examples and the provided project details and crew requirements, generate a comprehensive list of equipment requirements.
+    Output must be in JSON format and should contain only the following fields :[name, number_needed, Specification_required]"""
     messages = [
         ("system", prompt_equipment_requirement_getter),
         ("user", f"This is the project details from user : {detailed_desc}"),
@@ -166,22 +177,28 @@ def get_equipment_requirements(crew_requirements, detailed_desc, name):
 
 
 def get_selected_equipments(filtered_equipment, crew_selected, number_needed,
-                            equipmentName, detailed_desc):
-    prompt_equipment_selection = "You are an HR in my firm and you have to select the best possible equipment. Your subordinates will provide you with the project details, the equipment that matches the criteria for that particular need, and the quantity of equipment we need to procure for that project. Now you need to select the best possible equipment for that particular need and the reason why you preferred that particular equipment. You have to select the  equipments that well fitted to the selected crew and number of crew selected. For example if for partcular scene we have to shoot in two different angle at a paticulat time then if number of camera operator greater than 3 then you can select two camra for them. But, if there is only one camera operator then you have select only one camera. Other equipments are also have to choose accordingly. If there is no specific crew member for that equipment then try to fit it with crew members if not possible them ignore that equipment. Make sure the preferred equipment can work well for the project. Output should be in JSON format which should follow this: {'name': , 'model': , 'brand':, 'Preferred_because'}. Only output JSON. You don't need to put anything extra as your output will be directly fed to a function, so just output JSON."
-    # selected_equipments = []
+                            equipmentName, specification, detailed_desc):
+    prompt_equipment_selection = f"""
+     You are the HR in our firm, responsible for selecting the best possible equipment for our projects. Your subordinates will provide you with the project details, including the required equipment and the quantity needed. Based on this information and the selected crew for the project, you need to choose the most suitable equipment and explain your preference.
+     Here’s what you need to consider:
+     Select equipement according to the specification needed. Here is the datails about their specification: {specification}.
+     Match Equipment to Crew: Select equipment that best fits the crew's roles and the number of crew members. For example, if we need to shoot a scene from two different angles and have equal to or more than two camera operators, we can select two cameras. However, if there is only one camera operator, you should select only one camera.
+     Assign Equipment Accordingly: Ensure that the equipment is suitable for the crew members available. If a specific piece of equipment requires a specific crew member and none are available, try to assign it to another crew member. If no one can operate it, exclude that equipment.
+     Rationale for Selection: Make sure to explain why you prefer a particular piece of equipment. This could be based on compatibility, ease of use, the specific needs of the project, or the capabilities of the crew.
+     The output should be in JSON format which should follow this: ['name', 'model', 'brand', 'number_needed', 'Preferred_because', 'provider_email']. Only output JSON. You don't need to put anything extra as your output will be directly fed to a function, so just output JSON.
+    """
     messages = [
         ("system", prompt_equipment_selection),
         ("user",
          f"Following is the list of available equipment for the project: {filtered_equipment}, you need to procure {number_needed} pieces of equipment, for the purpose of {equipmentName} for this project: {detailed_desc}"
          ),
         ("user",
-         f"Make sure that all equipment chosen must be well fitted to the crew selected. Selected crew are these: {crew_selected} ."
+         f"Make sure that all equipment chosen must be well fitted to the crew selected. Selected crew are these: {crew_selected}."
          )
     ]
 
     response = llm_json.invoke(messages)
     selected_equipments = json.loads(response.content)
-    # selected_equipments.append(selected_equipment)
     return selected_equipments
 
 
@@ -199,26 +216,15 @@ class State(TypedDict):
     selected_crews: List[dict]
     equipments: List[str]
     equipment_requirements: List[Dict]
-    equipment_selected: List[dict]
+    selected_equipments: List[Dict]
 
 
 # description of the project
 def detailed_desc_getter(State):
     num_steps = int(State['num_steps'])
     num_steps += 1
-
     project_detail_from_customer = State["project_detail_from_customer"]
-    print(
-        "\n ########################################################################################################################## \n"
-    )
-    print("------------------DETAILED DESCRIPTION GETTER----------------")
-    pprint("project_detail_from_customer:")
-    pprint(project_detail_from_customer, width=140, indent=10)
-    print("num_steps:", num_steps)
-
     detailed_desc = get_detailed_desc(project_detail_from_customer)
-    pprint("detailed_desc:")
-    pprint(detailed_desc, width=140, indent=10)
     return {"detailed_desc": detailed_desc, "num_steps": num_steps}
 
 
@@ -227,12 +233,7 @@ def unique_roles_getter(State):
     num_steps = int(State['num_steps'])
     num_steps += 1
 
-    print(
-        "\n ########################################################################################################################## \n"
-    )
-    print("------------------UNIQUE ROLES GETTER----------------")
     roleJobTitles = get_unique_roles('crewdata.db')
-    print("roleJobTitles:", roleJobTitles)
     return {"roleJobTitles": roleJobTitles, "num_steps": num_steps}
 
 
@@ -243,13 +244,7 @@ def crew_requirement_getter(State):
     detailed_desc = State["detailed_desc"]
     roleJobTitles = State["roleJobTitles"]
 
-    print(
-        "\n ########################################################################################################################## \n"
-    )
-    print("------------------CREW REQUIREMENT GETTER----------------")
     crew_requirements = get_crew_requirements(detailed_desc, roleJobTitles)
-    pprint("crew_requirements:")
-    pprint(crew_requirements, width=140, indent=10)
     return {"crew_requirements": crew_requirements, "num_steps": num_steps}
 
 
@@ -259,13 +254,7 @@ def queries_getter(State):
     num_steps += 1
     crew_requirements = State["crew_requirements"]
 
-    print(
-        "\n ########################################################################################################################## \n"
-    )
-    print("------------------QUERIES GETTER----------------")
     queries = get_queries(crew_requirements)
-    pprint("queries:")
-    pprint(queries, width=140, indent=10)
     return {"queries": queries, "num_steps": num_steps}
 
 
@@ -281,10 +270,6 @@ def crew_selection(State):
     detailed_desc = State["detailed_desc"]
     crew_requirements = State["crew_requirements"]
 
-    print(
-        "\n ########################################################################################################################## \n"
-    )
-    print("------------------CREW SELECTION----------------")
     selected_crews = []
     for crew in crew_requirements:
         filtered_crew = filter_crew_members(crew["roleJobTitle"], 'Dubai',
@@ -296,18 +281,17 @@ def crew_selection(State):
                                                      number_needed,
                                                      hiring_role,
                                                      detailed_desc)
-        found_crew = False
-        if selected_crews_for_task:
-            selected_crews.append(selected_crews_for_task)
-            found_crew = True  # Set flag to True if crew members were found
-        else:
-            print(f"No suitable crew found for role: {hiring_role}")
-            # Break the loop if no crew members were found
-        if not found_crew:
-            break
+        
+        selected_crews.append({hiring_role:selected_crews_for_task})
+        # found_crew = False
+        # if selected_crews_for_task:
+        #     selected_crews.append(selected_crews_for_task)
+        #     found_crew = True  # Set flag to True if crew members were found
+        # else:
+        #     print(f"No suitable crew found for role: {hiring_role}")
+        # if not found_crew:
+        #     break
 
-        pprint("selected_crews_for_task:")
-        pprint(selected_crews_for_task, width=140, indent=10)
 
     return {"selected_crews": selected_crews, "num_steps": num_steps}
 
@@ -316,12 +300,7 @@ def unique_equipments_getter(state: State):
     num_steps = int(state['num_steps'])
     num_steps += 1
 
-    print(
-        "\n ########################################################################################################################## \n"
-    )
-    print("------------------UNIQUE EQUIPMENTS GETTER----------------")
     equipments = get_unique_equipments('equipment.db')
-    print("equipments:", equipments)
     return {"equipments": equipments, "num_steps": num_steps}
 
 
@@ -333,14 +312,8 @@ def equipment_requirement_getter(state: State):
     equipments = state["equipments"]
     crew_requirement = state["crew_requirements"]
 
-    print(
-        "\n ########################################################################################################################## \n"
-    )
-    print("------------------EQUIPMENT REQUIREMENT GETTER----------------")
     equipment_requirements = get_equipment_requirements(
         crew_requirement, detailed_desc, equipments)
-    pprint("equipment_requirements:")
-    pprint(equipment_requirements, width=140, indent=10)
     return {
         "equipment_requirements": equipment_requirements,
         "num_steps": num_steps
@@ -355,76 +328,19 @@ def equipment_selection(state: State):
     equipment_requirements = state["equipment_requirements"]
     crew_selected = state["selected_crews"]
 
-    print(
-        "\n ########################################################################################################################## \n"
-    )
-
-    print("------------------EQUIPMENT SELECTION----------------")
-
     selected_equipments = []
     for equipment in equipment_requirements:
-        filtered_equipment = filter_equipment(equipment["name"], 'Dubai',
-                                              'equipment.db')
+        filtered_equipment = filter_equipment(equipment["name"], 'Dubai','equipment.db')
         number_needed = equipment["number_needed"]
         # number_needed = 1
         equipmentName = equipment["name"]
+        specification= equipment["Specification_required"]
 
         selected_equipments_for_task = get_selected_equipments(
-            filtered_equipment, crew_selected, number_needed, equipmentName,
-            detailed_desc)
+            filtered_equipment, crew_selected, number_needed, equipmentName, specification, detailed_desc)
         selected_equipments.append(selected_equipments_for_task)
-        pprint("selected_equipments_for_task:")
-        pprint(selected_equipments_for_task, width=140, indent=10)
 
     return {"selected_equipments": selected_equipments, "num_steps": num_steps}
-
-
-# Selcting Equipment based on the roles and equipments under them.
-# def equipment_requirement_getter(state: State):
-#     num_steps = int(state['num_steps'])
-#     num_steps += 1
-#     detailed_desc = state["detailed_desc"]
-#     crew_requirements = state["crew_requirements"]
-
-#     print("\n ########################################################################################################################## \n")
-#     print("------------------EQUIPMENT REQUIREMENT GETTER----------------")
-
-#     # Create a mapping of crew roles to potential equipment needs
-#     role_to_equipment = {
-#         "Producer": ["Laptops/Computers", "Walkie-talkies"],
-#         "Director": ["Laptops/Computers", "Intercom System", "Walkie-talkies", "Monitor"],
-#         "Technical Director": ["Camera Switcher", "Intercom System", "Walkie-talkies"],
-#         "Camera Operator": ["broadcast_camera", "Tripods and Mounts", "Camera Switcher", "External Recorders", "Transport Cases"],
-#         "Sound Engineer": ["Lavalier Mics", "Handheld Mics", "Boom Mics", "Audio Mixer", "Speakers and Monitors", "XLR Cables"],
-#         "Lighting Technician": ["LED Lights", "Softboxes and Diffusers", "Lighting Stands and Rigging"],
-#         "Graphics Operator": ["Graphics Computer", "Graphics Software"],
-#         "Streaming Technician": ["Streaming Encoder", "High-Speed Internet", "HDMI/SDI Cables", "Ethernet Cables", "Streaming Software"],
-#         "Floor Manager": ["Intercom System", "Walkie-talkies"],
-#         "Teleprompter Operator": ["Teleprompter", "Laptops/Computers"],
-#         "IT Support": ["High-Speed Internet", "HDMI/SDI Cables", "Ethernet Cables", "Backup Power"],
-#         "Logistics Coordinator": ["Transport Cases", "Walkie-talkies"],
-#         "Talent/Host": ["Lavalier Mics", "Handheld Mics"],
-#         "Makeup Artist and Hair Stylist": ["Transport Cases"],
-#         "Venue Coordinator": ["Walkie-talkies"],
-#         "Time Zone Manager": ["Laptops/Computers", "High-Speed Internet"]
-#     }
-
-#     # Generate the equipment requirements based on the crew requirements
-#     equipment_requirements = []
-#     for crew in crew_requirements:
-#         role = crew["roleJobTitle"]
-#         location = crew["location"]
-#         if role in role_to_equipment:
-#             for equipment in role_to_equipment[role]:
-#                 equipment_requirements.append({
-#                     "name": equipment,
-#                     "location": location,
-#                     "number_needed": crew["number_needed"]
-#                 })
-
-#     pprint("equipment_requirements:")
-#     pprint(equipment_requirements, width=140, indent=10)
-#     return {"equipment_requirements": equipment_requirements, "num_steps": num_steps}
 
 
 def state_printer(state):
@@ -442,7 +358,7 @@ def state_printer(state):
     print("selected_crews:", state["selected_crews"])
     print("equipments:", state["equipments"])
     print("equipment_requirements:", state["equipment_requirements"])
-    print("equipment_selected:", state["equipment_selected"])
+    print("selected_equipments:", state["selected_equipments"])
     return
 
 
@@ -457,6 +373,7 @@ workflow.add_node("unique_equipments_getter", unique_equipments_getter)
 workflow.add_node("equipment_requirement_getter", equipment_requirement_getter)
 workflow.add_node("equipment_selection", equipment_selection)
 workflow.add_node("state_printer", state_printer)
+
 
 workflow.add_edge("detailed_desc_getter", "unique_roles_getter")
 workflow.add_edge("unique_roles_getter", "crew_requirement_getter")
@@ -484,5 +401,16 @@ inputs = {
     "equipments_selected": []
 }
 
-for op in app.stream(inputs):
-    print(op)
+print("\n\n")
+print("output:")
+
+# for op in app.stream(inputs):
+#     print(op)
+
+def equipment_output(inputs):
+    output = app.invoke(inputs)
+    return output["equipments_selected"]
+
+ans=equipment_output(inputs) 
+print(ans)
+

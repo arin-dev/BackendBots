@@ -1,0 +1,3654 @@
+[
+    {
+      "name": "broadcast_camera",
+      "type": "Camera Equipment",
+      "brand": "Sony",
+      "model": "HDC-3500",
+      "resolution": "4K",
+      "frame_rate": "60 fps",
+      "sensor_type": "3CMOS",
+      "connectivity": ["SDI", "HDMI", "Ethernet"],
+      "audio_input": ["XLR", "3.5mm jack"],
+      "battery_life": "8 hours",
+      "weight": "4.5 kg",
+      "accessories": [
+        "lens_cap",
+        "battery_pack",
+        "charger",
+        "handheld_grip",
+        "shoulder_mount"
+      ],
+      "rental_price_per_day": "300 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-10",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "broadcast_camera",
+      "type": "Camera Equipment",
+      "brand": "Panasonic",
+      "model": "AK-UC4000",
+      "resolution": "4K",
+      "frame_rate": "60 fps",
+      "sensor_type": "CMOS",
+      "connectivity": ["SDI", "HDMI", "Ethernet"],
+      "audio_input": ["XLR", "3.5mm jack"],
+      "battery_life": "7 hours",
+      "weight": "4.2 kg",
+      "accessories": [
+        "lens_cap",
+        "battery_pack",
+        "charger",
+        "handheld_grip",
+        "shoulder_mount"
+      ],
+      "rental_price_per_day": "280 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "broadcast_camera",
+      "type": "Camera Equipment",
+      "brand": "Canon",
+      "model": "XF705",
+      "resolution": "4K",
+      "frame_rate": "60 fps",
+      "sensor_type": "CMOS",
+      "connectivity": ["SDI", "HDMI", "Ethernet"],
+      "audio_input": ["XLR", "3.5mm jack"],
+      "battery_life": "6 hours",
+      "weight": "3.8 kg",
+      "accessories": [
+        "lens_cap",
+        "battery_pack",
+        "charger",
+        "handheld_grip",
+        "shoulder_mount"
+      ],
+      "rental_price_per_day": "250 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "broadcast_camera",
+      "type": "Camera Equipment",
+      "brand": "JVC",
+      "model": "GY-HC900",
+      "resolution": "4K",
+      "frame_rate": "60 fps",
+      "sensor_type": "CMOS",
+      "connectivity": ["SDI", "HDMI", "Ethernet"],
+      "audio_input": ["XLR", "3.5mm jack"],
+      "battery_life": "7 hours",
+      "weight": "4.0 kg",
+      "accessories": [
+        "lens_cap",
+        "battery_pack",
+        "charger",
+        "handheld_grip",
+        "shoulder_mount"
+      ],
+      "rental_price_per_day": "260 USD",
+      "provider": {
+        "name": "Broadcast Solutions",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "support@broadcastsolutions.com",
+          "address": "101 Broadcast Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-07-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "broadcast_camera",
+      "type": "Camera Equipment",
+      "brand": "Blackmagic Design",
+      "model": "URSA Broadcast G2",
+      "resolution": "4K",
+      "frame_rate": "60 fps",
+      "sensor_type": "CMOS",
+      "connectivity": ["SDI", "HDMI", "Ethernet"],
+      "audio_input": ["XLR", "3.5mm jack"],
+      "battery_life": "8 hours",
+      "weight": "3.9 kg",
+      "accessories": [
+        "lens_cap",
+        "battery_pack",
+        "charger",
+        "handheld_grip",
+        "shoulder_mount"
+      ],
+      "rental_price_per_day": "270 USD",
+      "provider": {
+        "name": "Elite Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "contact@eliterentals.com",
+          "address": "202 Elite Avenue, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Tripods and Mounts",
+      "type": "Camera Equipment",
+      "brand": "Manfrotto",
+      "model": "MT190XPRO4",
+      "height_range": "8 cm to 160 cm",
+      "weight_capacity": "7 kg",
+      "material": "Aluminum",
+      "weight": "2.5 kg",
+      "accessories": ["carrying case", "quick release plate", "bubble level"],
+      "rental_price_per_day": "40 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Tripods and Mounts",
+      "type": "Camera Equipment",
+      "brand": "Gitzo",
+      "model": "GT3543LS",
+      "height_range": "9 cm to 146 cm",
+      "weight_capacity": "21 kg",
+      "material": "Carbon Fiber",
+      "weight": "1.8 kg",
+      "accessories": ["carrying case", "spiked feet", "bubble level"],
+      "rental_price_per_day": "50 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+         "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Tripods and Mounts",
+      "type": "Camera Equipment",
+      "brand": "Sachtler",
+      "model": "FSB 8",
+      "height_range": "50 cm to 170 cm",
+      "weight_capacity": "10 kg",
+      "material": "Aluminum",
+      "weight": "3.2 kg",
+      "accessories": ["carrying case", "mid-level spreader", "rubber feet"],
+      "rental_price_per_day": "60 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Tripods and Mounts",
+      "type": "Camera Equipment",
+      "brand": "Benro",
+      "model": "A373T",
+      "height_range": "70 cm to 190 cm",
+      "weight_capacity": "16 kg",
+      "material": "Aluminum",
+      "weight": "2.1 kg",
+      "accessories": ["carrying case", "rubber feet", "spiked feet"],
+      "rental_price_per_day": "45 USD",
+      "provider": {
+        "name": "Broadcast Solutions",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "support@broadcastsolutions.com",
+          "address": "101 Broadcast Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Tripods and Mounts",
+      "type": "Camera Equipment",
+      "brand": "Miller",
+      "model": "Compass 23",
+      "height_range": "55 cm to 172 cm",
+      "weight_capacity": "14 kg",
+      "material": "Carbon Fiber",
+      "weight": "2.3 kg",
+      "accessories": ["carrying case", "mid-level spreader", "rubber feet"],
+      "rental_price_per_day": "55 USD",
+      "provider": {
+        "name": "Elite Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "contact@eliterentals.com",
+          "address": "202 Elite Avenue, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Camera Switcher",
+      "type": "Camera Equipment",
+      "brand": "Blackmagic",
+      "model": "ATEM Television Studio",
+      "inputs": 8,
+      "output": "SDI, HDMI",
+      "resolution_support": "Up to 1080p",
+      "audio_input": "Embedded audio",
+      "control_interface": "Ethernet, USB",
+      "weight": "2.5 kg",
+      "accessories": ["power cable", "rack ears"],
+      "rental_price_per_day": "150 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Camera Switcher",
+      "type": "Camera Equipment",
+      "brand": "Roland",
+      "model": "V-1HD",
+      "inputs": 4,
+      "output": "HDMI",
+      "resolution_support": "Up to 1080p",
+      "audio_input": "Analog stereo, HDMI embedded",
+      "control_interface": "USB",
+      "weight": "1.2 kg",
+      "accessories": ["AC adapter", "HDMI cable"],
+      "rental_price_per_day": "120 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Camera Switcher",
+      "type": "Camera Equipment",
+      "brand": "Sony",
+      "model": "MCX-500",
+      "inputs": 4,
+      "output": "HDMI, SDI",
+      "resolution_support": "Up to 1080p",
+      "audio_input": "Analog stereo, Embedded audio",
+      "control_interface": "Ethernet, RS-422",
+      "weight": "2.0 kg",
+      "accessories": ["AC adapter", "SDI cable"],
+      "rental_price_per_day": "130 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Camera Switcher",
+      "type": "Camera Equipment",
+      "brand": "ATEM",
+      "model": "Mini Pro ISO",
+      "inputs": 4,
+      "output": "HDMI, SDI",
+      "resolution_support": "Up to 1080p",
+      "audio_input": "Analog stereo, Embedded audio",
+      "control_interface": "Ethernet, USB",
+      "weight": "1.5 kg",
+      "accessories": ["AC adapter", "SDI cable"],
+      "rental_price_per_day": "140 USD",
+      "provider": {
+        "name": "Broadcast Solutions",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "support@broadcastsolutions.com",
+          "address": "101 Broadcast Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-07-22",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Camera Switcher",
+      "type": "Camera Equipment",
+      "brand": "ATEM",
+      "model": "Mini Extreme ISO",
+      "inputs": 8,
+      "output": "HDMI, SDI",
+      "resolution_support": "Up to 1080p",
+      "audio_input": "Analog stereo, Embedded audio",
+      "control_interface": "Ethernet, USB",
+      "weight": "1.7 kg",
+      "accessories": ["AC adapter", "HDMI cable"],
+      "rental_price_per_day": "160 USD",
+      "provider": {
+        "name": "Elite Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "contact@eliterentals.com",
+          "address": "202 Elite Avenue, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Lavalier Mics",
+      "type": "Audio Equipment",
+      "brand": "Sennheiser",
+      "model": "EW 100 G4",
+      "wireless": true,
+      "frequency_range": "516 - 558 MHz",
+      "frequency_response": "80 Hz - 18 kHz",
+      "transmitter_battery_life": "8 hours",
+      "weight": "200 g (transmitter)",
+      "accessories": [
+        "lavalier microphone",
+        "bodypack transmitter",
+        "receiver",
+        "mic clip"
+      ],
+      "rental_price_per_day": "80 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-15",
+        "end_date": "2024-08-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Lavalier Mics",
+      "type": "Audio Equipment",
+      "brand": "Shure",
+      "model": "BLX14R",
+      "wireless": true,
+      "frequency_range": "572 - 596 MHz",
+      "frequency_response": "50 Hz - 15 kHz",
+      "transmitter_battery_life": "14 hours",
+      "weight": "218 g (transmitter)",
+      "accessories": [
+        "lavalier microphone",
+        "bodypack transmitter",
+        "receiver",
+        "windscreen"
+      ],
+      "rental_price_per_day": "70 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Lavalier Mics",
+      "type": "Audio Equipment",
+      "brand": "Sony",
+      "model": "UWP-D11",
+      "wireless": true,
+      "frequency_range": "470 - 542 MHz",
+      "frequency_response": "40 Hz - 18 kHz",
+      "transmitter_battery_life": "6 hours",
+      "weight": "85 g (transmitter)",
+      "accessories": [
+        "lavalier microphone",
+        "bodypack transmitter",
+        "receiver",
+        "windscreen"
+      ],
+      "rental_price_per_day": "90 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-07-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Lavalier Mics",
+      "type": "Audio Equipment",
+      "brand": "Audio-Technica",
+      "model": "ATW-1101",
+      "wireless": true,
+      "frequency_range": "2.4 GHz",
+      "frequency_response": "20 Hz - 20 kHz",
+      "transmitter_battery_life": "7 hours",
+      "weight": "85 g (transmitter)",
+      "accessories": [
+        "lavalier microphone",
+        "bodypack transmitter",
+        "receiver",
+        "windscreen"
+      ],
+      "rental_price_per_day": "85 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-08-21",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Lavalier Mics",
+      "type": "Audio Equipment",
+      "brand": "AKG",
+      "model": "WMS40 Mini",
+      "wireless": true,
+      "frequency_range": "660 - 865 MHz",
+      "frequency_response": "40 Hz - 20 kHz",
+      "transmitter_battery_life": "30 hours",
+      "weight": "60 g (transmitter)",
+      "accessories": [
+        "lavalier microphone",
+        "bodypack transmitter",
+        "receiver",
+        "windscreen"
+      ],
+      "rental_price_per_day": "75 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Handheld Mics",
+      "type": "Audio Equipment",
+      "brand": "Shure",
+      "model": "SM58",
+      "wireless": true,
+      "frequency_response": "50 Hz - 15 kHz",
+      "weight": "298 g",
+      "accessories": ["microphone clip", "XLR cable"],
+      "rental_price_per_day": "60 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Handheld Mics",
+      "type": "Audio Equipment",
+      "brand": "Audio-Technica",
+      "model": "AT2020",
+      "wireless": false,
+      "transducer_type": "Condenser",
+      "frequency_response": "20 Hz - 20 kHz",
+      "weight": "345 g",
+      "accessories": ["stand mount", "pouch"],
+      "rental_price_per_day": "75 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-07-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Handheld Mics",
+      "type": "Audio Equipment",
+      "brand": "AKG",
+      "model": "D5",
+      "wireless": true,
+      "frequency_response": "70 Hz - 20 kHz",
+      "weight": "340 g",
+      "accessories": ["microphone clip", "carry case"],
+      "rental_price_per_day": "65 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Handheld Mics",
+      "type": "Audio Equipment",
+      "brand": "Sony",
+      "model": "F-V120",
+      "wireless": false,
+      "frequency_response": "80 Hz - 15 kHz",
+      "weight": "350 g",
+      "accessories": ["microphone clip", "XLR cable"],
+      "rental_price_per_day": "55 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Handheld Mics",
+      "type": "Audio Equipment",
+      "brand": "Rode",
+      "model": "NT1-A",
+      "wireless": true,
+      "transducer_type": "Condenser",
+      "frequency_response": "20 Hz - 20 kHz",
+      "weight": "326 g",
+      "accessories": ["microphone clip", "pop shield"],
+      "rental_price_per_day": "80 USD",
+      "provider": {
+        "name": "Elite Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "contact@eliterentals.com",
+          "address": "202 Elite Avenue, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Boom Mics",
+      "type": "Audio Equipment",
+      "brand": "Rode",
+      "model": "NTG3",
+      "directionality": "Supercardioid",
+      "frequency_response": "40 Hz - 20 kHz",
+      "weight": "163 g",
+      "accessories": ["windshield", "shock mount"],
+      "rental_price_per_day": "70 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Boom Mics",
+      "type": "Audio Equipment",
+      "brand": "Sennheiser",
+      "model": "MKH 416",
+      "directionality": "Supercardioid",
+      "frequency_response": "40 Hz - 20 kHz",
+      "weight": "175 g",
+      "accessories": ["windshield", "shock mount"],
+      "rental_price_per_day": "85 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Boom Mics",
+      "type": "Audio Equipment",
+      "brand": "Audio-Technica",
+      "model": "AT875R",
+      "directionality": "Line + Gradient",
+      "frequency_response": "90 Hz - 20 kHz",
+      "weight": "80 g",
+      "accessories": ["windshield", "shock mount"],
+      "rental_price_per_day": "60 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Boom Mics",
+      "type": "Audio Equipment",
+      "brand": "AKG",
+      "model": "C480B/CK61",
+      "directionality": "Hypercardioid",
+      "frequency_response": "20 Hz - 20 kHz",
+      "weight": "140 g",
+      "accessories": ["windshield", "shock mount"],
+      "rental_price_per_day": "75 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Boom Mics",
+      "type": "Audio Equipment",
+      "brand": "Rode",
+      "model": "NTG4+",
+      "directionality": "Supercardioid",
+      "frequency_response": "20 Hz - 20 kHz",
+      "weight": "176 g",
+      "accessories": ["windshield", "shock mount"],
+      "rental_price_per_day": "80 USD",
+      "provider": {
+        "name": "Elite Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "contact@eliterentals.com",
+          "address": "202 Elite Avenue, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Audio Mixer",
+      "type": "Audio Equipment",
+      "brand": "Behringer",
+      "model": "X32",
+      "channels": 32,
+      "inputs": "Analog, Digital",
+      "output": "Main, Aux, Monitor",
+      "effects": true,
+      "weight": "20.2 kg",
+      "accessories": ["power cable", "rack ears"],
+      "rental_price_per_day": "200 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Audio Mixer",
+      "type": "Audio Equipment",
+      "brand": "Soundcraft",
+      "model": "Si Expression 3",
+      "channels": 32,
+      "inputs": "Analog, Digital",
+      "output": "Main, Aux, Monitor",
+      "effects": true,
+      "weight": "22.5 kg",
+      "accessories": ["power cable", "rack ears"],
+      "rental_price_per_day": "220 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Audio Mixer",
+      "type": "Audio Equipment",
+      "brand": "Midas",
+      "model": "M32R",
+      "channels": 40,
+      "inputs": "Analog, Digital",
+      "output": "Main, Aux, Monitor",
+      "effects": true,
+      "weight": "18.5 kg",
+      "accessories": ["power cable", "rack ears"],
+      "rental_price_per_day": "250 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Audio Mixer",
+      "type": "Audio Equipment",
+      "brand": "Allen & Heath",
+      "model": "QU-32",
+      "channels": 32,
+      "inputs": "Analog, Digital",
+      "output": "Main, Aux, Monitor",
+      "effects": true,
+      "weight": "16.5 kg",
+      "accessories": ["power cable", "rack ears"],
+      "rental_price_per_day": "230 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Audio Mixer",
+      "type": "Audio Equipment",
+      "brand": "Yamaha",
+      "model": "TF5",
+      "channels": 32,
+      "inputs": "Analog, Digital",
+      "output": "Main, Aux, Monitor",
+      "effects": true,
+      "weight": "19.5 kg",
+      "accessories": ["power cable", "rack ears"],
+      "rental_price_per_day": "270 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+         "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Speakers and Monitors",
+      "type": "Audio Equipment",
+      "brand": "JBL",
+      "model": "EON615",
+      "speaker_type": "Active",
+      "power_rating": "1000W peak",
+      "frequency_response": "50 Hz - 20 kHz",
+      "weight": "17.69 kg",
+      "accessories": ["power cable", "speaker stand"],
+      "rental_price_per_day": "150 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Speakers and Monitors",
+      "type": "Audio Equipment",
+      "brand": "QSC",
+      "model": "K12.2",
+      "speaker_type": "Active",
+      "power_rating": "2000W peak",
+      "frequency_response": "45 Hz - 20 kHz",
+      "weight": "18.6 kg",
+      "accessories": ["power cable", "speaker stand"],
+      "rental_price_per_day": "180 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Speakers and Monitors",
+      "type": "Audio Equipment",
+      "brand": "Mackie",
+      "model": "Thump15A",
+      "speaker_type": "Active",
+      "power_rating": "1300W peak",
+      "frequency_response": "32 Hz - 23 kHz",
+      "weight": "15.5 kg",
+      "accessories": ["power cable", "speaker stand"],
+      "rental_price_per_day": "160 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Speakers and Monitors",
+      "type": "Audio Equipment",
+      "brand": "Electro-Voice",
+      "model": "ZLX-12BT",
+      "speaker_type": "Active",
+      "power_rating": "1000W peak",
+      "frequency_response": "50 Hz - 20 kHz",
+      "weight": "15.6 kg",
+      "accessories": ["power cable", "speaker stand"],
+      "rental_price_per_day": "170 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Speakers and Monitors",
+      "type": "Audio Equipment",
+      "brand": "RCF",
+      "model": "ART 315-A MK4",
+      "speaker_type": "Active",
+      "power_rating": "800W peak",
+      "frequency_response": "45 Hz - 20 kHz",
+      "weight": "18.4 kg",
+      "accessories": ["power cable", "speaker stand"],
+      "rental_price_per_day": "190 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "LED Lights",
+      "type": "Lighting Equipment",
+      "brand": "Aputure",
+      "model": "Light Storm LS C300d Mark II",
+      "light_type": "Daylight Balanced",
+      "power": "350W",
+      "color_temperature": "5500K",
+      "brightness": "130,000 lux @ 1m",
+      "weight": "2.2 kg",
+      "accessories": ["power adapter", "light stand mount"],
+      "rental_price_per_day": "150 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "LED Lights",
+      "type": "Lighting Equipment",
+      "brand": "Litepanels",
+      "model": "Astra 6X Bi-Color",
+      "light_type": "Bi-Color",
+      "power": "105W",
+      "color_temperature": "3200K - 5600K",
+      "brightness": "9760 lux @ 1m",
+      "weight": "3.2 kg",
+      "accessories": ["power adapter", "light stand mount"],
+      "rental_price_per_day": "120 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "LED Lights",
+      "type": "Lighting Equipment",
+      "brand": "Dracast",
+      "model": "LED1000 Plus Series",
+      "light_type": "Daylight Balanced",
+      "power": "60W",
+      "color_temperature": "5600K",
+      "brightness": "18,000 lux @ 1m",
+      "weight": "3.5 kg",
+      "accessories": ["power adapter", "light stand mount"],
+      "rental_price_per_day": "100 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "LED Lights",
+      "type": "Lighting Equipment",
+      "brand": "Godox",
+      "model": "SL-60W",
+      "light_type": "Daylight Balanced",
+      "power": "60W",
+      "color_temperature": "5600K",
+      "brightness": "4100 lux @ 1m",
+      "weight": "1.3 kg",
+      "accessories": ["power adapter", "light stand mount"],
+      "rental_price_per_day": "80 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "LED Lights",
+      "type": "Lighting Equipment",
+      "brand": "Falcon Eyes",
+      "model": "RX-18TD",
+      "light_type": "Bi-Color",
+      "power": "100W",
+      "color_temperature": "3000K - 5600K",
+      "brightness": "6000 lux @ 1m",
+      "weight": "2 kg",
+      "accessories": ["power adapter", "light stand mount"],
+      "rental_price_per_day": "110 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Softboxes and Diffusers",
+      "type": "Lighting Equipment",
+      "brand": "Neewer",
+      "model": "70x100cm Softbox",
+      "dimensions": "70x100 cm",
+      "shape": "Rectangle",
+      "diffuser_type": "White",
+      "mount_type": "Bowens",
+      "weight": "1.5 kg",
+      "accessories": [
+        "speedring",
+        "inner diffuser",
+        "outer diffuser",
+        "carrying bag"
+      ],
+      "rental_price_per_day": "50 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+         "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Softboxes and Diffusers",
+      "type": "Lighting Equipment",
+      "brand": "Godox",
+      "model": "SB-UE 60x90cm Softbox",
+      "dimensions": "60x90 cm",
+      "shape": "Rectangle",
+      "diffuser_type": "White",
+      "mount_type": "Bowens",
+      "weight": "1.2 kg",
+      "accessories": [
+        "speedring",
+        "inner diffuser",
+        "outer diffuser",
+        "carrying bag"
+      ],
+      "rental_price_per_day": "40 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Softboxes and Diffusers",
+      "type": "Lighting Equipment",
+      "brand": "Westcott",
+      "model": "Apollo Orb",
+      "dimensions": "106 cm",
+      "shape": "Octagon",
+      "diffuser_type": "White",
+      "mount_type": "Bowens",
+      "weight": "1.6 kg",
+      "accessories": [
+        "speedring",
+        "inner diffuser",
+        "outer diffuser",
+        "carrying case"
+      ],
+      "rental_price_per_day": "60 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Softboxes and Diffusers",
+      "type": "Lighting Equipment",
+      "brand": "Fotodiox",
+      "model": "EZ-Pro Deep Parabolic Softbox",
+      "dimensions": "48 inches",
+      "shape": "Parabolic",
+      "diffuser_type": "White",
+      "mount_type": "Bowens",
+      "weight": "3.2 kg",
+      "accessories": [
+        "speedring",
+        "inner diffuser",
+        "outer diffuser",
+        "carrying bag"
+      ],
+      "rental_price_per_day": "70 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Softboxes and Diffusers",
+      "type": "Lighting Equipment",
+      "brand": "Glow",
+      "model": "EZ Lock Deep Parabolic Softbox",
+      "dimensions": "28 inches",
+      "shape": "Parabolic",
+      "diffuser_type": "White",
+      "mount_type": "Bowens",
+      "weight": "1.5 kg",
+      "accessories": [
+        "speedring",
+        "inner diffuser",
+        "outer diffuser",
+        "carrying case"
+      ],
+      "rental_price_per_day": "55 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+         "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Lighting Stands and Rigging",
+      "type": "Lighting Equipment",
+      "brand": "Manfrotto",
+      "model": "1005BAC",
+      "material": "Aluminum",
+      "height_range": "124 - 366 cm",
+      "weight_capacity": "9 kg",
+      "sections": 4,
+      "weight": "2.15 kg",
+      "accessories": ["spigot", "checkerweight hook"],
+      "rental_price_per_day": "25 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Lighting Stands and Rigging",
+      "type": "Lighting Equipment",
+      "brand": "Impact",
+      "model": "Heavy-Duty Air-Cushioned Light Stand",
+      "material": "Aluminum",
+      "height_range": "110 - 366 cm",
+      "weight_capacity": "10 kg",
+      "sections": 4,
+      "weight": "2.5 kg",
+      "accessories": ["spigot", "checkerweight hook"],
+      "rental_price_per_day": "20 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Lighting Stands and Rigging",
+      "type": "Lighting Equipment",
+      "brand": "Neewer",
+      "model": "10ft/305cm Stainless Steel Light Stand",
+      "material": "Stainless Steel",
+      "height_range": "101 - 305 cm",
+      "weight_capacity": "7 kg",
+      "sections": 3,
+      "weight": "3.2 kg",
+      "accessories": ["spigot", "checkerweight hook"],
+      "rental_price_per_day": "15 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Lighting Stands and Rigging",
+      "type": "Lighting Equipment",
+      "brand": "Avenger",
+      "model": "A2030DCB",
+      "material": "Aluminum",
+      "height_range": "133 - 366 cm",
+      "weight_capacity": "15 kg",
+      "sections": 3,
+      "weight": "3.7 kg",
+      "accessories": ["spigot", "checkerweight hook"],
+      "rental_price_per_day": "30 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+        "name": "Lighting Stands and Rigging",
+        "type": "Lighting Equipment",
+        "brand": "Manfrotto",
+        "model": "Ranker Stand 1005BAC",
+        "material": "Aluminum",
+        "height_range": "124 - 366 cm",
+        "weight_capacity": "10 kg",
+        "sections": 3,
+        "weight": "2.2 kg",
+        "accessories": ["spigot", "sandbag hook"],
+        "rental_price_per_day": "25 USD",
+        "provider": {
+          "name": "Vision Rentals",
+          "contact": {
+            "phone": "+971 3456 7890",
+            "email": "rentals@vision.com",
+            "address": "789 Vision Street, Dubai"
+          }
+        },
+        "availability": {
+          "start_date": "2024-06-01",
+          "end_date": "2024-06-30",
+          "status": "available"
+        }
+      },  
+    {
+      "name": "Streaming Encoder",
+      "type": "Connectivity and Streaming Equipment",
+      "model": "Teradek VidiU Pro",
+      "features": [
+        "High-definition live streaming",
+        "Support for multiple streaming platforms",
+        "Built-in WiFi and Ethernet"
+      ],
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      },
+      "rental_price_per_day": "150 USD"
+    },
+    {
+      "name": "Streaming Encoder",
+      "type": "Connectivity and Streaming Equipment",
+      "model": "Blackmagic Design Web Presenter",
+      "features": [
+        "Stream to YouTube, Facebook, and more",
+        "Professional 12G-SDI and HDMI inputs",
+        "USB webcam output"
+      ],
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+         "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      },
+      "rental_price_per_day": "100 USD"
+    },
+    {
+      "name": "Streaming Encoder",
+      "type": "Connectivity and Streaming Equipment",
+      "model": "AJA HELO H.264 Streamer and Recorder",
+      "features": [
+        "H.264 streaming and recording",
+        "HDMI and SDI inputs",
+        "Supports RTMP, RTSP, HLS streaming protocols"
+      ],
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      },
+      "rental_price_per_day": "130 USD"
+    },
+    {
+      "name": "Streaming Encoder",
+      "type": "Connectivity and Streaming Equipment",
+      "model": "Epiphan Pearl Mini Video Production System",
+      "features": [
+        "All-in-one live video production system",
+        "Supports HDMI and SDI video sources",
+        "Simultaneous live streaming and recording"
+      ],
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      },
+      "rental_price_per_day": "200 USD"
+    },
+    {
+      "name": "Streaming Encoder",
+      "type": "Connectivity and Streaming Equipment",
+      "model": "Matrox Monarch HDX Dual-Channel H.264 Encoder",
+      "features": [
+        "Dual-channel H.264 streaming and recording",
+        "HDMI and 3G-SDI inputs",
+        "RTMP, RTSP, MPEG-TS, HLS streaming protocols"
+      ],
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      },
+      "rental_price_per_day": "180 USD"
+    },
+    {
+      "name": "High-Speed Internet",
+      "type": "Connectivity and Streaming Equipment",
+      "model": "Dedicated Fiber Optic Connection",
+      "speed": "1 Gbps",
+      "features": [
+        "Guaranteed bandwidth",
+        "Low latency for live streaming",
+        "24/7 technical support"
+      ],
+      "provider": {
+        "name": "FiberNet Solutions",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "support@fibernetsolutions.com",
+          "address": "123 Internet Blvd, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      },
+      "rental_price_per_day": "300 USD"
+    },
+    {
+      "name": "High-Speed Internet",
+      "type": "Connectivity and Streaming Equipment",
+      "model": "4G LTE Backup Connection",
+      "speed": "100 Mbps",
+      "features": [
+        "Wireless 4G LTE connection",
+        "Automatic failover",
+        "Portable and easy to set up"
+      ],
+      "provider": {
+        "name": "MobileNet Services",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mobilenetservices.com",
+          "address": "456 Wireless Road, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      },
+      "rental_price_per_day": "150 USD"
+    },
+    {
+      "name": "High-Speed Internet",
+      "type": "Connectivity and Streaming Equipment",
+      "model": "Satellite Internet Connection",
+      "speed": "50 Mbps",
+      "features": [
+        "Remote location connectivity",
+        "High reliability",
+        "Quick deployment"
+      ],
+      "provider": {
+        "name": "SatelliteNet Solutions",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "contact@satellitenetsolutions.com",
+          "address": "789 Satellite Street, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      },
+      "rental_price_per_day": "400 USD"
+    },
+    {
+      "name": "High-Speed Internet",
+      "type": "Connectivity and Streaming Equipment",
+      "model": "High-Speed DSL Connection",
+      "speed": "200 Mbps",
+      "features": [
+        "Broadband DSL connection",
+        "Consistent speed",
+        "Cost-effective solution"
+      ],
+      "provider": {
+        "name": "DSL Connect",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@dslconnect.com",
+          "address": "202 DSL Lane, Dubai"
+        }
+      },
+      "availability": {
+         "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      },
+      "rental_price_per_day": "100 USD"
+    },
+    {
+      "name": "High-Speed Internet",
+      "type": "Connectivity and Streaming Equipment",
+      "model": "Dedicated Microwave Link",
+      "speed": "500 Mbps",
+      "features": [
+        "Point-to-point connection",
+        "High reliability",
+        "Suitable for events with high data requirements"
+      ],
+      "provider": {
+        "name": "MicrowaveNet Services",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "support@microwavenetservices.com",
+          "address": "101 Microwave Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      },
+      "rental_price_per_day": "350 USD"
+    },
+    {
+      "name": "HDMI/SDI Cables",
+      "type": "Cabling",
+      "cable_type": "HDMI",
+      "length": "3 meters",
+      "model": "HDMI Type A",
+      "bandwidth": "18 Gbps",
+      "material": "High-quality copper",
+      "rental_price_per_day": "10 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "HDMI/SDI Cables",
+      "type": "Cabling",
+      "cable_type": "SDI",
+      "length": "5 meters",
+      "model": "BNC",
+      "bandwidth": "12 Gbps",
+      "material": "Premium-grade copper",
+      "rental_price_per_day": "15 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "HDMI/SDI Cables",
+      "type": "Cabling",
+      "cable_type": "HDMI",
+      "length": "10 meters",
+      "model": "HDMI Type A",
+      "bandwidth": "18 Gbps",
+      "material": "High-quality copper",
+      "rental_price_per_day": "20 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "HDMI/SDI Cables",
+      "type": "Cabling",
+      "cable_type": "SDI",
+      "length": "15 meters",
+      "model": "BNC",
+      "bandwidth": "12 Gbps",
+      "material": "Premium-grade copper",
+      "rental_price_per_day": "25 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "HDMI/SDI Cables",
+      "type": "Cabling",
+      "cable_type": "HDMI",
+      "length": "20 meters",
+      "model": "HDMI Type A",
+      "bandwidth": "18 Gbps",
+      "material": "High-quality copper",
+      "rental_price_per_day": "30 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "XLR Cables",
+      "type": "Cabling",
+      "cable_type": "XLR",
+      "length": "3 meters",
+      "model": "Male to Female",
+      "material": "Oxygen-Free Copper (OFC)",
+      "rental_price_per_day": "8 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "XLR Cables",
+      "type": "Cabling",
+      "cable_type": "XLR",
+      "length": "5 meters",
+      "model": "Male to Female",
+      "material": "Oxygen-Free Copper (OFC)",
+      "rental_price_per_day": "10 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "XLR Cables",
+      "type": "Cabling",
+      "cable_type": "XLR",
+      "length": "10 meters",
+      "model": "Male to Female",
+      "material": "Oxygen-Free Copper (OFC)",
+      "rental_price_per_day": "15 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "XLR Cables",
+      "type": "Cabling",
+      "cable_type": "XLR",
+      "length": "15 meters",
+      "model": "Male to Female",
+      "material": "Oxygen-Free Copper (OFC)",
+      "rental_price_per_day": "20 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+         "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "XLR Cables",
+      "type": "Cabling",
+      "cable_type": "XLR",
+      "length": "20 meters",
+      "model": "Male to Female",
+      "material": "Oxygen-Free Copper (OFC)",
+      "rental_price_per_day": "25 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Ethernet Cables",
+      "type": "Cabling",
+      "cable_type": "Ethernet",
+      "length": "5 meters",
+      "model": "RJ45",
+      "speed": "Cat 6",
+      "material": "High-quality copper",
+      "rental_price_per_day": "5 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Ethernet Cables",
+      "type": "Cabling",
+      "cable_type": "Ethernet",
+      "length": "10 meters",
+      "model": "RJ45",
+      "speed": "Cat 6",
+      "material": "High-quality copper",
+      "rental_price_per_day": "7 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+        "name": "Ethernet Cables",
+        "type": "Cabling",
+        "cable_type": "Ethernet",
+        "length": "10 meters",
+        "model": "RJ48",
+        "speed": "Cat 7",
+        "material": "High-quality copper",
+        "rental_price_per_day": "8 USD",
+        "provider": {
+          "name": "ProMedia Rentals",
+          "contact": {
+            "phone": "+971 1234 5678",
+            "email": "contact@promediarentals.com",
+            "address": "123 Media Lane, Dubai"
+          }
+        },
+        "availability": {
+          "start_date": "2024-06-15",
+          "end_date": "2024-07-15",
+          "status": "available"
+        }
+      },
+    {
+      "name": "Ethernet Cables",
+      "type": "Cabling",
+      "cable_type": "Ethernet",
+      "length": "15 meters",
+      "model": "RJ45",
+      "speed": "Cat 6",
+      "material": "High-quality copper",
+      "rental_price_per_day": "9 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+         "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Ethernet Cables",
+      "type": "Cabling",
+      "cable_type": "Ethernet",
+      "length": "20 meters",
+      "model": "RJ45",
+      "speed": "Cat 6",
+      "material": "High-quality copper",
+      "rental_price_per_day": "10 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Intercom System",
+      "type": "Communication Equipment",
+      "model": "Wired",
+      "channels": 16,
+      "range": "Unlimited (within venue)",
+      "features": [
+        "Full-duplex communication",
+        "Noise-canceling technology",
+        "Individual channel monitoring"
+      ],
+      "rental_price_per_day": "200 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Intercom System",
+      "type": "Communication Equipment",
+      "model": "Wireless",
+      "channels": 8,
+      "range": "Up to 500 meters",
+      "features": [
+        "Hands-free operation",
+        "Long battery life",
+        "Compact and lightweight design"
+      ],
+      "rental_price_per_day": "150 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+        "name": "Intercom System",
+        "type": "Communication Equipment",
+        "model": "Wireless",
+        "channels": 8,
+        "range": "500 meters",
+        "features": [
+          "Full-duplex communication",
+          "Noise-canceling technology",
+          "Individual channel monitoring"
+        ],
+        "rental_price_per_day": "180 USD",
+        "provider": {
+          "name": "MediaGear Rentals",
+          "contact": {
+            "phone": "+971 2345 6789",
+            "email": "info@mediagearrentals.com",
+            "address": "456 Broadcast Blvd, Dubai"
+          }
+        },
+        "availability": {
+            "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+          "status": "available"
+        }
+      },
+      {
+        "name": "Intercom System",
+        "type": "Communication Equipment",
+        "model": "Wired",
+        "channels": 12,
+        "range": "Unlimited (within venue)",
+        "features": [
+          "Full-duplex communication",
+          "Noise-canceling technology",
+          "Individual channel monitoring"
+        ],
+        "rental_price_per_day": "220 USD",
+        "provider": {
+          "name": "Vision Rentals",
+          "contact": {
+            "phone": "+971 3456 7890",
+            "email": "rentals@vision.com",
+            "address": "789 Vision Street, Dubai"
+          }
+        },
+        "availability": {
+          "start_date": "2024-06-15",
+          "end_date": "2024-07-15",
+          "status": "available"
+        }
+      },      
+    {
+      "name": "Intercom System",
+      "type": "Communication Equipment",
+      "model": "Wireless",
+      "channels": 12,
+      "range": "Up to 300 meters",
+      "features": [
+        "Clear voice transmission",
+        "Multi-group communication",
+        "LCD display for channel selection"
+      ],
+      "rental_price_per_day": "180 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Walkie-talkies",
+      "type": "Communication Equipment",
+      "model": "Motorola CP200d",
+      "channels": 16,
+      "range": "Up to 5 kilometers",
+      "features": [
+        "Rugged design for outdoor use",
+        "Voice-activated transmission",
+        "Long battery life"
+      ],
+      "rental_price_per_day": "20 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Walkie-talkies",
+      "type": "Communication Equipment",
+      "model": "Kenwood TK-3402U16P",
+      "channels": 16,
+      "range": "Up to 3 kilometers",
+      "features": [
+        "Compact and lightweight",
+        "Clear audio transmission",
+        "Emergency alert function"
+      ],
+      "rental_price_per_day": "15 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+        "name": "Walkie-talkies",
+        "type": "Communication Equipment",
+        "model": "Motorola DP4400e",
+        "channels": 32,
+        "range": "Up to 5 kilometers",
+        "features": [
+          "Rugged design",
+          "Clear audio transmission",
+          "Bluetooth connectivity"
+        ],
+        "rental_price_per_day": "20 USD",
+        "provider": {
+          "name": "MediaGear Rentals",
+          "contact": {
+            "phone": "+971 2345 6789",
+            "email": "info@mediagearrentals.com",
+            "address": "456 Broadcast Blvd, Dubai"
+          }
+        },
+        "availability": {
+          "start_date": "2024-07-01",
+          "end_date": "2024-07-31",
+          "status": "available"
+        }
+      },
+      {
+        "name": "Walkie-talkies",
+        "type": "Communication Equipment",
+        "model": "Hytera PD685",
+        "channels": 256,
+        "range": "Up to 6 kilometers",
+        "features": [
+          "Digital and analog modes",
+          "Clear audio transmission",
+          "Compact design"
+        ],
+        "rental_price_per_day": "25 USD",
+        "provider": {
+          "name": "Vision Rentals",
+          "contact": {
+            "phone": "+971 3456 7890",
+            "email": "rentals@vision.com",
+            "address": "789 Vision Street, Dubai"
+          }
+        },
+        "availability": {
+            "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+          "status": "available"
+        }
+      },
+      {
+        "name": "Walkie-talkies",
+        "type": "Communication Equipment",
+        "model": "ICOM IC-F4001",
+        "channels": "16",
+        "range": "Up to 4 kilometers",
+        "features": [
+          "Durable construction",
+          "Clear audio transmission",
+          "VOX function for hands-free use"
+        ],
+        "rental_price_per_day": "18 USD",
+        "provider": {
+          "name": "ProMedia Rentals",
+          "contact": {
+            "phone": "+971 1234 5678",
+            "email": "contact@promediarentals.com",
+            "address": "123 Media Lane, Dubai"
+          }
+        },
+        "availability": {
+          "start_date": "2024-06-01",
+          "end_date": "2024-06-30",
+          "status": "available"
+        }
+      },      
+    {
+      "name": "Teleprompter",
+      "type": "Miscellaneous Equipment",
+      "model": "Prompter People Flex 17",
+      "screen_size": "17 inches",
+      "compatibility": "Universal",
+      "features": [
+        "Remote control for speed and direction",
+        "Wide-angle beamsplitter glass",
+        "Quick-release camera mount"
+      ],
+      "rental_price_per_day": "120 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Teleprompter",
+      "type": "Miscellaneous Equipment",
+      "model": "ikan PT1200",
+      "screen_size": "12 inches",
+      "compatibility": "Universal",
+      "features": [
+        "High-brightness monitor",
+        "Dual glass setup for reflection",
+        "Lightweight and portable design"
+      ],
+      "rental_price_per_day": "110 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Teleprompter",
+      "type": "Miscellaneous Equipment",
+      "model": "Parrot Teleprompter v2",
+      "screen_size": "12 inches",
+      "compatibility": "Smartphone",
+      "features": [
+        "Compact and portable",
+        "Easy setup with smartphone app",
+        "Works with any camera setup"
+      ],
+      "rental_price_per_day": "90 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Teleprompter",
+      "type": "Miscellaneous Equipment",
+      "model": "Datavideo TP-300B",
+      "screen_size": "7 inches",
+      "compatibility": "iPad/Tablet",
+      "features": [
+        "Supports iPad/Tablet use",
+        "Lightweight and portable",
+        "Easy setup and adjustment"
+      ],
+      "rental_price_per_day": "80 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+        "name": "Teleprompter",
+        "type": "Miscellaneous Equipment",
+        "model": "Glide Gear TMP100",
+        "screen_size": "10 inches",
+        "compatibility": "Tablet",
+        "features": [
+          "High-quality beam splitter glass",
+          "Adjustable mount for various camera sizes",
+          "Includes remote control for speed and direction"
+        ],
+        "rental_price_per_day": "100 USD",
+        "provider": {
+          "name": "Vision Rentals",
+          "contact": {
+            "phone": "+971 3456 7890",
+            "email": "rentals@vision.com",
+            "address": "789 Vision Street, Dubai"
+          }
+        },
+        "availability": {
+          "start_date": "2024-07-01",
+          "end_date": "2024-07-31",
+          "status": "available"
+        }
+      },      
+    {
+      "name": "Laptops/Computers",
+      "type": "Miscellaneous Equipment",
+      "model": "Dell XPS 15",
+      "processor": "Intel Core i7",
+      "memory": "16 GB RAM",
+      "storage": "512 GB SSD",
+      "features": [
+        "Slim and lightweight design",
+        "InfinityEdge display",
+        "Powerful performance for multitasking"
+      ],
+      "rental_price_per_day": "120 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Laptops/Computers",
+      "type": "Miscellaneous Equipment",
+      "model": "Lenovo ThinkPad X1 Carbon",
+      "processor": "Intel Core i5",
+      "memory": "8 GB RAM",
+      "storage": "256 GB SSD",
+      "features": [
+        "Durable carbon-fiber construction",
+        "RapidCharge technology",
+        "Enhanced security features"
+      ],
+      "rental_price_per_day": "100 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Laptops/Computers",
+      "type": "Miscellaneous Equipment",
+      "model": "Microsoft Surface Book 3",
+      "processor": "Intel Core i7",
+      "memory": "16 GB RAM",
+      "storage": "512 GB SSD",
+      "features": [
+        "Versatile 2-in-1 design",
+        "Detachable touchscreen display",
+        "Surface Pen compatibility"
+      ],
+      "rental_price_per_day": "130 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Laptops/Computers",
+      "type": "Miscellaneous Equipment",
+      "model": "HP Spectre x360",
+      "processor": "Intel Core i7",
+      "memory": "16 GB RAM",
+      "storage": "1 TB SSD",
+      "features": [
+        "360-degree hinge for versatility",
+        "Ultra-thin and lightweight",
+        "High-resolution touchscreen display"
+      ],
+      "rental_price_per_day": "140 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+        "name": "Laptops/Computers",
+        "type": "Miscellaneous Equipment",
+        "model": "Dell XPS 15",
+        "processor": "Intel Core i9",
+        "memory": "32 GB RAM",
+        "storage": "2 TB SSD",
+        "features": [
+          "Stunning 4K Ultra HD display",
+          "Powerful performance for multitasking",
+          "Slim and lightweight design"
+        ],
+        "rental_price_per_day": "180 USD",
+        "provider": {
+          "name": "ProMedia Rentals",
+          "contact": {
+            "phone": "+971 1234 5678",
+            "email": "contact@promediarentals.com",
+            "address": "123 Media Lane, Dubai"
+          }
+        },
+        "availability": {
+          "start_date": "2024-07-01",
+          "end_date": "2024-08-31",
+          "status": "available"
+        }
+      },      
+    {
+      "name": "Backup Power",
+      "type": "Miscellaneous Equipment",
+      "model": "CyberPower CP1500PFCLCD",
+      "power_capacity": "1500 VA",
+      "battery_runtime": "Up to 1500W/900W (depending on load)",
+      "features": [
+        "Pure sine wave output",
+        "Multifunction LCD panel",
+        "Automatic voltage regulation (AVR)"
+      ],
+      "rental_price_per_day": "80 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Backup Power",
+      "type": "Miscellaneous Equipment",
+      "model": "Eaton 5P1500RC",
+      "power_capacity": "1500 VA",
+      "battery_runtime": "Up to 810W/800W (depending on load)",
+      "features": [
+        "Compact design with rackmount capability",
+        "Hot-swappable batteries",
+        "Advanced LCD screen for monitoring"
+      ],
+      "rental_price_per_day": "90 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Backup Power",
+      "type": "Miscellaneous Equipment",
+      "model": "Tripp Lite SMART1500LCDT",
+      "power_capacity": "1500 VA",
+      "battery_runtime": "Up to 900W/810W (depending on load)",
+      "features": [
+        "Line-interactive UPS system",
+        "LCD screen with status indicators",
+        "USB communication port for remote monitoring"
+      ],
+      "rental_price_per_day": "85 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Backup Power",
+      "type": "Miscellaneous Equipment",
+      "model": "Vertiv Liebert PSA5 1500VA",
+      "power_capacity": "1500 VA",
+      "battery_runtime": "Up to 1000W/900W (depending on load)",
+      "features": [
+        "Compact tower design",
+        "Automatic voltage regulation (AVR)",
+        "Intelligent battery management system"
+      ],
+      "rental_price_per_day": "95 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Backup Power",
+      "type": "Miscellaneous Equipment",
+      "model": "APC Back-UPS Pro 1500VA",
+      "power_capacity": "1500 VA",
+      "battery_runtime": "Up to 865W/900W (depending on load)",
+      "features": [
+        "Sinewave output for compatibility with sensitive electronics",
+        "Automatic voltage regulation (AVR)",
+        "LCD display for real-time status updates"
+      ],
+      "rental_price_per_day": "100 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Graphics Computer",
+      "type": "Video and Graphics Equipment",
+      "model": "Alienware Aurora R12",
+      "processor": "Intel Core i9-11900KF",
+      "graphics_card": "NVIDIA GeForce RTX 3080",
+      "memory": "32 GB DDR4 RAM",
+      "storage": "1 TB SSD + 2 TB HDD",
+      "features": [
+        "High-performance gaming-grade components",
+        "Customizable AlienFX lighting",
+        "Advanced thermal control for sustained performance"
+      ],
+      "rental_price_per_day": "200 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Graphics Computer",
+      "type": "Video and Graphics Equipment",
+      "model": "HP OMEN 30L",
+      "processor": "AMD Ryzen 9 5900X",
+      "graphics_card": "NVIDIA GeForce RTX 3070",
+      "memory": "32 GB DDR4 RAM",
+      "storage": "1 TB SSD",
+      "features": [
+        "Tool-less access for easy upgrades",
+        "Liquid cooling system",
+        "Customizable RGB lighting"
+      ],
+      "rental_price_per_day": "180 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Graphics Computer",
+      "type": "Video and Graphics Equipment",
+      "model": "Dell XPS Desktop Special Edition",
+      "processor": "Intel Core i7-11700KF",
+      "graphics_card": "NVIDIA GeForce GTX 1660 Ti",
+      "memory": "16 GB DDR4 RAM",
+      "storage": "512 GB SSD + 1 TB HDD",
+      "features": [
+        "Compact and stylish design",
+        "Advanced cooling system",
+        "Dell CinemaColor for vibrant visuals"
+      ],
+      "rental_price_per_day": "150 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Graphics Computer",
+      "type": "Video and Graphics Equipment",
+      "model": "MSI MEG Trident X 10TD-1285US",
+      "processor": "Intel Core i7-10700KF",
+      "graphics_card": "NVIDIA GeForce RTX 3080",
+      "memory": "32 GB DDR4 RAM",
+      "storage": "1 TB SSD",
+      "features": [
+        "Compact form factor",
+        "Silent Storm Cooling 3 Pro",
+        "Mystic Light RGB lighting"
+      ],
+      "rental_price_per_day": "190 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+         "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Graphics Computer",
+      "type": "Video and Graphics Equipment",
+      "model": "Lenovo Legion Tower 5i",
+      "processor": "Intel Core i7-10700F",
+      "graphics_card": "NVIDIA GeForce RTX 3060 Ti",
+      "memory": "16 GB DDR4 RAM",
+      "storage": "1 TB SSD",
+      "features": [
+        "Tool-free upgradeability",
+        "Coldfront 2.0 cooling system",
+        "Legion TrueStrike keyboard"
+      ],
+      "rental_price_per_day": "170 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Streaming Software",
+      "type": "Software",
+      "model": "Wirecast",
+      "license_type": "Commercial",
+      "features": [
+        "Professional live streaming production software",
+        "Support for multiple cameras and sources",
+        "Built-in graphics and titles"
+      ],
+      "rental_price_per_day": "120 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Streaming Software",
+      "type": "Software",
+      "model": "XSplit Broadcaster",
+      "license_type": "Subscription",
+      "features": [
+        "Easy-to-use live streaming and recording software",
+        "Scene preview editor",
+        "Support for plugins and extensions"
+      ],
+      "rental_price_per_day": "90 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Streaming Software",
+      "type": "Software",
+      "model": "Streamlabs OBS",
+      "license_type": "Freemium",
+      "features": [
+        "Integrated with Twitch, YouTube, and other platforms",
+        "Customizable alerts and overlays",
+        "Automatic optimization for streaming"
+      ],
+      "rental_price_per_day": "70 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Streaming Software",
+      "type": "Software",
+      "model": "Lightstream Studio",
+      "license_type": "Subscription",
+      "features": [
+        "Cloud-based live streaming software",
+        "Drag-and-drop interface",
+        "Built-in viewer interactions"
+      ],
+      "rental_price_per_day": "100 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Streaming Software",
+      "type": "Software",
+      "model": "XSplit Gamecaster",
+      "license_type": "Freemium",
+      "features": [
+        "Optimized for game streaming",
+        "Easy-to-use interface",
+        "Support for overlays and webcam"
+      ],
+      "rental_price_per_day": "60 USD",
+      "provider": {
+        "name": "MediaStream Rentals",
+        "contact": {
+          "phone": "+971 7890 1234",
+          "email": "info@mediastreamrentals.com",
+          "address": "789 Stream Avenue, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Graphics Software",
+      "type": "Software",
+      "model": "DaVinci Resolve",
+      "license_type": "Free/Premium",
+      "features": [
+        "Professional video editing and color correction",
+        "Fairlight audio post-production tools",
+        "Fusion visual effects"
+      ],
+      "rental_price_per_day": "110 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Graphics Software",
+      "type": "Software",
+      "model": "CorelDRAW Graphics Suite",
+      "license_type": "Subscription",
+      "features": [
+        "Vector illustration and page layout",
+        "Photo editing and bitmap-to-vector tracing",
+        "Font management and filtering"
+      ],
+      "rental_price_per_day": "80 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Graphics Software",
+      "type": "Software",
+      "model": "Blender",
+      "license_type": "Open Source",
+      "features": [
+        "3D modeling, animation, and rendering",
+        "Sculpting and texturing tools",
+        "VFX and compositing"
+      ],
+      "rental_price_per_day": "90 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Graphics Software",
+      "type": "Software",
+      "model": "Inkscape",
+      "license_type": "Open Source",
+      "features": [
+        "Scalable vector graphics editor",
+        "Support for SVG file format",
+        "Advanced path editing tools"
+      ],
+      "rental_price_per_day": "60 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+         "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Graphics Software",
+      "type": "Software",
+      "model": "GIMP",
+      "license_type": "Open Source",
+      "features": [
+        "Image editing and retouching",
+        "Customizable interface",
+        "Support for various file formats"
+      ],
+      "rental_price_per_day": "70 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "External Recorders",
+      "type": "Recording Equipment",
+      "model": "Atomos Ninja V 5\" 4K HDMI Recording Monitor",
+      "resolution": "Up to 4Kp60 10-bit HDR",
+      "media_support": "SSD recording media",
+      "features": [
+        "5\" IPS touchscreen display",
+        "Apple ProRes and Avid DNx recording formats",
+        "HDR monitoring and recording"
+      ],
+      "rental_price_per_day": "150 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "External Recorders",
+      "type": "Recording Equipment",
+      "model": "Blackmagic Design HyperDeck Studio Mini",
+      "resolution": "Up to 1080p60",
+      "media_support": "SD card or SSD recording media",
+      "features": [
+        "Professional broadcast deck",
+        "Dual SD card slots for continuous recording",
+        "Remote control via Ethernet"
+      ],
+      "rental_price_per_day": "120 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "External Recorders",
+      "type": "Recording Equipment",
+      "model": "Zoom F6 Multi-Track Field Recorder",
+      "channels": "6",
+      "media_support": "SD card",
+      "features": [
+        "6 XLR inputs with phantom power",
+        "32-bit float recording",
+        "Timecode input and output"
+      ],
+      "rental_price_per_day": "100 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "External Recorders",
+      "type": "Recording Equipment",
+      "model": "Tascam DR-40X 4-Track Portable Digital Audio Recorder",
+      "channels": "4",
+      "media_support": "SD card",
+      "features": [
+        "Adjustable built-in stereo microphones",
+        "Dual recording mode for safety backup",
+        "USB audio interface functionality"
+      ],
+      "rental_price_per_day": "80 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "External Recorders",
+      "type": "Recording Equipment",
+      "model": "Roland R-07 High-Resolution Audio Recorder",
+      "channels": "2",
+      "media_support": "MicroSD card",
+      "features": [
+        "Wireless smartphone control",
+        "Bluetooth audio streaming",
+        "Hybrid limiting and low-cut filter"
+      ],
+      "rental_price_per_day": "70 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Storage Devices",
+      "type": "Recording Equipment",
+      "model": "Samsung T7 Portable SSD 1TB",
+      "interface": "USB 3.2 Gen 2 (Type-C)",
+      "capacity": "1 TB",
+      "speed": "Up to 1050 MB/s read, 1000 MB/s write",
+      "features": [
+        "Compact and portable design",
+        "AES 256-bit hardware encryption",
+        "Shock-resistant and durable"
+      ],
+      "rental_price_per_day": "50 USD",
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Storage Devices",
+      "type": "Recording Equipment",
+      "model": "SanDisk Extreme PRO Portable SSD 2TB",
+      "interface": "USB 3.2 Gen 2x2",
+      "capacity": "2 TB",
+      "speed": "Up to 2000 MB/s read, 2000 MB/s write",
+      "features": [
+        "Compact and rugged design",
+        "IP55-rated for water and dust resistance",
+        "Hardware encryption"
+      ],
+      "rental_price_per_day": "70 USD",
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Storage Devices",
+      "type": "Recording Equipment",
+      "model": "Western Digital My Passport 4TB External Hard Drive",
+      "interface": "USB 3.2 Gen 1",
+      "capacity": "4 TB",
+      "speed": "Up to 110 MB/s",
+      "features": [
+        "Slim design with automatic backup software",
+        "Password protection with hardware encryption",
+        "Compatible with Windows and Mac"
+      ],
+      "rental_price_per_day": "60 USD",
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Storage Devices",
+      "type": "Recording Equipment",
+      "model": "LaCie Rugged Mini 5TB External Hard Drive",
+      "interface": "USB 3.0",
+      "capacity": "5 TB",
+      "speed": "Up to 130 MB/s",
+      "features": [
+        "Shock, rain, and pressure-resistant",
+        "Automatic backup software",
+        "Password protection with AES 256-bit encryption"
+      ],
+      "rental_price_per_day": "80 USD",
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Storage Devices",
+      "type": "Recording Equipment",
+      "model": "G-Technology G-DRIVE USB-C 6TB External Hard Drive",
+      "interface": "USB 3.1 Gen 1",
+      "capacity": "6 TB",
+      "speed": "Up to 195 MB/s",
+      "features": [
+        "Aluminum enclosure for heat dissipation",
+        "Time Machine compatibility for Mac",
+        "All-terrain resistance to shock, dust, and water"
+      ],
+      "rental_price_per_day": "90 USD",
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      }
+    },
+    {
+      "name": "Rigging and Staging",
+      "type": "Setup and Support",
+      "model": "Manfrotto 290 Xtra Aluminum Tripod with 128RC Fluid Head",
+      "load_capacity": "11 lb",
+      "height_range": "16.5\" to 67.5\"",
+      "features": [
+        "Fluid drag system ensures smooth movements",
+        "Quick-release plate for fast camera attachment",
+        "Rubber leg warmers for grip and comfort"
+      ],
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      },
+      "rental_price_per_day": "80 USD"
+    },
+    {
+      "name": "Rigging and Staging",
+      "type": "Setup and Support",
+      "model": "Manfrotto Avenger A2033FKIT Steel Stand with Grip Head and Arm",
+      "load_capacity": "88 lb",
+      "height_range": "52.8\" to 130.7\"",
+      "features": [
+        "Fold-away crank handle for easy adjustment",
+        "Made of black steel for durability",
+        "Can be used as a junior boom"
+      ],
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-01",
+        "end_date": "2024-06-30",
+        "status": "available"
+      },
+      "rental_price_per_day": "100 USD"
+    },
+    {
+      "name": "Rigging and Staging",
+      "type": "Setup and Support",
+      "model": "Grip EQ Gaffer Grip Gear Head with Baby Pins",
+      "load_capacity": "40 lb",
+      "height_range": "N/A",
+      "features": [
+        "1.5\" and 2\" baby pin receivers",
+        "360-degree rotation",
+        "Rubber-coated handle for comfortable grip"
+      ],
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      },
+      "rental_price_per_day": "60 USD"
+    },
+    {
+      "name": "Rigging and Staging",
+      "type": "Setup and Support",
+      "model": "Matthews Studio Equipment Mini Matthellini Clamp with 3/8\" Pin",
+      "load_capacity": "50 lb",
+      "height_range": "N/A",
+      "features": [
+        "Jaw opens up to 2\"",
+        "Rotates 360 degrees",
+        "Compatible with grip heads and accessories"
+      ],
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      },
+      "rental_price_per_day": "40 USD"
+    },
+    {
+      "name": "Rigging and Staging",
+      "type": "Setup and Support",
+      "model": "Avenger D650 Junior Boom Arm with checkerweight",
+      "load_capacity": "22 lb",
+      "height_range": "31.5\" to 70.9\"",
+      "features": [
+        "Chrome-plated steel construction",
+        "Adjustable friction brake for precise positioning",
+        "Includes 15.7 lb checkerweight"
+      ],
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-14",
+        "end_date": "2024-07-10",
+        "status": "available"
+      },
+      "rental_price_per_day": "90 USD"
+    },
+    {
+      "name": "Transport Cases",
+      "type": "Setup and Support",
+      "model": "Pelican 1650 Protector Case with Foam",
+      "dimensions": "30.75\" x 20.5\" x 11.62\"",
+      "weight": "28.12 lb",
+      "features": [
+        "Watertight, crushproof, and dustproof design",
+        "Easy-open double-throw latches",
+        "O-ring seal for airtight protection"
+      ],
+      "provider": {
+        "name": "ProMedia Rentals",
+        "contact": {
+          "phone": "+971 1234 5678",
+          "email": "contact@promediarentals.com",
+          "address": "123 Media Lane, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      },
+      "rental_price_per_day": "70 USD"
+    },
+    {
+      "name": "Transport Cases",
+      "type": "Setup and Support",
+      "model": "SKB Cases 3I-2918-14B-C Waterproof Utility Case",
+      "dimensions": "29\" x 18\" x 14\"",
+      "weight": "26 lb",
+      "features": [
+        "Waterproof and dustproof design",
+        "Automatic ambient pressure equalization valve",
+        "TSA-accepted lock"
+      ],
+      "provider": {
+        "name": "MediaGear Rentals",
+        "contact": {
+          "phone": "+971 2345 6789",
+          "email": "info@mediagearrentals.com",
+          "address": "456 Broadcast Blvd, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      },
+      "rental_price_per_day": "60 USD"
+    },
+    {
+      "name": "Transport Cases",
+      "type": "Setup and Support",
+      "model": "SKB iSeries 2011-7 Waterproof Case with Think Tank Photo Dividers",
+      "dimensions": "20.4\" x 11.5\" x 7.5\"",
+      "weight": "9.45 lb",
+      "features": [
+        "Crushproof and dustproof design",
+        "Automatic ambient pressure equalization valve",
+        "Comfortable rubber over-molded cushion grip handle"
+      ],
+      "provider": {
+        "name": "Vision Rentals",
+        "contact": {
+          "phone": "+971 3456 7890",
+          "email": "rentals@vision.com",
+          "address": "789 Vision Street, Dubai"
+        }
+      },
+      "availability": {
+          "start_date": "2024-07-01",
+        "end_date": "2024-08-31",
+        "status": "available"
+      },
+      "rental_price_per_day": "50 USD"
+    },
+    {
+      "name": "Transport Cases",
+      "type": "Setup and Support",
+      "model": "Nanuk 960 Hard Case with Foam Insert",
+      "dimensions": "22.0\" x 14.0\" x 8.9\"",
+      "weight": "12.9 lb",
+      "features": [
+        "Waterproof and impact-resistant NK-7 resin construction",
+        "PowerClaw latching system for secure closure",
+        "Padlockable for added security"
+      ],
+      "provider": {
+        "name": "SoundWave Rentals",
+        "contact": {
+          "phone": "+971 5678 9012",
+          "email": "info@soundwaverentals.com",
+          "address": "202 Sound Street, Dubai"
+        }
+      },
+      "availability": {
+         "start_date": "2024-07-01",
+        "end_date": "2024-08-15",
+        "status": "available"
+      },
+      "rental_price_per_day": "65 USD"
+    },
+    {
+      "name": "Transport Cases",
+      "type": "Setup and Support",
+      "model": "HPRC 2550W Wheeled Hard Case with Foam",
+      "dimensions": "21.26\" x 13.78\" x 9.06\"",
+      "weight": "12.57 lb",
+      "features": [
+        "Wheeled design for easy transportation",
+        "Waterproof and impact-resistant shell",
+        "Ergonomic handle for comfortable carrying"
+      ],
+      "provider": {
+        "name": "AudioMaster Rentals",
+        "contact": {
+          "phone": "+971 4567 8901",
+          "email": "info@audiomasterrentals.com",
+          "address": "101 Audio Lane, Dubai"
+        }
+      },
+      "availability": {
+        "start_date": "2024-06-11",
+        "end_date": "2024-07-25",
+        "status": "available"
+      },
+      "rental_price_per_day": "75 USD"
+    }
+  ]
