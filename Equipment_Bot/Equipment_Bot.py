@@ -400,7 +400,7 @@ inputs = {
     "selected_crews": [],
     "equipment_requirements": [],
     "queries": [],
-    "equipments_selected": []
+    "selected_equipments": []
 }
 
 print("output: ")
@@ -410,7 +410,7 @@ print("output: ")
 
 def equipment_output(inputs):
     output = app.invoke(inputs)
-    return output["equipments_selected"]
+    return output["selected_equipments"]
 
 ans=equipment_output(inputs) 
 print(ans)
