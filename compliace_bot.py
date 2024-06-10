@@ -1,9 +1,11 @@
 import openai
+import os
 
-openai.api_key = "OPENAI_API_KEY"
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+openai.api_key = OPENAI_API_KEY
 
 
-def compliance_bot(Input):
+def compliance_bot(Text):
 
     system_message_template = """
     You are an expert in international film production compliance. Provide a detailed guide for obtaining necessary permits, ensuring compliance requirements, understanding visa needs, and arranging hotels and travel for foreign crew members for a film shoot based on the user's specified locations. The guide should include the following sections:
@@ -57,7 +59,8 @@ def compliance_bot(Input):
             ],
     )
 
-    return response
+    # return response
 
     output = response.choices[0].message.content
+    print(output)
     return output
