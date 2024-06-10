@@ -1,0 +1,58 @@
+{
+    "status": true,
+    "message": "Successful",
+    "data": {
+        "top_providers": [
+            {
+                "rating": 4.5,
+                "optimised_for_mobile": true,
+                "reviews": 233601,
+                "facilitated_booking_enabled": false,
+                "provider_name": "Expedia",
+                "errored": false,
+                "in_progress": true,
+                "logo": "http://logos.skyscnr.com/images/websites/expa.png"
+            },
+            {
+                "rating": 4.6,
+                "optimised_for_mobile": true,
+                "reviews": 151678,
+                "facilitated_booking_enabled": false,
+                "provider_name": "Discover Cars",
+                "errored": false,
+                "in_progress": true,
+                "logo": "http://logos.skyscnr.com/images/websites/dscv.png"
+            },
+            {
+                "rating": 3.9,
+                "optimised_for_mobile": true,
+                "reviews": 113953,
+                "facilitated_booking_enabled": false,
+                "provider_name": "rentalcars.com",
+                "errored": false,
+                "in_progress": true,
+                "logo": "http://logos.skyscnr.com/images/websites/trjv.png"
+            },
+            {
+                "rating": 4.6,
+                "optimised_for_mobile": true,
+                "reviews": 72267,
+                "facilitated_booking_enabled": false,
+                "provider_name": "Rentcars.com",
+                "errored": false,
+                "in_progress": true,
+                "logo": "http://logos.skyscnr.com/images/websites/rcbr.png"
+            },
+            {
+                "rating": 4.1,
+                "optimised_for_mobile": true,
+                "reviews": 35037,
+                "facilitated_booking_enabled": false,
+                "provider_name": "Holiday Autos",
+                "errored": false,
+                "in_progress": true,
+                "logo": "http://logos.skyscnr.com/images/websites/hlau.png"
+            }
+        ]
+    }
+}

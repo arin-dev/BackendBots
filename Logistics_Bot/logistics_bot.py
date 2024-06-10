@@ -4,8 +4,7 @@ import openai
 import requests
 from datetime import datetime
 from dotenv import load_dotenv
-from reformat_flight_data import process_flight_data
-from reformat_hotel_data import extract_hotel_data
+from functions import process_flight_data, process_hotel_data, process_taxi_data, find_entity_id
 
 load_dotenv()
 
@@ -81,7 +80,6 @@ end_date = format_date(end_date)
 
 
 ## Searching for Flights
-
 flight_url = "https://sky-scanner3.p.rapidapi.com/flights/search-roundtrip"
 flight_querystring = {"fromEntityId":start_location_airport_code, "toEntityId":end_location_airport_code, "departDate":start_date, "returnDate":end_date, "currency":"USD"}
 flight_headers = {
@@ -93,48 +91,29 @@ simplified_flight_response = process_flight_data(flight_response.json())    #ret
 
 
 
+## Finding location entity id
+entity_id, date, time, drop_time = find_entity_id(flight_response.json(), end_location_airport_code)
+
+
+
 ## Searching for Hotels
-
-hotelID_url = "https://sky-scanner3.p.rapidapi.com/hotels/auto-complete"
-hotelID_querystring = {"query":end_location}
-hotelID_headers = {
-	"X-RapidAPI-Key": x_rapid_api_Key,
-	"X-RapidAPI-Host": "sky-scanner3.p.rapidapi.com"
-}
-hotelID_response = requests.get(hotelID_url, headers=hotelID_headers, params=hotelID_querystring)
-
-entity_ID = hotelID_response.json()['data'][0]['entityId']
-
 hotel_url = "https://sky-scanner3.p.rapidapi.com/hotels/search"
-hotel_querystring = {"entityId":entity_ID,"checkin":start_date,"checkout":end_date}
+hotel_querystring = {"entityId":entity_id,"checkin":date,"checkout":end_date}
 hotel_headers = {
 	"X-RapidAPI-Key": x_rapid_api_Key,
 	"X-RapidAPI-Host": "sky-scanner3.p.rapidapi.com"
 }
 hotel_response = requests.get(hotel_url, headers=hotel_headers, params=hotel_querystring)
-simplified_hotel_response = extract_hotel_data(hotel_response.json())   #returns a JSON format data (format given in Example_Output/Hotel_Data.json)
+simplified_hotel_response = process_hotel_data(hotel_response.json())
 
 
-## Searching for taxi
 
-# taxiID_url = "https://sky-scanner3.p.rapidapi.com/cars/auto-complete"
-# taxiID_querystring = {"query":end_location}
-# taxiID_headers = {
-# 	"x-rapidapi-key": x_rapid_api_Key,
-# 	"x-rapidapi-host": "sky-scanner3.p.rapidapi.com"
-# }
-# taxiID_response = requests.get(taxiID_url, headers=taxiID_headers, params=taxiID_querystring)
-
-# taxiID = taxiID_response.json()['data'][0]['entity_id']
-
-
-# url = "https://sky-scanner3.p.rapidapi.com/cars/search"
-
-# querystring = {"pickUpEntityId":"95673506",  "pickUpDate":"2024-06-10", "pickUpTime":"10:05", "dropOffDate":"2024-06-10", "dropOffTime":"12:05"}
-
-# headers = {
-# 	"x-rapidapi-key": "39928d39b5mshb293a861cfaa496p10e454jsn2e3831639968",
-# 	"x-rapidapi-host": "sky-scanner3.p.rapidapi.com"
-# }
-
-# response = requests.get(url, headers=headers, params=querystring)
+## Searching for Taxi
+taxi_url = "https://sky-scanner3.p.rapidapi.com/cars/search"
+taxi_querystring = {"pickUpEntityId":entity_id,  "pickUpDate":date, "pickUpTime":time, "dropOffDate":date, "dropOffTime":drop_time}
+taxi_headers = {
+	"x-rapidapi-key": x_rapid_api_Key,
+	"x-rapidapi-host": "sky-scanner3.p.rapidapi.com"
+}
+taxi_response = requests.get(taxi_url, headers=taxi_headers, params=taxi_querystring)
+simplified_taxi_response = process_taxi_data(taxi_response.json())

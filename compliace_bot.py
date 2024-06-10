@@ -58,9 +58,12 @@ def compliance_bot(Text):
                 {"role":'user', 'content':prompt}
             ],
     )
+<<<<<<< HEAD
 
     # return response
 
+=======
+>>>>>>> origin/main
     output = response.choices[0].message.content
     print(output)
     return output
