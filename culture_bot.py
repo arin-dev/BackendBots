@@ -1,8 +1,9 @@
+import os
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from openai import OpenAI
-OPENAI_API_KEY = "OPENAPI_KEY"
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
 def with_country_name(country_name1):
 

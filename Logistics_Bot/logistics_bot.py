@@ -91,6 +91,7 @@ simplified_flight_response = process_flight_data(flight_response.json())    #ret
 
 
 
+## Finding location entity id
 entity_id, date, time, drop_time = find_entity_id(flight_response.json(), end_location_airport_code)
 
 

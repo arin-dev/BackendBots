@@ -56,8 +56,5 @@ def compliance_bot(Input):
                 {"role":'user', 'content':prompt}
             ],
     )
-
-    return response
-
     output = response.choices[0].message.content
     return output
