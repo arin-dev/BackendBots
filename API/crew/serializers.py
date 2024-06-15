@@ -5,7 +5,7 @@ from .models import CrewMember, Project, CrewRequirement, SelectedCrew
 class CrewMemberSerializer(serializers.ModelSerializer):
     class Meta:
         model = CrewMember
-        fields = ['name', 'userid', 'crewType', 'roleJobTitle', 'services', 'tags', 'expertise', 'yoe', 'minRatePerDay', 'maxRatePerDay', 'location']
+        exclude = ['next_available_date']
         depth = 1
 
 class CrewRequirementSerializer(serializers.ModelSerializer):
@@ -17,11 +17,20 @@ class CrewRequirementSerializer(serializers.ModelSerializer):
 class SelectedCrewSerializer(serializers.ModelSerializer):
     class Meta:
         model = SelectedCrew
-        fields = ['crew_member']
+        fields = ['crew_member', 'preferred_because']
         depth = 1
 
-class ProjectSerializer(serializers.ModelSerializer):
+class ProjectsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
-        fields = ['project_id', 'project_detail_from_customer', 'detailed_desc']
+        fields = ['project_id', 'project_name', 'description']
+        depth = 1
+
+class ProjectDetailsSerializer(serializers.ModelSerializer):
+    crew_requirements_set = CrewRequirementSerializer(many=True, read_only=True)
+    selected_crews_set = SelectedCrewSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Project
+        exclude = ['selected_crews', 'crew_requirements']
         depth = 1

@@ -1,74 +1,45 @@
-from rest_framework.views import APIView
-from rest_framework.decorators import api_view
-from rest_framework import status
-from rest_framework.response import Response
-from rest_framework.views import APIView
-# Create your views here.
 import os
+import uuid
+# import json
 
-from .serializers import CrewMemberSerializer, CrewRequirementSerializer, SelectedCrewSerializer, ProjectSerializer
-from crew.models import CrewMember, Project, CrewRequirement, SelectedCrew
+from rest_framework import status
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-
-from Crew_Bot.CrewGraph import CrewGraph
 from .models import CrewMember
+from Crew_Bot.CrewGraph import CrewGraph
+from crew.models import CrewMember, Project, CrewRequirement, SelectedCrew
+from .serializers import CrewMemberSerializer, CrewRequirementSerializer, SelectedCrewSerializer, ProjectsSerializer, ProjectDetailsSerializer
 
-from typing import TypedDict, List
+from .APIFunctions import *
+
 
 @api_view(['POST'])
 def create_project(request):
-    project_detail = request.GET.get('project_detail')
-    if project_detail is None:
-        return Response("Project detail is required", status=400)
-    # print("\n\nproject_detail", project_detail)
-
-    class State(TypedDict):
-        num_steps : int
-        project_detail_from_customer : str
-        detailed_desc : str
-        roleJobTitles : List[str]
-        crew_requirements : List[dict]
-        queries : List[str]
-        selected_crews : List[dict]
-
-    result = CrewGraph(State=State, project_detail_from_customer=project_detail)
-
-    # print("\n\nresult", result)
+    project_state = get_form_data(request)
+    result = CrewGraph(State=State, state=project_state)
 
     new_project = Project(
-    project_detail_from_customer=result["project_detail_from_customer"],
-    detailed_desc=result["detailed_desc"],)
+    project_name=result["project_name"],
+    content_type=result["content_type"],
+    budget=result["budget"],
+    description=result["description"],
+    additional_details=result["additional_details"],
+    locations=result["locations"],
+    ai_suggestions=result["ai_suggestions"],)
     new_project.save()
     
     crew_req = result["crew_requirements"]
-    for crew in crew_req:
-        new_crew = CrewRequirement(
-            project=new_project,
-            role=crew["roleJobTitle"], 
-            number_needed=crew["number_needed"],
-            location=crew["location"],
-        )
-        new_crew.save()
+    createCrewRequirement(crew_req, new_project)
 
     selected_crews = result["selected_crews"]
-
-    # print("\n\n\n ###########  \n\n\n")
-    # print("\n\nselected_crews", type(selected_crews), selected_crews)
-    for role_dict in selected_crews:
-            for role, crews in role_dict.items():
-                for crew in crews:
-                    new_selected_crew = SelectedCrew(
-                    project=new_project,
-                    crew_member=CrewMember.objects.get(userid=crew["userid"]),
-                    crew_requirements=CrewRequirement.objects.get(project=new_project, role=role, location=crew["location"]),
-                    )
-                    new_selected_crew.save()
+    createSelectedCrews(selected_crews, new_project)
+                
     new_project_id = new_project.project_id
     return Response({"message": "Request successful", "project_id": new_project_id})
 
     
-
 @api_view(['GET'])
 def crew_requirement(request):
     project_id = request.GET.get('project_id')
@@ -90,12 +61,50 @@ def selected_crew(request):
 
 
 @api_view(['GET'])
+def list_crew_memebers(request):
+    users = CrewMember.objects.all()
+    serializer = CrewMemberSerializer(users, many=True)
+    return Response(serializer.data, status=200) 
+
+
+@api_view(['GET'])
 def crew_member(request):
+    crew_id = request.GET.get('id')
+    if crew_id is None:
+        return Response("id is required", status=400)
+    try:
+        crew_member = CrewMember.objects.get(id=crew_id)
+    except CrewMember.DoesNotExist:
+        return Response("Crew member not found", status=404)
+    serializer = CrewMemberSerializer(crew_member)
+    return Response(serializer.data, status=200)
+
+
+@api_view(['GET'])
+def list_projects(request):
+    projects = Project.objects.all()
+    serializer = ProjectsSerializer(projects, many=True)
+    return Response(serializer.data, status=200)
+
+
+@api_view(['GET'])
+def project_crew_details(request):
     project_id = request.GET.get('project_id')
     if project_id is None:
         return Response("Project id is required", status=400)
-    crew_member = CrewMember.objects.filter(project_id=project_id)
-    serializer = CrewMemberSerializer(crew_member, many=True)
+    project = Project.objects.get(project_id=uuid.UUID(project_id))
+    serializer = ProjectDetailsSerializer(project)
+    response = transform_crew_data(serializer.data)
+    return Response(response, status=200)
+
+
+@api_view(['GET'])
+def complete_project_details(request):
+    project_id = request.GET.get('project_id')
+    if project_id is None:
+        return Response("Project id is required", status=400)
+    project = Project.objects.get(project_id=uuid.UUID(project_id))
+    serializer = ProjectDetailsSerializer(project)
     return Response(serializer.data, status=200)
 
 
@@ -107,26 +116,43 @@ class CrewMemberCreateView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+
+@api_view(['DELETE'])
+def delete_project(request):
+    project_id = request.GET.get('project_id')
+    try:
+        project = Project.objects.get(project_id=project_id)
+    except Project.DoesNotExist:
+        return Response({'error': 'Project not found'}, status=404)
+
+    project.delete()
+    return Response({'message': 'Project deleted'}, status=200)
+
 # @api_view(['POST'])
 # def push_dummy_data(request):
+#     print("Testing if dummy data present")
+
+#     print("Starting pushing dummy data")
 #     with open('crew/crewdata.json') as f:
 #         data = json.load(f)
 
 #     crew_members = []
 #     for crew_member in data:
-#         crew_members.append(CrewMember(
-#             name=crew_member["name"], 
-#             userid=crew_member["userid"], 
-#             crewType=crew_member["crewType"], 
-#             roleJobTitle=crew_member["roleJobTitle"], 
-#             services=','.join(crew_member["services"]), 
-#             tags=','.join(crew_member["tags"]), 
-#             expertise=','.join(crew_member["expertise"]), 
-#             yoe=crew_member["yoe"], 
-#             minRatePerDay=crew_member["minRatePerDay"], 
-#             maxRatePerDay=crew_member["maxRatePerDay"], 
-#             location=crew_member["location"]
-#         ))
+#         # Check if a CrewMember with the same userid already exists
+#         if not CrewMember.objects.filter(userid=crew_member["userid"]).exists():
+#             crew_members.append(CrewMember(
+#                 name=crew_member["name"], 
+#                 userid=crew_member["userid"], 
+#                 crewType=crew_member["crewType"], 
+#                 role=crew_member["roleJobTitle"], 
+#                 services=','.join(crew_member["services"]), 
+#                 tags=','.join(crew_member["tags"]), 
+#                 expertise=','.join(crew_member["expertise"]), 
+#                 yoe=crew_member["yoe"], 
+#                 minRatePerDay=crew_member["minRatePerDay"], 
+#                 maxRatePerDay=crew_member["maxRatePerDay"], 
+#                 location=crew_member["location"]
+#             ))
 #     CrewMember.objects.bulk_create(crew_members)
 
-#     return Response("Data pushed successfully", status=200)
+#     return Response({"message": "Data pushed successfully"}, status=200)
