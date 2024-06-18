@@ -1,10 +1,6 @@
-import sqlite3
 import json
-from langchain_core.messages import HumanMessage, SystemMessage
-from langchain_core.prompts import ChatPromptTemplate
+from crew.models import CrewMember
 from langchain_openai import ChatOpenAI
-from crew.models import CrewMember, CrewRequirement, SelectedCrew
-from project.models import Project
 
 import os
 from dotenv import load_dotenv

@@ -1,8 +1,6 @@
+from typing import List
 from .CrewFunctions import *
 from langgraph.graph import END, StateGraph
-from typing import TypedDict, List, Annotated
-from crew.models import CrewMember, CrewRequirement, SelectedCrew
-from .apikey import OPENAI_API_KEY
 
 
 def unique_roles_getter(State):
@@ -63,7 +61,6 @@ def state_printer(state):
 
 
 def CrewGraph(State: dict, state):
-
     workflow = StateGraph(State)
 
     workflow.add_node("unique_roles_getter", unique_roles_getter)
@@ -74,11 +71,10 @@ def CrewGraph(State: dict, state):
     workflow.add_edge("unique_roles_getter", "crew_requirement_getter")
     workflow.add_edge("crew_requirement_getter", "crew_selection")
     workflow.add_edge("crew_selection", "state_printer")
-
     workflow.set_entry_point("unique_roles_getter")
     workflow.add_edge("state_printer", END)
 
     app = workflow.compile()
-
     var = app.invoke(state)
+    
     return var
