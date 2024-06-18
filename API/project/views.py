@@ -12,14 +12,14 @@ from .utils import *
 # Create your views here.
 @api_view(['POST'])
 def create_project(request):
-    project_state = get_form_data(request)
+    project_state, location_details = get_form_data(request)
     new_project = Project(
         project_name=project_state["project_name"],
         content_type=project_state["content_type"],
         budget=project_state["budget"],
         description=project_state["description"],
         additional_details=project_state["additional_details"],
-        locations=project_state["locations"],
+        location_details=location_details,
         ai_suggestions=project_state["ai_suggestions"],
     )
     new_project.save()
@@ -27,9 +27,10 @@ def create_project(request):
     # Start threading tasks
     task2 = threading.Thread(target=complete_project_details, args=(project_state, new_project))
     task3 = threading.Thread(target=complete_culture_details, args=(project_state["locations"], new_project))
-    
+    task4 = threading.Thread(target=complete_logistics_details, args=(location_details, new_project))
     task2.start()
     task3.start()
+    task4.start()
     
     # Optionally join the threads if you want to wait for them to complete before returning the response
     # task2.join()

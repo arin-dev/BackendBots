@@ -2,10 +2,11 @@ import time
 import threading
 from culture.models import Culture
 from typing import TypedDict, List
+from logistics.models import Logistics
 from Crew_Bot.CrewGraph import CrewGraph
 from culture.models import ProjectCulture
 from culture.functions import get_cultural_protocols
-from django.core.exceptions import ObjectDoesNotExist
+from logistics.functions import get_logistics_details
 from crew.models import CrewMember, CrewRequirement, SelectedCrew
 
 class State(TypedDict):
@@ -33,14 +34,9 @@ def get_form_data(request):
     location_details = form_data.get('locationDetails')
     ai_suggestions = form_data.get('ai_suggestions')
     user_crew_requirements = form_data.get('crew')
-    # user_equipment_requirements = form_data.get('equipment')
-    # locations = []
-    # for location in location_details:
-    #     locations.append(location["location"].replace("'", "").split(",")[0])
-    ########### because of lack of dataa it is giving error ###########
     locations = ['Dubai']
     my_state = State(project_name=project_name, content_type=content_type, budget=budget, description=description, additional_details=additional_details, locations=locations, ai_suggestions=ai_suggestions, unique_roles=[], user_crew_requirements=user_crew_requirements, crew_requirements=[], queries=[], selected_crews=[])
-    return my_state
+    return my_state, location_details
 
 
 def short_wait():
@@ -127,3 +123,28 @@ def complete_project_details(project_state, new_project):
     createCrewRequirement(crew_req, new_project)
     selected_crews = result["selected_crews"]
     createSelectedCrews(selected_crews, new_project)
+
+
+
+
+def create_logistics_details(destination, start_date, end_date, new_project):
+    response = get_logistics_details(destination=destination, start_date=start_date, end_date=end_date)
+    logistics = Logistics(
+        project=new_project,
+        flights_details=response.get('flight_details'),
+        hotel_details=response.get('hotel_details'),
+        taxi_details=response.get('taxi_details')
+    )
+    logistics.save()
+
+def complete_logistics_details(location_details, new_project):
+    threads = []
+    for location_detail in location_details:
+        location, start_date, end_date = location_detail.get('location'), location_detail.get('start_date'), location_detail.get('end_date')
+        thread = threading.Thread(target=create_logistics_details, args=(location, start_date, end_date, new_project))
+        threads.append(thread)
+        thread.start()
+
+    for thread in threads:
+        thread.join()
+        
