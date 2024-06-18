@@ -3,7 +3,8 @@ import json
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
-from crew.models import CrewMember, Project, CrewRequirement, SelectedCrew
+from crew.models import CrewMember, CrewRequirement, SelectedCrew
+from project.models import Project
 
 import os
 from dotenv import load_dotenv
@@ -73,23 +74,6 @@ def  get_crew_requirements(project_name, description, unique_roles, content_type
         return crew_requirements
 
 
-# def get_queries(crew_requirements):
-#     prompt_query_generator = "You are the database manager at my film production management company, a client will contact you with the crew requirement and then you need to define queries to database to get the data for that particular role. Queries should be for a SQL DB and should filter data out based on, role and location. Output should be in JSON format as list of query. JSON is to be outputted, take point location can only be a country."
-#     messages = [
-#         ("system", prompt_query_generator),
-#         ("user", f"Following is the requirement of the customer : {crew_requirements}"),
-#     ]
-#     response = llm_json.invoke(messages)
-#     queries = json.loads(response.content)
-    
-#     try : 
-#         queries = queries["queries"]
-#     except : 
-#         queries = queries
-
-#     return queries
-
-
 def get_selected_crews(filtered_crew, number_needed, hiring_role, project_name, content_type, description, additional_details, budget):
     
     # print("\n\n\n ############## THIS IS REAL FILTERED CREW \n\n\n\n")
@@ -113,29 +97,3 @@ def get_selected_crews(filtered_crew, number_needed, hiring_role, project_name, 
     except : 
         selected_crews = selected_crews
     return selected_crews
-
-
-####### FOLLOWING IS NOT IN USE AS DATA IS BEING FETCHED FROM DB NOW ################
-
-# def get_selected_crew_details(filtered_data):
-#     selected_crews = {}
-#     for dictionary in filtered_data:
-#         for key, val in dictionary.items():
-#             user = val
-#             user_details = CrewMember.objects.filter(userid=user['userid']).first()
-#             if user_details:
-#                 role = key
-#                 if role not in selected_crews:
-#                     selected_crews[role] = []
-#                 selected_crews[role].append({
-#                     "name": user_details.name,
-#                     "userid": user_details.userid,
-#                     "preferred_because": user['Preferred_because'],
-#                     "role": user_details.role,
-#                     "yoe": user_details.yoe,
-#                     "minRatePerDay": user_details.minRatePerDay,
-#                     "maxRatePerDay": user_details.maxRatePerDay,
-#                         "location": user_details.location
-#                     })
-#     # print(selected_crews)
-#     return selected_crews

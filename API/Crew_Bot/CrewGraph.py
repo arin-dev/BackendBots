@@ -1,7 +1,7 @@
 from .CrewFunctions import *
 from langgraph.graph import END, StateGraph
 from typing import TypedDict, List, Annotated
-from crew.models import CrewMember, Project, CrewRequirement, SelectedCrew
+from crew.models import CrewMember, CrewRequirement, SelectedCrew
 from .apikey import OPENAI_API_KEY
 
 
@@ -23,14 +23,6 @@ def crew_requirement_getter(State):
 
     crew_requirements = get_crew_requirements(project_name, description, unique_roles, content_type, additional_details, locations, ai_suggestions, budget, user_crew_requirements)
     return {"crew_requirements" : crew_requirements}
-
-
-# def queries_getter(State):
-#     crew_requirements = State["crew_requirements"]
-
-#     queries = get_queries(crew_requirements)
-#     return {"queries" : queries}
-
 
 def crew_selection(State):
     project_name = State["project_name"]
@@ -62,9 +54,6 @@ def crew_selection(State):
     
     # print("\n\n\n ############# \n\n\n")
     # print("selected_crews:", selected_crews)
-
-
-    ## selected_crews = get_selected_crew_details(selected_crews_filtering)
     return {"selected_crews" : selected_crews}
 
     
@@ -77,16 +66,12 @@ def CrewGraph(State: dict, state):
 
     workflow = StateGraph(State)
 
-    # workflow.add_node("detailed_desc_getter", detailed_desc_getter)
     workflow.add_node("unique_roles_getter", unique_roles_getter)
     workflow.add_node("crew_requirement_getter", crew_requirement_getter)
-    # workflow.add_node("queries_getter", queries_getter)
     workflow.add_node("crew_selection", crew_selection)
     workflow.add_node("state_printer", state_printer)
 
-    # workflow.add_edge("detailed_desc_getter", "unique_roles_getter")
     workflow.add_edge("unique_roles_getter", "crew_requirement_getter")
-    # workflow.add_edge("crew_requirement_getter", "queries_getter")
     workflow.add_edge("crew_requirement_getter", "crew_selection")
     workflow.add_edge("crew_selection", "state_printer")
 
@@ -94,8 +79,6 @@ def CrewGraph(State: dict, state):
     workflow.add_edge("state_printer", END)
 
     app = workflow.compile()
-
-    # inputs = {"project_detail_from_customer": project_detail_from_customer,"num_steps":0}
 
     var = app.invoke(state)
     return var
