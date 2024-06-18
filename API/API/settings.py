@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'crew',
     'project',
+    'culture'
 ]
 
 MIDDLEWARE = [

@@ -81,7 +81,7 @@ end_date = format_date(end_date)
 
 ## Searching for Flights
 flight_url = "https://sky-scanner3.p.rapidapi.com/flights/search-roundtrip"
-flight_querystring = {"fromEntityId":start_location_airport_code, "toEntityId":end_location_airport_code, "departDate":start_date, "returnDate":end_date, "currency":"USD"}
+flight_querystring = {"fromEntityId":'Singapore', "toEntityId":end_location_airport_code, "departDate":start_date, "returnDate":end_date, "currency":"USD"}
 flight_headers = {
 	"X-RapidAPI-Key": x_rapid_api_Key,
 	"X-RapidAPI-Host": "sky-scanner3.p.rapidapi.com"

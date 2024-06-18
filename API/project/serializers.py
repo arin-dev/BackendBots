@@ -2,6 +2,7 @@ from rest_framework import serializers
 
 from crew.serializers import CrewRequirementSerializer, SelectedCrewSerializer
 from .models import Project
+from culture.serializers import CultureSerializer
 
 class ProjectsSerializer(serializers.ModelSerializer):
     class Meta:
@@ -12,8 +13,10 @@ class ProjectsSerializer(serializers.ModelSerializer):
 class ProjectDetailsSerializer(serializers.ModelSerializer):
     crew_requirements_set = CrewRequirementSerializer(many=True, read_only=True)
     selected_crews_set = SelectedCrewSerializer(many=True, read_only=True)
-
+    culture_details = CultureSerializer(many=True, read_only=True)
+    
     class Meta:
         model = Project
         exclude = ['selected_crews', 'crew_requirements']
         depth = 1
+    

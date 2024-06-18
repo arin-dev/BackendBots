@@ -1,11 +1,12 @@
-from typing import TypedDict, List
 import time
-from crew.models import CrewMember
-from crew.models import CrewMember, CrewRequirement, SelectedCrew
-from .models import Project
-
-
+import threading
+from culture.models import Culture
+from typing import TypedDict, List
 from Crew_Bot.CrewGraph import CrewGraph
+from culture.models import ProjectCulture
+from culture.functions import get_cultural_protocols
+from django.core.exceptions import ObjectDoesNotExist
+from crew.models import CrewMember, CrewRequirement, SelectedCrew
 
 class State(TypedDict):
     project_name : str
@@ -39,21 +40,12 @@ def get_form_data(request):
     ########### because of lack of dataa it is giving error ###########
     locations = ['Dubai']
     my_state = State(project_name=project_name, content_type=content_type, budget=budget, description=description, additional_details=additional_details, locations=locations, ai_suggestions=ai_suggestions, unique_roles=[], user_crew_requirements=user_crew_requirements, crew_requirements=[], queries=[], selected_crews=[])
-
     return my_state
+
 
 def short_wait():
     time.sleep(2)
     print("done")
-
-def complete_project_details(project_state, new_project):
-    result = CrewGraph(State=State, state=project_state)
-    
-    crew_req = result["crew_requirements"]
-    createCrewRequirement(crew_req, new_project)
-
-    selected_crews = result["selected_crews"]
-    createSelectedCrews(selected_crews, new_project)
 
 
 def createCrewRequirement(crew_req, new_project):
@@ -76,6 +68,7 @@ def createCrewRequirement(crew_req, new_project):
         )
         new_crew.save()
 
+ 
 def createSelectedCrews(selected_crews, new_project):
     # print("\n\n\n ###########  \n\n\n")
     # print("\n\nselected_crews", type(selected_crews), selected_crews)
@@ -107,3 +100,30 @@ def createSelectedCrews(selected_crews, new_project):
                 preferred_because=crews["preferred_because"]
                 )
                 new_selected_crew.save()
+
+
+### This portion is just to make code faster, make sure to remove this in upcoming versions so that i always gives latest trends and details.
+def create_culture_for_location(location, project_culture):
+    details = get_cultural_protocols(location)
+    culture, created = Culture.objects.get_or_create(location=location, defaults={'details': details})
+    project_culture.cultures.add(culture)
+
+def complete_culture_details(locations, project):
+    project_culture = ProjectCulture.objects.create(project=project)
+    threads = []
+    for location in locations:
+        thread = threading.Thread(target=create_culture_for_location, args=(location, project_culture))
+        threads.append(thread)
+        thread.start()
+    for thread in threads:
+        thread.join()
+
+
+
+def complete_project_details(project_state, new_project):
+    result = CrewGraph(State=State, state=project_state)
+    locations = result['locations']
+    crew_req = result["crew_requirements"]
+    createCrewRequirement(crew_req, new_project)
+    selected_crews = result["selected_crews"]
+    createSelectedCrews(selected_crews, new_project)

@@ -1,13 +1,8 @@
 import uuid
-
 from django.db import models
-# from crew.models import CrewRequirement, SelectedCrew
-from django.apps import apps
+from culture.models import ProjectCulture
 
-
-# Create your models here.
 class Project(models.Model):
-    
     project_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     project_name = models.CharField(max_length=255)
     content_type = models.CharField(max_length=255)
@@ -18,11 +13,12 @@ class Project(models.Model):
     ai_suggestions = models.BooleanField()
     crew_requirements = models.ManyToManyField('crew.CrewRequirement', related_name='projects_set')
     selected_crews = models.ManyToManyField('crew.SelectedCrew', related_name='projects_set')
+    project_cultures = models.ManyToManyField('culture.Culture', through='culture.ProjectCulture', related_name='projects')
 
     def delete(self, *args, **kwargs):
         self.crew_requirements.all().delete()
         self.selected_crews.all().delete()
-
+        ProjectCulture.objects.filter(project=self).delete()
         super().delete(*args, **kwargs)
 
     def __str__(self):
