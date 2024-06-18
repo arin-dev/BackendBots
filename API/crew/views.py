@@ -77,31 +77,65 @@ class CrewMemberCreateView(APIView):
 
 
 
+# @api_view(['POST'])
+# def push_dummy_data(request):
+#     print("Testing if dummy data present")
+
+#     print("Starting pushing dummy data")
+#     with open('crew/crewdata.json') as f:
+#         data = json.load(f)
+
+#     crew_members = []
+#     for crew_member in data:
+#         # Check if a CrewMember with the same userid already exists
+#         if not CrewMember.objects.filter(userid=crew_member["userid"]).exists():
+#             crew_members.append(CrewMember(
+#                 name=crew_member["name"], 
+#                 userid=crew_member["userid"], 
+#                 crewType=crew_member["crewType"], 
+#                 role=crew_member["roleJobTitle"], 
+#                 services=','.join(crew_member["services"]), 
+#                 tags=','.join(crew_member["tags"]), 
+#                 expertise=','.join(crew_member["expertise"]), 
+#                 yoe=crew_member["yoe"], 
+#                 minRatePerDay=crew_member["minRatePerDay"], 
+#                 maxRatePerDay=crew_member["maxRatePerDay"], 
+#                 location=crew_member["location"]
+#             ))
+#     CrewMember.objects.bulk_create(crew_members)
+
+#     return Response({"message": "Data pushed successfully"}, status=200)
+ 
+####################### UPDATE DUMMY DATA
 @api_view(['POST'])
 def push_dummy_data(request):
     print("Testing if dummy data present")
-
+    print(request)
     print("Starting pushing dummy data")
-    with open('crew/crewdata.json') as f:
+    with open('crew/crewdata_with_profilepic.json') as f:
         data = json.load(f)
-
-    crew_members = []
-    for crew_member in data:
-        # Check if a CrewMember with the same userid already exists
-        if not CrewMember.objects.filter(userid=crew_member["userid"]).exists():
-            crew_members.append(CrewMember(
-                name=crew_member["name"], 
-                userid=crew_member["userid"], 
-                crewType=crew_member["crewType"], 
-                role=crew_member["roleJobTitle"], 
-                services=','.join(crew_member["services"]), 
-                tags=','.join(crew_member["tags"]), 
-                expertise=','.join(crew_member["expertise"]), 
-                yoe=crew_member["yoe"], 
-                minRatePerDay=crew_member["minRatePerDay"], 
-                maxRatePerDay=crew_member["maxRatePerDay"], 
-                location=crew_member["location"]
-            ))
-    CrewMember.objects.bulk_create(crew_members)
-
+    
+    print(data[0])
+    from django.db import transaction
+    with transaction.atomic():
+        for crew_member in data:
+            # Check if a CrewMember with the same userid already exists
+            obj, created = CrewMember.objects.update_or_create(
+                userid=crew_member["userid"],
+                defaults={
+                    'name': crew_member["name"],
+                    'crewType': crew_member["crewType"],
+                    'role': crew_member["roleJobTitle"],
+                    'services': ','.join(crew_member["services"]),
+                    'tags': ','.join(crew_member["tags"]),
+                    'expertise': ','.join(crew_member["expertise"]),
+                    'yoe': crew_member["yoe"],
+                    'minRatePerDay': crew_member["minRatePerDay"],
+                    'maxRatePerDay': crew_member["maxRatePerDay"],
+                    'location': crew_member["location"],
+                    'profile_pic': crew_member["profilePic"]
+                }
+            )
+            print(obj,created)
+    print("Data Pushed Successfully")
     return Response({"message": "Data pushed successfully"}, status=200)

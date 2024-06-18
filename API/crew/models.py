@@ -3,6 +3,7 @@ from django.utils import timezone
 import uuid
 
 class CrewMember(models.Model):
+    profile_pic = models.URLField(max_length=200, blank=True)
     name = models.CharField(max_length=100)
     userid = models.EmailField(unique=True)
     crewType = models.CharField(max_length=50)

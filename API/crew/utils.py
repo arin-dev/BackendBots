@@ -13,6 +13,8 @@ def transform_crew_data(input_data):
         role = member['role']
         preferred_because=crew["preferred_because"]
         user_details = {
+            "id":member["id"],
+            "profile_pic":member["profile_pic"],
             "name": member["name"],
             "yoe": member["yoe"],
             "userid":member["userid"],
