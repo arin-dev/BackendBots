@@ -1,0 +1,158 @@
+{
+    "flight_details":{
+        "status": true,
+            "message": "Successful",
+            "data": {
+                "itineraries": [
+                    {
+                        "price": "$378",
+                        "departure": {
+                            "date": "2024-06-22",
+                            "time": "08:40:00"
+                        },
+                        "arrival": {
+                            "date": "2024-06-22",
+                            "time": "10:50:00"
+                        },
+                        "origin": "New Delhi (DEL)",
+                        "destination": "Dubai (DXB)",
+                        "tags": [
+                            "second_cheapest"
+                        ]
+                    },
+                    {
+                        "price": "$378",
+                        "departure": {
+                            "date": "2024-06-22",
+                            "time": "08:40:00"
+                        },
+                        "arrival": {
+                            "date": "2024-06-22",
+                            "time": "10:50:00"
+                        },
+                        "origin": "New Delhi (DEL)",
+                        "destination": "Dubai (DXB)",
+                        "tags": [
+                            "second_cheapest"
+                        ]
+                    },
+                    {
+                        "price": "$371",
+                        "departure": {
+                            "date": "2024-06-22",
+                            "time": "07:45:00"
+                        },
+                        "arrival": {
+                            "date": "2024-06-22",
+                            "time": "10:10:00"
+                        },
+                        "origin": "New Delhi (DEL)",
+                        "destination": "Dubai (DXB)",
+                        "tags": [
+                            "cheapest"
+                        ]
+                    }
+                ]
+            }
+        },
+
+    "hotel_details":{
+        "searchSummary": {
+            "total": 272,
+            "resultsSummary": "Taxes and fees not included | 272 hotels found near Dubai sorted by Best"
+        },
+        "hotelsRegion": {
+            "latitude": 25.2584485,
+            "longitude": 55.3364195
+        },
+        "hotelCards": [
+                {
+                "name": "Holiday Inn Express Dubai Airport, an IHG Hotel",
+                "stars": "3",
+                "distance": "0.81 miles from Dubai",
+                "reviewsSummary": {
+                    "score": 4,
+                    "scoreDesc": "Very Good",
+                    "total": 3140
+                },
+                "lowestPrice": "$28",
+                "images": [
+                    "https://content.skyscnr.com/available/1388593038/1388593038_WxH.jpg",
+                    "https://content.skyscnr.com/available/1548112253/1548112253_WxH.jpg",
+                    "https://content.skyscnr.com/available/1548112428/1548112428_WxH.jpg"
+                ]
+            },
+            {
+                "name": "Premier Inn Dubai International Airport",
+                "stars": "3",
+                "distance": "0.82 miles from Dubai",
+                "reviewsSummary": {
+                    "score": 4.5,
+                    "scoreDesc": "Excellent",
+                    "total": 7160
+                },
+                "lowestPrice": "$35",
+                "images": [
+                    "https://content.skyscnr.com/available/1501197505/1501197505_WxH.jpg",
+                    "https://content.skyscnr.com/available/1330243573/1330243573_WxH.jpg",
+                    "https://content.skyscnr.com/available/1330243650/1330243650_WxH.jpg"
+                ]
+            },
+            {
+                "name": "Le M\\u00e9ridien Dubai Hotel & Conference Centre",
+                "stars": "5",
+                "distance": "1.19 miles from Dubai",
+                "reviewsSummary": {
+                    "score": 4.5,
+                    "scoreDesc": "Excellent",
+                    "total": 7428
+                },
+                "lowestPrice": "$70",
+                "images": [
+                    "https://content.skyscnr.com/available/1363620535/1363620535_WxH.jpg",
+                    "https://content.skyscnr.com/available/1363621139/1363621139_WxH.jpg",
+                    "https://content.skyscnr.com/available/1544310394/1544310394_WxH.jpg"
+                ]
+            }
+        ]
+    },
+    
+    "taxi_details":{
+        "status": true,
+        "message": "Successful",
+        "data": {
+            "top_providers": [
+                {
+                    "rating": 4.5,
+                    "optimised_for_mobile": true,
+                    "reviews": 233601,
+                    "facilitated_booking_enabled": false,
+                    "provider_name": "Expedia",
+                    "errored": false,
+                    "in_progress": true,
+                    "logo": "http://logos.skyscnr.com/images/websites/expa.png"
+                },
+                {
+                    "rating": 4.6,
+                    "optimised_for_mobile": true,
+                    "reviews": 151678,
+                    "facilitated_booking_enabled": false,
+                    "provider_name": "Discover Cars",
+                    "errored": false,
+                    "in_progress": true,
+                    "logo": "http://logos.skyscnr.com/images/websites/dscv.png"
+                },
+                {
+                    "rating": 3.9,
+                    "optimised_for_mobile": true,
+                    "reviews": 113953,
+                    "facilitated_booking_enabled": false,
+                    "provider_name": "rentalcars.com",
+                    "errored": false,
+                    "in_progress": true,
+                    "logo": "http://logos.skyscnr.com/images/websites/trjv.png"
+                }
+            ]
+        }
+    }
+}
