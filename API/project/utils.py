@@ -99,16 +99,15 @@ def createSelectedCrews(selected_crews, new_project):
 
 
 ### This portion is just to make code faster, make sure to remove this in upcoming versions so that i always gives latest trends and details.
-def create_culture_for_location(location, project_culture):
+def create_culture_for_location(location, project):
     details = get_cultural_protocols(location)
     culture, created = Culture.objects.get_or_create(location=location, defaults={'details': details})
-    project_culture.cultures.add(culture)
+    ProjectCulture.objects.create(project=project, culture=culture)
 
 def complete_culture_details(locations, project):
-    project_culture = ProjectCulture.objects.create(project=project)
     threads = []
     for location in locations:
-        thread = threading.Thread(target=create_culture_for_location, args=(location, project_culture))
+        thread = threading.Thread(target=create_culture_for_location, args=(location, project))
         threads.append(thread)
         thread.start()
     for thread in threads:

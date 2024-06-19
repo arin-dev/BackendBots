@@ -12,7 +12,7 @@ class CultureSerializer(serializers.ModelSerializer):
 class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
-        fields = ['project_id', 'project_name', 'content_type', 'budget', 'description', 'additional_details', 'locations', 'ai_suggestions']
+        fields = ['project_id', 'project_name', 'content_type', 'budget', 'description', 'additional_details', 'location_details', 'ai_suggestions']
 
 class ProjectCultureSerializer(serializers.ModelSerializer):
     project = ProjectSerializer(read_only=True)
