@@ -38,6 +38,7 @@ def create_project(request):
     
     new_project_id = new_project.project_id
     return Response({"message": "Request successful", "project_id": new_project_id})
+    # return Response({"message": "Request successful", "trial":"True"})
 
 
 

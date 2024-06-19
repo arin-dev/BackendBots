@@ -34,7 +34,12 @@ def get_form_data(request):
     location_details = form_data.get('locationDetails')
     ai_suggestions = form_data.get('ai_suggestions')
     user_crew_requirements = form_data.get('crew')
-    locations = ['Dubai']
+    # locations = ['Dubai']
+    locations = []
+    for location in location_details:
+        locations.append(location["location"].replace("'", "").split(",")[0])
+    
+    print(locations)
     my_state = State(project_name=project_name, content_type=content_type, budget=budget, description=description, additional_details=additional_details, locations=locations, ai_suggestions=ai_suggestions, unique_roles=[], user_crew_requirements=user_crew_requirements, crew_requirements=[], queries=[], selected_crews=[])
     return my_state, location_details
 
@@ -77,6 +82,10 @@ def createSelectedCrews(selected_crews, new_project):
             # print("length", len(crews))
             if isinstance(crews, list):
                 for crew in crews:
+                    print("\n\n\n ########### I want this : crew ########### \n ", "crew#",crew,"#crew")
+                    print(not crew)
+                    if not crew:
+                        continue
                     # print("\n\n\n ########### crew ########### ")
                     # print("crew[userid]", crew["userid"])
                     new_selected_crew = SelectedCrew(
@@ -87,6 +96,9 @@ def createSelectedCrews(selected_crews, new_project):
                     )
                     new_selected_crew.save()
             else:
+                print("\n\n\n ########### crew ########### \n ", crews)
+                if not crews:
+                    continue
                 # print("\n\n\n ########### crews ########### ")
                 # print("crews[userid]", crews["userid"])
                 new_selected_crew = SelectedCrew(

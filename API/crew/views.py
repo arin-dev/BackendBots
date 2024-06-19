@@ -9,7 +9,7 @@ from rest_framework.decorators import api_view
 from .models import CrewMember
 from Crew_Bot.CrewGraph import CrewGraph
 from .models import CrewMember, CrewRequirement, SelectedCrew
-from .serializers import CrewMemberSerializer, CrewRequirementSerializer, SelectedCrewSerializer
+from .serializers import CrewMemberSerializer, CrewRequirementSerializer, SelectedCrewSerializer, TryingProjectSerializer
 
 from project.models import Project
 from project.serializers import ProjectsSerializer, ProjectDetailsSerializer
@@ -61,9 +61,13 @@ def project_crew_details(request):
     project_id = request.GET.get('project_id')
     if project_id is None:
         return Response("Project id is required", status=400)
-    project = Project.objects.get(project_id=uuid.UUID(project_id))
-    serializer = ProjectDetailsSerializer(project)
-    response = transform_crew_data(serializer.data)
+    proj = Project.objects.get(project_id=uuid.UUID(project_id))
+    # serializer = ProjectDetailsSerializer(project)
+    # response = transform_crew_data(serializer.data)
+    # crew_req = CrewRequirement.objects.filter(project_id=uuid.UUID(project_id))
+    serializer = TryingProjectSerializer(proj)
+    # response = transform_crew_data(serializer.data)
+    response = serializer.data
     return Response(response, status=200)
 
 
