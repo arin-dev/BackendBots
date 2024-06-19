@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'crew',
     'project',
     'culture',
-    'logistics'
+    'logistics',
+    'compliance'
 ]
 
 MIDDLEWARE = [
