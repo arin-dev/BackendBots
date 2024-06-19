@@ -84,18 +84,28 @@ def process_hotel_data(input_json_data):
     }
     top_5_hotel_cards = input_json_data["data"]["results"]["hotelCards"][:3]
     for hotel in top_5_hotel_cards:
-        relevant_hotel_info = {
-            "name": hotel.get("name"),
-            "stars": hotel.get("stars"),
-            "distance": hotel.get("distance"),
-            "reviewsSummary": {
-                "score": hotel["reviewsSummary"].get("score"),
-                "scoreDesc": hotel["reviewsSummary"].get("scoreDesc"),
-                "total": hotel["reviewsSummary"].get("total")
-            },
-            "lowestPrice": hotel["lowestPrice"].get("price"),
-            "images": hotel.get("images", [])
-        }
+        if hotel["reviewsSummary"]:
+            relevant_hotel_info = {
+                "name": hotel.get("name"),
+                "stars": hotel.get("stars"),
+                "distance": hotel.get("distance"),
+                "reviewsSummary": {
+                    "score": hotel["reviewsSummary"].get("score"),
+                    "scoreDesc": hotel["reviewsSummary"].get("scoreDesc"),
+                    "total": hotel["reviewsSummary"].get("total")
+                },
+                "lowestPrice": hotel["lowestPrice"].get("price"),
+                "images": hotel.get("images", [])
+            }
+        else:
+            relevant_hotel_info = {
+                "name": hotel.get("name"),
+                "stars": hotel.get("stars"),
+                "distance": hotel.get("distance"),
+                "reviewsSummary": None,
+                "lowestPrice": hotel["lowestPrice"].get("price"),
+                "images": hotel.get("images", [])
+            }
         relevant_data["hotelCards"].append(relevant_hotel_info)
     # Output the formatted JSON
     reduced_json = json.dumps(relevant_data, indent=4)
@@ -155,7 +165,6 @@ def get_logistics_details(destination, start_date, end_date):
 
     ## Finding location entity id
     entity_id, date, time, drop_time = find_entity_id(flight_response.json(), end_location_airport_code)
-    print(entity_id, date, time, drop_time)
 
 
     ## Searching for Hotels
