@@ -160,6 +160,8 @@ def get_logistics_details(destination, start_date, end_date):
         "X-RapidAPI-Host": "sky-scanner3.p.rapidapi.com"
     }
     flight_response = requests.get(flight_url, headers=flight_headers, params=flight_querystring)
+    with open('flight.json', 'w') as file:
+        json.dump(flight_response.json(), file, indent=4)
     simplified_flight_response = process_flight_data(flight_response.json())
 
 
@@ -175,6 +177,8 @@ def get_logistics_details(destination, start_date, end_date):
         "X-RapidAPI-Host": "sky-scanner3.p.rapidapi.com"
     }
     hotel_response = requests.get(hotel_url, headers=hotel_headers, params=hotel_querystring)
+    with open('hotel.json', 'w') as file:
+        json.dump(hotel_response.json(), file, indent=4)
     simplified_hotel_response = process_hotel_data(hotel_response.json())
 
 
@@ -186,6 +190,8 @@ def get_logistics_details(destination, start_date, end_date):
         "x-rapidapi-host": "sky-scanner3.p.rapidapi.com"
     }
     taxi_response = requests.get(taxi_url, headers=taxi_headers, params=taxi_querystring)
+    with open('taxi.json', 'w') as file:
+        json.dump(taxi_response.json(), file, indent=4)
     simplified_taxi_response = process_taxi_data(taxi_response.json())
 
     return {"flight_details":simplified_flight_response, "hotel_details":simplified_hotel_response, "taxi_details":simplified_taxi_response}
