@@ -3,10 +3,12 @@ import threading
 from culture.models import Culture
 from typing import TypedDict, List
 from logistics.models import Logistics
+from compliance.models import Compliance
 from Crew_Bot.CrewGraph import CrewGraph
 from culture.models import ProjectCulture
 from culture.functions import get_cultural_protocols
 from logistics.functions import get_logistics_details
+from compliance.functions import get_compliance_report
 from crew.models import CrewMember, CrewRequirement, SelectedCrew
 
 class State(TypedDict):
@@ -137,7 +139,6 @@ def complete_project_details(project_state, new_project):
 
 
 
-
 def create_logistics_details(destination, start_date, end_date, new_project):
     response = get_logistics_details(destination=destination, start_date=start_date, end_date=end_date)
     logistics = Logistics(
@@ -155,7 +156,32 @@ def complete_logistics_details(location_details, new_project):
         thread = threading.Thread(target=create_logistics_details, args=(location, start_date, end_date, new_project))
         threads.append(thread)
         thread.start()
-
     for thread in threads:
         thread.join()
         
+
+
+def create_compliance_details(new_project, location, mode, crew_size, time_frame, landmarks=None, special_equipment=None):
+    compliance = Compliance(
+        project=new_project,
+        location=location,
+        mode=mode,
+        crew_size=crew_size,
+        time_frame=time_frame,
+        landmarks=landmarks,
+        special_equipment=special_equipment,
+        report = get_compliance_report(location, mode, crew_size, time_frame, landmarks, special_equipment)
+    )
+    compliance.save()
+
+def complete_compliance_reports(project_state, location_details, new_project):
+    threads = []
+    crew_size = sum(project_state.get('user_crew_requirements').values)
+    for location_detail in location_details:
+        location, start_date, end_date, mode = location_detail.get('location'), location_detail.get('start_date'), location_detail.get('end_date'), location_detail.get('mode')
+        time_frame = str(start_date) + " to " + str(end_date)
+        thread = threading.Thread(target=create_compliance_details, args=(new_project, location, mode, crew_size, time_frame, None, None))
+        threads.append(thread)
+        thread.start()
+    for thread in threads:
+        thread.join()

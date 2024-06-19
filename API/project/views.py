@@ -28,9 +28,11 @@ def create_project(request):
     task2 = threading.Thread(target=complete_project_details, args=(project_state, new_project))
     task3 = threading.Thread(target=complete_culture_details, args=(project_state["locations"], new_project))
     task4 = threading.Thread(target=complete_logistics_details, args=(location_details, new_project))
+    task5 = threading.Thread(target=complete_compliance_reports, args=(project_state, location_details, new_project))
     task2.start()
     task3.start()
     task4.start()
+    task5.start()
     
     # Optionally join the threads if you want to wait for them to complete before returning the response
     # task2.join()
