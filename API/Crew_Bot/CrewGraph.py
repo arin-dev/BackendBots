@@ -1,8 +1,6 @@
+from typing import List
 from .CrewFunctions import *
 from langgraph.graph import END, StateGraph
-from typing import TypedDict, List, Annotated
-from crew.models import CrewMember, CrewRequirement, SelectedCrew
-from .apikey import OPENAI_API_KEY
 
 
 def unique_roles_getter(State):
@@ -38,22 +36,28 @@ def crew_selection(State):
     selected_crews = []
     if isinstance(crew_requirements, List):
         for crew in crew_requirements:
-            # print("\n\n\n ############# \n",crew)
-            filtered_crew = filter_crew_members(crew["role"], 'Dubai')
+            # print("\n\n\n ############# crew req: \n",crew)
+            filtered_crew = filter_crew_members(crew["role"], crew["location"])
+            # print("\n\n\n ############# filtered crew: \n",filtered_crew)
             number_needed = crew["number_needed"]
             hiring_role = crew["role"]
 
-            selected_crews_for_task = get_selected_crews(filtered_crew, number_needed, hiring_role, project_name, content_type, description, additional_details, budget)
-            selected_crews.append({hiring_role:selected_crews_for_task})
+            if filtered_crew:
+                selected_crews_for_task = get_selected_crews(filtered_crew, number_needed, hiring_role, project_name, content_type, description, additional_details, budget)
+                selected_crews.append({hiring_role:selected_crews_for_task})
+            else:
+                continue
     else:
         crew = crew_requirements
-        filtered_crew = filter_crew_members(crew["role"], 'Dubai')
+        # print("\n\n\n ############# crew req: \n",crew)
+        filtered_crew = filter_crew_members(crew["role"], crew["location"])
+        # print("\n\n\n ############# filtered crew: \n",filtered_crew)
         number_needed = crew["number_needed"]
         hiring_role = crew["role"]
 
-        selected_crews_for_task = get_selected_crews(filtered_crew, number_needed, hiring_role, project_name, content_type, description, additional_details, budget)
-        selected_crews.append({hiring_role:selected_crews_for_task})
-    
+        if filtered_crew:
+            selected_crews_for_task = get_selected_crews(filtered_crew, number_needed, hiring_role, project_name, content_type, description, additional_details, budget)
+            selected_crews.append({hiring_role:selected_crews_for_task})
     # print("\n\n\n ############# \n\n\n")
     # print("selected_crews:", selected_crews)
     return {"selected_crews" : selected_crews}
@@ -65,7 +69,6 @@ def state_printer(state):
 
 
 def CrewGraph(State: dict, state):
-
     workflow = StateGraph(State)
 
     workflow.add_node("unique_roles_getter", unique_roles_getter)
@@ -76,11 +79,10 @@ def CrewGraph(State: dict, state):
     workflow.add_edge("unique_roles_getter", "crew_requirement_getter")
     workflow.add_edge("crew_requirement_getter", "crew_selection")
     workflow.add_edge("crew_selection", "state_printer")
-
     workflow.set_entry_point("unique_roles_getter")
     workflow.add_edge("state_printer", END)
 
     app = workflow.compile()
-
     var = app.invoke(state)
+    
     return var

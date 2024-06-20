@@ -1,5 +1,5 @@
-from typing import TypedDict, List
 import time
+
 
 from crew.models import CrewMember, CrewRequirement, SelectedCrew
 from equipment.models import Equipment, EquipmentRequirement, SelectedEquipments
@@ -8,6 +8,19 @@ from .models import Project
 
 from Crew_Bot.CrewGraph import CrewGraph
 from Equipment_Bot.EquipmentWorkflow import EquipmentGraph
+
+import threading
+from culture.models import Culture
+from typing import TypedDict, List
+from logistics.models import Logistics
+from compliance.models import Compliance
+from Crew_Bot.CrewGraph import CrewGraph
+from culture.models import ProjectCulture
+from culture.functions import get_cultural_protocols
+from logistics.functions import get_logistics_details
+from compliance.functions import get_compliance_report
+from crew.models import CrewMember, CrewRequirement, SelectedCrew
+
 
 class State(TypedDict):
     project_name : str
@@ -39,6 +52,7 @@ def get_form_data(request):
     location_details = form_data.get('locationDetails')
     ai_suggestions = form_data.get('ai_suggestions')
     user_crew_requirements = form_data.get('crew')
+
     user_equipment_requirements = form_data.get('equipment')
     # locations = []
     # for location in location_details:
@@ -47,7 +61,16 @@ def get_form_data(request):
     locations = ['Dubai']
     my_state = State(project_name=project_name, content_type=content_type, budget=budget, description=description, additional_details=additional_details, locations=locations, ai_suggestions=ai_suggestions, unique_roles=[], user_crew_requirements=user_crew_requirements, crew_requirements=[], queries=[], selected_crews=[], equipments=[], equipment_requirements=[],user_equipment_requirements=user_equipment_requirements,selected_equipments=[])
 
-    return my_state
+    # locations = ['Dubai']
+    locations = []
+    for location in location_details:
+        locations.append(location["location"].replace("'", "").split(",")[0])
+    
+    print(locations)
+    my_state = State(project_name=project_name, content_type=content_type, budget=budget, description=description, additional_details=additional_details, locations=locations, ai_suggestions=ai_suggestions, unique_roles=[], user_crew_requirements=user_crew_requirements, crew_requirements=[], queries=[], selected_crews=[])
+    return my_state, location_details
+
+
 
 def short_wait():
     time.sleep(2)
@@ -154,6 +177,7 @@ def createCrewRequirement(crew_req, new_project):
 
 
 
+ 
 def createSelectedCrews(selected_crews, new_project):
     # print("\n\n\n ###########  \n\n\n")
     # print("\n\nselected_crews", type(selected_crews), selected_crews)
@@ -166,6 +190,10 @@ def createSelectedCrews(selected_crews, new_project):
             # print("length", len(crews))
             if isinstance(crews, list):
                 for crew in crews:
+                    # print("\n\n\n ########### I want this : crew ########### \n ", "crew#",crew,"#crew")
+                    # print(not crew)
+                    if not crew:
+                        continue
                     # print("\n\n\n ########### crew ########### ")
                     # print("crew[userid]", crew["userid"])
                     new_selected_crew = SelectedCrew(
@@ -176,6 +204,9 @@ def createSelectedCrews(selected_crews, new_project):
                     )
                     new_selected_crew.save()
             else:
+                # print("\n\n\n ########### crew ########### \n ", crews)
+                if not crews:
+                    continue
                 # print("\n\n\n ########### crews ########### ")
                 # print("crews[userid]", crews["userid"])
                 new_selected_crew = SelectedCrew(
@@ -185,3 +216,81 @@ def createSelectedCrews(selected_crews, new_project):
                 preferred_because=crews["preferred_because"]
                 )
                 new_selected_crew.save()
+
+
+### This portion is just to make code faster, make sure to remove this in upcoming versions so that i always gives latest trends and details.
+def create_culture_for_location(location, project):
+    details = get_cultural_protocols(location)
+    culture, created = Culture.objects.get_or_create(location=location, defaults={'details': details})
+    ProjectCulture.objects.create(project=project, culture=culture)
+
+def complete_culture_details(locations, project):
+    threads = []
+    for location in locations:
+        thread = threading.Thread(target=create_culture_for_location, args=(location, project))
+        threads.append(thread)
+        thread.start()
+    for thread in threads:
+        thread.join()
+
+
+
+def complete_project_details(project_state, new_project):
+    result = CrewGraph(State=State, state=project_state)
+    locations = result['locations']
+    crew_req = result["crew_requirements"]
+    createCrewRequirement(crew_req, new_project)
+    selected_crews = result["selected_crews"]
+    createSelectedCrews(selected_crews, new_project)
+
+
+    new_project.status = "PENDING"
+    new_project.save()
+
+
+def create_logistics_details(destination, start_date, end_date, new_project):
+    response = get_logistics_details(destination=destination, start_date=start_date, end_date=end_date)
+    logistics = Logistics(
+        project=new_project,
+        flights_details=response.get('flight_details'),
+        hotel_details=response.get('hotel_details'),
+        taxi_details=response.get('taxi_details')
+    )
+    logistics.save()
+
+def complete_logistics_details(location_details, new_project):
+    threads = []
+    for location_detail in location_details:
+        location, start_date, end_date = location_detail.get('location'), location_detail.get('start_date'), location_detail.get('end_date')
+        thread = threading.Thread(target=create_logistics_details, args=(location, start_date, end_date, new_project))
+        threads.append(thread)
+        thread.start()
+    for thread in threads:
+        thread.join()
+        
+
+
+def create_compliance_details(new_project, location, mode, crew_size, time_frame, landmarks=None, special_equipment=None):
+    compliance = Compliance(
+        project=new_project,
+        location=location,
+        mode=mode,
+        crew_size=crew_size,
+        time_frame=time_frame,
+        landmarks=landmarks,
+        special_equipment=special_equipment,
+        report = get_compliance_report(location, mode, crew_size, time_frame, landmarks, special_equipment)
+    )
+    compliance.save()
+
+def complete_compliance_reports(project_state, location_details, new_project):
+    threads = []
+    crew_size = sum(project_state.get('user_crew_requirements').values())
+    for location_detail in location_details:
+        location, start_date, end_date, mode = location_detail.get('location'), location_detail.get('start_date'), location_detail.get('end_date'), location_detail.get('mode')
+        time_frame = str(start_date) + " to " + str(end_date)
+        thread = threading.Thread(target=create_compliance_details, args=(new_project, location, mode, crew_size, time_frame, None, None))
+        threads.append(thread)
+        thread.start()
+    for thread in threads:
+        thread.join()

@@ -1,10 +1,6 @@
-import sqlite3
 import json
-from langchain_core.messages import HumanMessage, SystemMessage
-from langchain_core.prompts import ChatPromptTemplate
+from crew.models import CrewMember
 from langchain_openai import ChatOpenAI
-from crew.models import CrewMember, CrewRequirement, SelectedCrew
-from project.models import Project
 
 import os
 from dotenv import load_dotenv
@@ -23,6 +19,11 @@ def filter_crew_members(role, location):
     # print("\n\n CREW FILTER CALLING for role ",role,"\n\n")
     raw_user_details = CrewMember.objects.filter(role=role, location=location)
     # print("\n raw_user_details is ", raw_user_detail, "\n\n")
+    try:
+        raw_user_details = CrewMember.objects.filter(role=role, location=location)
+    except CrewMember.DoesNotExist:
+        return None
+
     filtered_data = []
     for raw_user_detail in raw_user_details:
         filtered_data.append({
@@ -64,6 +65,19 @@ def  get_crew_requirements(project_name, description, unique_roles, content_type
             crew_requirements = crew_requirements["crew"]
         except : 
             crew_requirements = crew_requirements
+
+        # TO MANUALLY FIX ANY INCOREECT BUNDLING
+        grouped_data = {}
+        for item in crew_requirements:
+            key = (item["role"], item["location"])  # Group by role and location
+            if key in grouped_data:
+                grouped_data[key]["number_needed"] += item["number_needed"]
+            else:
+                grouped_data[key] = item
+        grouped_data = list(grouped_data.values())
+
+        return grouped_data
+    
     else:
         prompt_crew_requirement_getter = f"You are an experienced film production assistant and an expert in planning and organizing film crews. Your task is to study user needs based on the crew requirements provided by user, and divide them based on locations the user wants to do the project. Make sure that all roles chosen must only be from these : {unique_roles}. Note that if project is to be done in multiple locations we might need crew at multiple location or we might travel, understand the requirement and give output accordingly. Now if two camera operator are required one at location1 and other at location2 then output them separately like one camera operator at location1 and one camera operator at locatin2. but if both camera operator are required at location1 then output them together like camera operator at location1 and number_needed is 2. Generate crew requirements for each individual roles. Output must be in JSON format and should contain only following fields :[role, number_needed, location]"
         messages = [
@@ -76,11 +90,24 @@ def  get_crew_requirements(project_name, description, unique_roles, content_type
             crew_requirements = crew_requirements["crew"]
         except : 
             crew_requirements = crew_requirements
+
             
         # print("\n\n ######## FINAL_CREW_REQUIREMENT ######   \n\n")
         # print(crew_requirements)
         # print("\n\n")  
         return crew_requirements
+        
+        # TO MANUALLY FIX ANY INCOREECT BUNDLING
+        grouped_data = {}
+        for item in crew_requirements:
+            key = (item["role"], item["location"])  # Group by role and location
+            if key in grouped_data:
+                grouped_data[key]["number_needed"] += item["number_needed"]
+            else:
+                grouped_data[key] = item
+        grouped_data = list(grouped_data.values())
+
+        return grouped_data
 
 
 def get_selected_crews(filtered_crew, number_needed, hiring_role, project_name, content_type, description, additional_details, budget):

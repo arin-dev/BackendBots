@@ -41,7 +41,13 @@ INSTALLED_APPS = [
     'corsheaders',
     'crew',
     'project',
+<<<<<<< HEAD
     'equipment',
+=======
+    'culture',
+    'logistics',
+    'compliance'
+>>>>>>> 9712475685cb99315246a3fffa5e6ed5573c7031
 ]
 
 MIDDLEWARE = [
