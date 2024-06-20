@@ -21,11 +21,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/crew/', include('crew.urls')),
     path('api/project/', include('project.urls')),
-<<<<<<< HEAD
     path('api/equipment/', include('equipment.urls')),
-=======
     path('api/culture/', include('culture.urls')),
     path('api/logistics/', include('logistics.urls')),
     path('api/compliance/', include('compliance.urls'))
->>>>>>> 9712475685cb99315246a3fffa5e6ed5573c7031
 ]
