@@ -39,7 +39,7 @@ def create_project(request):
         task3.join()
         task4.join()
         task5.join()
-        new_project.status = "COMPLETED"
+        new_project.status = "PENDING"
         new_project.save()
 
     update_thread = threading.Thread(target=update_project_status)
