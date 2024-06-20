@@ -5,6 +5,7 @@ from culture.serializers import CultureSerializer
 from logistics.serializers import LogisticsSerializer
 from crew.serializers import CrewRequirementSerializer, SelectedCrewSerializer
 from compliance.serializers import ComplianceSerializer
+from equipment.serializers import EquipmentRequirementSerializer, SelectedEquipmentsSerializer
 
 class ProjectsSerializer(serializers.ModelSerializer):
     class Meta:
@@ -18,6 +19,8 @@ class ProjectDetailsSerializer(serializers.ModelSerializer):
     culture_details = CultureSerializer(many=True, read_only=True)
     logistics_set = LogisticsSerializer(many=True, read_only=True)
     compliance_details = ComplianceSerializer(many=True, read_only=True)
+    equipment_requirements_set = EquipmentRequirementSerializer(many=True, read_only=True)
+    selected_equipment_set = SelectedEquipmentsSerializer(many=True, read_only=True)
     
     class Meta:
         model = Project

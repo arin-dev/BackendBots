@@ -28,7 +28,7 @@ class State(TypedDict):
     unique_roles : List[str]
     user_crew_requirements : List[dict]
     crew_requirements : List[dict]
-    # queries : List[str]
+    queries : List[str]
     selected_crews : List[dict]
     equipments: List[str]
     # unique_equipments: List[str]
@@ -56,7 +56,7 @@ def get_form_data(request):
         locations.append(location["location"].replace("'", "").split(",")[0])
     
     print(locations)
-    my_state = State(project_name=project_name, content_type=content_type, budget=budget, description=description, additional_details=additional_details, locations=locations, ai_suggestions=ai_suggestions, unique_roles=[], user_crew_requirements=user_crew_requirements, crew_requirements=[], selected_crews=[], unique_equipments=[], equipment_requirements=[], user_equipment_requirements=user_equipment_requirements, selected_equipments=[])
+    my_state = State(project_name=project_name, content_type=content_type, budget=budget, description=description, additional_details=additional_details, locations=locations, ai_suggestions=ai_suggestions, unique_roles=[], user_crew_requirements=user_crew_requirements, crew_requirements=[], queries=[], selected_crews=[],equipments=[], equipment_requirements=[],user_equipment_requirements=user_equipment_requirements,selected_equipments=[])
     return my_state, location_details
 
 
@@ -77,6 +77,16 @@ def complete_project_details(project_state, new_project):
     result = EquipmentGraph(State=State, state=result)
 
     equip_req = result["equipment_requirements"]
+
+    if(type(equip_req)==dict):
+        equip_req=equip_req["equipment_requirements"]
+        
+    # print("\n\n OPERATION IN EQUIP REQ JSON \n\n")
+    # items= []
+    # for x in equip_req:
+    #     if x["name"]=="Laptops/Computers":
+    #         items.append(x)
+    # print("\n After operat  ",items,"\n")    
     print("\n\n\n ############# Entering into create equipment requirement :", equip_req)
     createEquipmentRequirement(equip_req, new_project)
 
@@ -92,7 +102,7 @@ def createEquipmentRequirement(equip_req, new_project):
         for equip in equip_req:
             new_equip = EquipmentRequirement(
                 project=new_project,
-                type=equip["name"], 
+                name=equip["name"], 
                 Specification_required = equip["Specification_required"],
                 number_needed=equip["number_needed"],
                 location=equip["location"],
@@ -102,7 +112,7 @@ def createEquipmentRequirement(equip_req, new_project):
         equip = equip_req
         new_equip = EquipmentRequirement(
             project=new_project,
-            type=equip["name"], 
+            name=equip["name"], 
             Specification_required = equip["Specification_required"],
             number_needed=equip["number_needed"],
             location=equip["location"],
@@ -113,7 +123,7 @@ def createSelectedEquipments(selected_equipments, new_project):
     # print("\n\n\n ###########  \n\n\n")
     # print("\n\nselected_equipments", type(selected_equipments), selected_equipments)
     for equipment in selected_equipments:
-        equipment_queryset = Equipment.objects.filter(model=equipment["model"], brand=equipment["brand"])
+        equipment_queryset = Equipment.objects.filter(name=equipment["name"], brand=equipment["brand"], model=equipment["model"])
         equipment_instance = equipment_queryset.first()
          
         #  location = equipment.get('location')
@@ -128,7 +138,7 @@ def createSelectedEquipments(selected_equipments, new_project):
             project = new_project,
             equipment = equipment_instance,
             equipment_requirements = EquipmentRequirement.objects.get(project=new_project, name=equipment["name"]),
-            preferred_because = equipment["preferred_because"],
+            preferred_because = equipment["Preferred_because"],
          )
         new_equip_selected.save()
 

@@ -87,7 +87,7 @@ class Equipment(models.Model):
         return self.name
 
 class EquipmentRequirement(models.Model):
-    project = models.ForeignKey('project.Project', on_delete=models.CASCADE, related_name='equipment_requirements_set', default=1)
+    project = models.ForeignKey('project.Project', on_delete=models.CASCADE, related_name='equipment_requirements_set')
     name = models.CharField(max_length=50)
     Specification_required = models.TextField(default="")
     location = models.CharField(max_length=50)
@@ -97,9 +97,9 @@ class EquipmentRequirement(models.Model):
         return self.name
 
 class SelectedEquipments(models.Model):
-    project = models.ForeignKey('project.Project', on_delete=models.CASCADE, related_name='selected_equipment_set', default=1)
-    equipment = models.ForeignKey('Equipment', on_delete=models.CASCADE, default=1)
-    equipment_requirements = models.ForeignKey('EquipmentRequirement', on_delete=models.CASCADE, default=1)
+    project = models.ForeignKey('project.Project', on_delete=models.CASCADE, related_name='selected_equipment_set')
+    equipment = models.ForeignKey('Equipment', on_delete=models.CASCADE)
+    equipment_requirements = models.ForeignKey('EquipmentRequirement', on_delete=models.CASCADE)
     preferred_because = models.TextField(default="Did not store the field") #remove this after deleting previous data
     
     def __str__(self):

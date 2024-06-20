@@ -31,7 +31,7 @@ class CrewRequirement(models.Model):
 
 class SelectedCrew(models.Model):
     project = models.ForeignKey('project.Project', on_delete=models.CASCADE, related_name='selected_crews_set')
-    crew_member = models.ForeignKey('CrewMember', on_delete=models.CASCADE, default=1)
+    crew_member = models.ForeignKey('CrewMember', on_delete=models.CASCADE)
     crew_requirements = models.ForeignKey('CrewRequirement', on_delete=models.CASCADE, related_name='selected_crews')
     preferred_because = models.TextField(default="Did not store the field") #remove this after deleting previous data
     
