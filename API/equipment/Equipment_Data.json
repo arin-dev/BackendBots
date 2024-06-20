@@ -1,6 +1,6 @@
 [
     {
-      "name": "Broadcast Camera",
+      "name": "broadcast_camera",
       "type": "Camera Equipment",
       "brand": "Sony",
       "model": "HDC-3500",
@@ -31,10 +31,11 @@
         "start_date": "2024-06-10",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
-      "name": "Broadcast Camera",
+      "name": "broadcast_camera",
       "type": "Camera Equipment",
       "brand": "Panasonic",
       "model": "AK-UC4000",
@@ -65,10 +66,11 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
-      "name": "Broadcast Camera",
+      "name": "broadcast_camera",
       "type": "Camera Equipment",
       "brand": "Canon",
       "model": "XF705",
@@ -99,10 +101,11 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
-      "name": "Broadcast Camera",
+      "name": "broadcast_camera",
       "type": "Camera Equipment",
       "brand": "JVC",
       "model": "GY-HC900",
@@ -133,10 +136,11 @@
         "start_date": "2024-06-01",
         "end_date": "2024-07-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
-      "name": "Broadcast Camera",
+      "name": "broadcast_camera",
       "type": "Camera Equipment",
       "brand": "Blackmagic Design",
       "model": "URSA Broadcast G2",
@@ -167,7 +171,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Tripods and Mounts",
@@ -192,7 +197,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Tripods and Mounts",
@@ -217,7 +223,8 @@
          "start_date": "2024-07-01",
         "end_date": "2024-08-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Tripods and Mounts",
@@ -242,7 +249,8 @@
           "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Tripods and Mounts",
@@ -267,7 +275,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Tripods and Mounts",
@@ -292,7 +301,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Camera Switcher",
@@ -319,7 +329,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Camera Switcher",
@@ -346,7 +357,8 @@
           "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Camera Switcher",
@@ -373,7 +385,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Camera Switcher",
@@ -400,7 +413,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-07-22",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Camera Switcher",
@@ -427,7 +441,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Lavalier Mics",
@@ -458,7 +473,8 @@
         "start_date": "2024-06-15",
         "end_date": "2024-08-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Lavalier Mics",
@@ -489,7 +505,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Lavalier Mics",
@@ -520,7 +537,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-07-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Lavalier Mics",
@@ -551,7 +569,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-08-21",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Lavalier Mics",
@@ -582,7 +601,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Handheld Mics",
@@ -606,7 +626,8 @@
           "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Handheld Mics",
@@ -631,7 +652,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-07-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Handheld Mics",
@@ -655,7 +677,8 @@
           "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Handheld Mics",
@@ -679,7 +702,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Handheld Mics",
@@ -704,7 +728,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Boom Mics",
@@ -728,7 +753,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Boom Mics",
@@ -752,7 +778,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Boom Mics",
@@ -776,7 +803,8 @@
           "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Boom Mics",
@@ -800,7 +828,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Boom Mics",
@@ -824,7 +853,8 @@
           "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Audio Mixer",
@@ -850,7 +880,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Audio Mixer",
@@ -876,7 +907,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Audio Mixer",
@@ -902,7 +934,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Audio Mixer",
@@ -928,7 +961,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Audio Mixer",
@@ -954,7 +988,8 @@
          "start_date": "2024-07-01",
         "end_date": "2024-08-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Speakers and Monitors",
@@ -979,7 +1014,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Speakers and Monitors",
@@ -1004,7 +1040,8 @@
           "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Speakers and Monitors",
@@ -1029,7 +1066,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Speakers and Monitors",
@@ -1054,7 +1092,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Speakers and Monitors",
@@ -1079,7 +1118,8 @@
           "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "LED Lights",
@@ -1105,7 +1145,8 @@
           "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "LED Lights",
@@ -1131,7 +1172,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "LED Lights",
@@ -1157,7 +1199,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "LED Lights",
@@ -1183,7 +1226,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "LED Lights",
@@ -1209,7 +1253,8 @@
           "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Softboxes and Diffusers",
@@ -1240,7 +1285,8 @@
          "start_date": "2024-07-01",
         "end_date": "2024-08-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Softboxes and Diffusers",
@@ -1271,7 +1317,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Softboxes and Diffusers",
@@ -1302,7 +1349,8 @@
           "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Softboxes and Diffusers",
@@ -1333,7 +1381,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Softboxes and Diffusers",
@@ -1364,7 +1413,8 @@
          "start_date": "2024-07-01",
         "end_date": "2024-08-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Lighting Stands and Rigging",
@@ -1390,7 +1440,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Lighting Stands and Rigging",
@@ -1416,7 +1467,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Lighting Stands and Rigging",
@@ -1442,7 +1494,8 @@
           "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Lighting Stands and Rigging",
@@ -1468,7 +1521,8 @@
           "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
         "name": "Lighting Stands and Rigging",
@@ -1494,7 +1548,8 @@
           "start_date": "2024-06-01",
           "end_date": "2024-06-30",
           "status": "available"
-        }
+        },
+        "location":"Dubai"
       },  
     {
       "name": "Streaming Encoder",
@@ -1518,6 +1573,7 @@
         "end_date": "2024-06-30",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "150 USD"
     },
     {
@@ -1542,6 +1598,7 @@
         "end_date": "2024-08-15",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "100 USD"
     },
     {
@@ -1566,6 +1623,7 @@
         "end_date": "2024-07-10",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "130 USD"
     },
     {
@@ -1590,6 +1648,7 @@
         "end_date": "2024-06-30",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "200 USD"
     },
     {
@@ -1614,6 +1673,7 @@
         "end_date": "2024-08-31",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "180 USD"
     },
     {
@@ -1639,6 +1699,7 @@
         "end_date": "2024-08-31",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "300 USD"
     },
     {
@@ -1664,6 +1725,7 @@
         "end_date": "2024-08-31",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "150 USD"
     },
     {
@@ -1689,6 +1751,7 @@
         "end_date": "2024-07-25",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "400 USD"
     },
     {
@@ -1714,6 +1777,7 @@
         "end_date": "2024-08-15",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "100 USD"
     },
     {
@@ -1739,6 +1803,7 @@
         "end_date": "2024-06-30",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "350 USD"
     },
     {
@@ -1762,7 +1827,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "HDMI/SDI Cables",
@@ -1785,7 +1851,8 @@
           "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "HDMI/SDI Cables",
@@ -1808,7 +1875,8 @@
           "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "HDMI/SDI Cables",
@@ -1831,7 +1899,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "HDMI/SDI Cables",
@@ -1854,7 +1923,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "XLR Cables",
@@ -1876,7 +1946,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "XLR Cables",
@@ -1898,7 +1969,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "XLR Cables",
@@ -1920,7 +1992,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "XLR Cables",
@@ -1942,7 +2015,8 @@
          "start_date": "2024-07-01",
         "end_date": "2024-08-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "XLR Cables",
@@ -1964,7 +2038,8 @@
           "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Ethernet Cables",
@@ -1987,7 +2062,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Ethernet Cables",
@@ -2010,7 +2086,8 @@
           "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
         "name": "Ethernet Cables",
@@ -2033,7 +2110,8 @@
           "start_date": "2024-06-15",
           "end_date": "2024-07-15",
           "status": "available"
-        }
+        },
+        "location":"Dubai"
       },
     {
       "name": "Ethernet Cables",
@@ -2056,7 +2134,8 @@
          "start_date": "2024-07-01",
         "end_date": "2024-08-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Ethernet Cables",
@@ -2079,7 +2158,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Intercom System",
@@ -2105,7 +2185,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Intercom System",
@@ -2131,7 +2212,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
         "name": "Intercom System",
@@ -2157,7 +2239,8 @@
             "start_date": "2024-06-11",
         "end_date": "2024-07-25",
           "status": "available"
-        }
+        },
+        "location":"Dubai"
       },
       {
         "name": "Intercom System",
@@ -2183,7 +2266,8 @@
           "start_date": "2024-06-15",
           "end_date": "2024-07-15",
           "status": "available"
-        }
+        },
+        "location":"Dubai"
       },      
     {
       "name": "Intercom System",
@@ -2209,7 +2293,8 @@
           "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Walkie-talkies",
@@ -2235,7 +2320,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Walkie-talkies",
@@ -2261,7 +2347,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
         "name": "Walkie-talkies",
@@ -2287,7 +2374,8 @@
           "start_date": "2024-07-01",
           "end_date": "2024-07-31",
           "status": "available"
-        }
+        },
+        "location":"Dubai"
       },
       {
         "name": "Walkie-talkies",
@@ -2313,7 +2401,8 @@
             "start_date": "2024-06-11",
         "end_date": "2024-07-25",
           "status": "available"
-        }
+        },
+        "location":"Dubai"
       },
       {
         "name": "Walkie-talkies",
@@ -2339,7 +2428,8 @@
           "start_date": "2024-06-01",
           "end_date": "2024-06-30",
           "status": "available"
-        }
+        },
+        "location":"Dubai"
       },      
     {
       "name": "Teleprompter",
@@ -2365,7 +2455,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Teleprompter",
@@ -2391,7 +2482,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Teleprompter",
@@ -2417,7 +2509,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Teleprompter",
@@ -2443,7 +2536,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
         "name": "Teleprompter",
@@ -2469,7 +2563,8 @@
           "start_date": "2024-07-01",
           "end_date": "2024-07-31",
           "status": "available"
-        }
+        },
+        "location":"Dubai"
       },      
     {
       "name": "Laptops/Computers",
@@ -2496,7 +2591,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Laptops/Computers",
@@ -2523,7 +2619,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Laptops/Computers",
@@ -2550,7 +2647,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Laptops/Computers",
@@ -2577,7 +2675,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
         "name": "Laptops/Computers",
@@ -2604,7 +2703,8 @@
           "start_date": "2024-07-01",
           "end_date": "2024-08-31",
           "status": "available"
-        }
+        },
+        "location":"Dubai"
       },      
     {
       "name": "Backup Power",
@@ -2630,7 +2730,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Backup Power",
@@ -2656,7 +2757,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Backup Power",
@@ -2682,7 +2784,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Backup Power",
@@ -2708,7 +2811,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Backup Power",
@@ -2734,7 +2838,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Graphics Computer",
@@ -2762,7 +2867,8 @@
           "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Graphics Computer",
@@ -2790,7 +2896,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Graphics Computer",
@@ -2818,7 +2925,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Graphics Computer",
@@ -2846,7 +2954,8 @@
          "start_date": "2024-07-01",
         "end_date": "2024-08-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Graphics Computer",
@@ -2874,7 +2983,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Streaming Software",
@@ -2899,7 +3009,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Streaming Software",
@@ -2924,7 +3035,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Streaming Software",
@@ -2949,7 +3061,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Streaming Software",
@@ -2974,7 +3087,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Streaming Software",
@@ -2999,7 +3113,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Graphics Software",
@@ -3024,7 +3139,8 @@
           "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Graphics Software",
@@ -3049,7 +3165,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Graphics Software",
@@ -3074,7 +3191,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Graphics Software",
@@ -3099,7 +3217,8 @@
          "start_date": "2024-07-01",
         "end_date": "2024-08-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Graphics Software",
@@ -3124,7 +3243,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "External Recorders",
@@ -3150,7 +3270,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "External Recorders",
@@ -3176,7 +3297,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "External Recorders",
@@ -3202,7 +3324,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "External Recorders",
@@ -3228,7 +3351,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "External Recorders",
@@ -3254,7 +3378,8 @@
           "start_date": "2024-07-01",
         "end_date": "2024-08-31",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Storage Devices",
@@ -3281,7 +3406,8 @@
         "start_date": "2024-06-11",
         "end_date": "2024-07-25",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Storage Devices",
@@ -3308,7 +3434,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Storage Devices",
@@ -3335,7 +3462,8 @@
         "start_date": "2024-06-01",
         "end_date": "2024-06-30",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Storage Devices",
@@ -3362,7 +3490,8 @@
         "start_date": "2024-07-01",
         "end_date": "2024-08-15",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Storage Devices",
@@ -3389,7 +3518,8 @@
         "start_date": "2024-06-14",
         "end_date": "2024-07-10",
         "status": "available"
-      }
+      },
+      "location":"Dubai"
     },
     {
       "name": "Rigging and Staging",
@@ -3415,6 +3545,7 @@
         "end_date": "2024-07-25",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "80 USD"
     },
     {
@@ -3441,6 +3572,7 @@
         "end_date": "2024-06-30",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "100 USD"
     },
     {
@@ -3467,6 +3599,7 @@
         "end_date": "2024-08-15",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "60 USD"
     },
     {
@@ -3493,6 +3626,7 @@
         "end_date": "2024-08-31",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "40 USD"
     },
     {
@@ -3519,6 +3653,7 @@
         "end_date": "2024-07-10",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "90 USD"
     },
     {
@@ -3545,6 +3680,7 @@
         "end_date": "2024-07-25",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "70 USD"
     },
     {
@@ -3571,6 +3707,7 @@
         "end_date": "2024-08-31",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "60 USD"
     },
     {
@@ -3597,6 +3734,7 @@
         "end_date": "2024-08-31",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "50 USD"
     },
     {
@@ -3623,6 +3761,7 @@
         "end_date": "2024-08-15",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "65 USD"
     },
     {
@@ -3649,6 +3788,7 @@
         "end_date": "2024-07-25",
         "status": "available"
       },
+      "location":"Dubai",
       "rental_price_per_day": "75 USD"
     }
   ]

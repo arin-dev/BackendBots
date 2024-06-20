@@ -31,8 +31,8 @@ class SelectedEquipmentsSerializer(serializers.ModelSerializer):
     model = serializers.CharField(source='equipment.model')
     brand = serializers.CharField(source='equipment.brand')
     number_needed = serializers.IntegerField(source='equipment_requirements.number_needed')
-    location = serializers.IntegerField(source='equipment.location')
-    preferred_because = serializers.CharField(source='preferred_because')
+    location = serializers.CharField(source='equipment.location')
+    Preferred_because = serializers.CharField(source='preferred_because')
     provider_email = serializers.EmailField(source='equipment.provider.email', required=False)
     
     class Meta:

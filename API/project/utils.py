@@ -30,8 +30,8 @@ class State(TypedDict):
     crew_requirements : List[dict]
     # queries : List[str]
     selected_crews : List[dict]
-    # equipments: List[str]
-    unique_equipments: List[str]
+    equipments: List[str]
+    # unique_equipments: List[str]
     equipment_requirements: List[dict]
     user_equipment_requirements: List[dict]
     selected_equipments: List[dict]
@@ -127,7 +127,7 @@ def createSelectedEquipments(selected_equipments, new_project):
         new_equip_selected = SelectedEquipments(
             project = new_project,
             equipment = equipment_instance,
-            equipment_requirements = EquipmentRequirement.objects.get(project=new_project, type=equipment["type"]),
+            equipment_requirements = EquipmentRequirement.objects.get(project=new_project, name=equipment["name"]),
             preferred_because = equipment["preferred_because"],
          )
         new_equip_selected.save()
