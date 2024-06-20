@@ -1,5 +1,3 @@
-# culture/serializers.py
-
 from rest_framework import serializers
 from .models import Culture, ProjectCulture
 from project.models import Project  # Import the Project model
@@ -15,9 +13,9 @@ class ProjectSerializer(serializers.ModelSerializer):
         fields = ['project_id', 'project_name', 'content_type', 'budget', 'description', 'additional_details', 'location_details', 'ai_suggestions']
 
 class ProjectCultureSerializer(serializers.ModelSerializer):
-    project = ProjectSerializer(read_only=True)
-    cultures = CultureSerializer(many=True, read_only=True)
+    # project = ProjectSerializer(read_only=True)
+    culture = CultureSerializer(read_only=True)
 
     class Meta:
         model = ProjectCulture
-        fields = ['id', 'project', 'cultures']
+        fields = ['id', 'culture']
