@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-OPENAI_API_KEY = "sk-proj-I5kH0wL8KRe8R8AiD79HT3BlbkFJdsc5uaiBIFSgHbxKmaCd"
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+
 
 # For LLM
 llm = ChatOpenAI(model="gpt-4o", temperature=0.2, api_key=OPENAI_API_KEY)
