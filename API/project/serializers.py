@@ -21,6 +21,6 @@ class ProjectDetailsSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Project
-        exclude = ['selected_crews', 'crew_requirements']
+        exclude = ['selected_crews', 'crew_requirements', 'logistics', 'compliance_report']
         depth = 1
     

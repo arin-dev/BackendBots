@@ -84,7 +84,7 @@ def createSelectedCrews(selected_crews, new_project):
             # print("length", len(crews))
             if isinstance(crews, list):
                 for crew in crews:
-                    print("\n\n\n ########### I want this : crew ########### \n ", "crew#",crew,"#crew")
+                    # print("\n\n\n ########### I want this : crew ########### \n ", "crew#",crew,"#crew")
                     print(not crew)
                     if not crew:
                         continue
@@ -98,7 +98,7 @@ def createSelectedCrews(selected_crews, new_project):
                     )
                     new_selected_crew.save()
             else:
-                print("\n\n\n ########### crew ########### \n ", crews)
+                # print("\n\n\n ########### crew ########### \n ", crews)
                 if not crews:
                     continue
                 # print("\n\n\n ########### crews ########### ")
@@ -176,7 +176,7 @@ def create_compliance_details(new_project, location, mode, crew_size, time_frame
 
 def complete_compliance_reports(project_state, location_details, new_project):
     threads = []
-    crew_size = sum(project_state.get('user_crew_requirements').values)
+    crew_size = sum(project_state.get('user_crew_requirements').values())
     for location_detail in location_details:
         location, start_date, end_date, mode = location_detail.get('location'), location_detail.get('start_date'), location_detail.get('end_date'), location_detail.get('mode')
         time_frame = str(start_date) + " to " + str(end_date)
