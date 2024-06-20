@@ -1,25 +1,20 @@
 import time
+import threading
+from typing import TypedDict, List
+from Equipment_Bot.EquipmentWorkflow import unique_equipments_getter
 
-
+from culture.models import Culture
+from logistics.models import Logistics
+from compliance.models import Compliance
+from culture.models import ProjectCulture
 from crew.models import CrewMember, CrewRequirement, SelectedCrew
 from equipment.models import Equipment, EquipmentRequirement, SelectedEquipments
-from .models import Project
-
 
 from Crew_Bot.CrewGraph import CrewGraph
 from Equipment_Bot.EquipmentWorkflow import EquipmentGraph
-
-import threading
-from culture.models import Culture
-from typing import TypedDict, List
-from logistics.models import Logistics
-from compliance.models import Compliance
-from Crew_Bot.CrewGraph import CrewGraph
-from culture.models import ProjectCulture
 from culture.functions import get_cultural_protocols
 from logistics.functions import get_logistics_details
 from compliance.functions import get_compliance_report
-from crew.models import CrewMember, CrewRequirement, SelectedCrew
 
 
 class State(TypedDict):
@@ -33,9 +28,10 @@ class State(TypedDict):
     unique_roles : List[str]
     user_crew_requirements : List[dict]
     crew_requirements : List[dict]
-    queries : List[str]
+    # queries : List[str]
     selected_crews : List[dict]
-    equipments: List[str]
+    # equipments: List[str]
+    unique_equipments: List[str]
     equipment_requirements: List[dict]
     user_equipment_requirements: List[dict]
     selected_equipments: List[dict]
@@ -52,53 +48,40 @@ def get_form_data(request):
     location_details = form_data.get('locationDetails')
     ai_suggestions = form_data.get('ai_suggestions')
     user_crew_requirements = form_data.get('crew')
-
     user_equipment_requirements = form_data.get('equipment')
-    # locations = []
-    # for location in location_details:
-    #     locations.append(location["location"].replace("'", "").split(",")[0])
-    ########### because of lack of data it is giving error ###########
-    locations = ['Dubai']
-    my_state = State(project_name=project_name, content_type=content_type, budget=budget, description=description, additional_details=additional_details, locations=locations, ai_suggestions=ai_suggestions, unique_roles=[], user_crew_requirements=user_crew_requirements, crew_requirements=[], queries=[], selected_crews=[], equipments=[], equipment_requirements=[],user_equipment_requirements=user_equipment_requirements,selected_equipments=[])
 
-    # locations = ['Dubai']
+
     locations = []
     for location in location_details:
         locations.append(location["location"].replace("'", "").split(",")[0])
     
     print(locations)
-    my_state = State(project_name=project_name, content_type=content_type, budget=budget, description=description, additional_details=additional_details, locations=locations, ai_suggestions=ai_suggestions, unique_roles=[], user_crew_requirements=user_crew_requirements, crew_requirements=[], queries=[], selected_crews=[])
+    my_state = State(project_name=project_name, content_type=content_type, budget=budget, description=description, additional_details=additional_details, locations=locations, ai_suggestions=ai_suggestions, unique_roles=[], user_crew_requirements=user_crew_requirements, crew_requirements=[], selected_crews=[], unique_equipments=[], equipment_requirements=[], user_equipment_requirements=user_equipment_requirements, selected_equipments=[])
     return my_state, location_details
-
-
-
-def short_wait():
-    time.sleep(2)
-    print("done")
-
 
 
 def complete_project_details(project_state, new_project):
     # Calling CrewGraph
     result = CrewGraph(State = State, state=project_state)
     # print("\n\n Fuction0 calling ",result, "type of ",type(result))
+
     crew_req = result["crew_requirements"]
-    if(type(crew_req)==dict):
-        crew_req=crew_req["crew_requirements"]
     createCrewRequirement(crew_req, new_project)
+
     selected_crews = result["selected_crews"]
     createSelectedCrews(selected_crews, new_project)
     
-    # print("\n\n\n project state is ",project_state,"\n\n")
     # print("\n\n\n result is ",result,"\n\n")
     
     # Calling EquipmentGraph
     result = EquipmentGraph(State=State, state=result)
+
     equip_req = result["equipment_requirements"]
-    if(type(equip_req)==dict):
-        equip_req=equip_req["equipment_requirements"]
+    print("\n\n\n ############# Entering into create equipment requirement :", equip_req)
     createEquipmentRequirement(equip_req, new_project)
+
     selected_equipments = result["selected_equipments"]
+    print("\n\n\n ############# Entering into create selected equipment :", selected_equipments)
     createSelectedEquipments(selected_equipments, new_project)
     
     
@@ -109,7 +92,7 @@ def createEquipmentRequirement(equip_req, new_project):
         for equip in equip_req:
             new_equip = EquipmentRequirement(
                 project=new_project,
-                name=equip["name"], 
+                type=equip["name"], 
                 Specification_required = equip["Specification_required"],
                 number_needed=equip["number_needed"],
                 location=equip["location"],
@@ -119,7 +102,7 @@ def createEquipmentRequirement(equip_req, new_project):
         equip = equip_req
         new_equip = EquipmentRequirement(
             project=new_project,
-            name=equip["name"], 
+            type=equip["name"], 
             Specification_required = equip["Specification_required"],
             number_needed=equip["number_needed"],
             location=equip["location"],
@@ -130,7 +113,7 @@ def createSelectedEquipments(selected_equipments, new_project):
     # print("\n\n\n ###########  \n\n\n")
     # print("\n\nselected_equipments", type(selected_equipments), selected_equipments)
     for equipment in selected_equipments:
-        equipment_queryset = Equipment.objects.filter(name=equipment["name"], brand=equipment["brand"], model=equipment["model"])
+        equipment_queryset = Equipment.objects.filter(model=equipment["model"], brand=equipment["brand"])
         equipment_instance = equipment_queryset.first()
          
         #  location = equipment.get('location')
@@ -144,7 +127,7 @@ def createSelectedEquipments(selected_equipments, new_project):
         new_equip_selected = SelectedEquipments(
             project = new_project,
             equipment = equipment_instance,
-            equipment_requirements = EquipmentRequirement.objects.get(project=new_project, name=equipment["name"]),
+            equipment_requirements = EquipmentRequirement.objects.get(project=new_project, type=equipment["type"]),
             preferred_because = equipment["preferred_because"],
          )
         new_equip_selected.save()
@@ -155,22 +138,22 @@ def createCrewRequirement(crew_req, new_project):
     # print("\n\n Fuction1 calling ",crew_req, "type of ",type(crew_req))
     if isinstance(crew_req,List):
         for crew in crew_req:
-            new_equip = CrewRequirement(
+            new_crew = CrewRequirement(
                 project=new_project,
                 role=crew["role"], 
                 number_needed=crew["number_needed"],
                 location=crew["location"],
             )
-            new_equip.save()
+            new_crew.save()
     else:
         crew = crew_req
-        new_equip = CrewRequirement(
+        new_crew = CrewRequirement(
             project=new_project,
             role=crew["role"], 
             number_needed=crew["number_needed"],
             location=crew["location"],
         )
-        new_equip.save()
+        new_crew.save()
 
 def createSelectedCrews(selected_crews, new_project):
     # print("\n\n\n ###########  \n\n\n")
@@ -179,8 +162,8 @@ def createSelectedCrews(selected_crews, new_project):
         # print("\n\n\n ########### role_dict.items() #######  \n\n\n")
         # print("\n\n role_dict", type(role_dict), role_dict.items())
         for role, crews in role_dict.items():
-            # print("\n\n\n ########### role and crews ########### ")
-            # print("role", role, "crews", crews, "type", type(crews))
+            print("\n\n\n ########### role and crews ########### ")
+            print("role", role, "crews", crews, "type", type(crews))
             # print("length", len(crews))
             if isinstance(crews, list):
                 for crew in crews:

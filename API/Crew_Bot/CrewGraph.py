@@ -29,6 +29,7 @@ def crew_selection(State):
     additional_details = State["additional_details"]
     budget = State["budget"]
     crew_requirements = State["crew_requirements"]
+
     # print("\n\n\n ############# \n",crew_requirements)
     if(type(crew_requirements)==dict):
         crew_requirements = crew_requirements["crew_requirements"]
@@ -79,6 +80,7 @@ def CrewGraph(State: dict, state):
     workflow.add_edge("unique_roles_getter", "crew_requirement_getter")
     workflow.add_edge("crew_requirement_getter", "crew_selection")
     workflow.add_edge("crew_selection", "state_printer")
+
     workflow.set_entry_point("unique_roles_getter")
     workflow.add_edge("state_printer", END)
 

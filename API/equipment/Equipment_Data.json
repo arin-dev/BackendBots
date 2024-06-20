@@ -1,6 +1,6 @@
 [
     {
-      "name": "broadcast_camera",
+      "name": "Broadcast Camera",
       "type": "Camera Equipment",
       "brand": "Sony",
       "model": "HDC-3500",
@@ -34,7 +34,7 @@
       }
     },
     {
-      "name": "broadcast_camera",
+      "name": "Broadcast Camera",
       "type": "Camera Equipment",
       "brand": "Panasonic",
       "model": "AK-UC4000",
@@ -68,7 +68,7 @@
       }
     },
     {
-      "name": "broadcast_camera",
+      "name": "Broadcast Camera",
       "type": "Camera Equipment",
       "brand": "Canon",
       "model": "XF705",
@@ -102,7 +102,7 @@
       }
     },
     {
-      "name": "broadcast_camera",
+      "name": "Broadcast Camera",
       "type": "Camera Equipment",
       "brand": "JVC",
       "model": "GY-HC900",
@@ -136,7 +136,7 @@
       }
     },
     {
-      "name": "broadcast_camera",
+      "name": "Broadcast Camera",
       "type": "Camera Equipment",
       "brand": "Blackmagic Design",
       "model": "URSA Broadcast G2",

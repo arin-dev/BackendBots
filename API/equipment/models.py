@@ -88,7 +88,7 @@ class Equipment(models.Model):
 
 class EquipmentRequirement(models.Model):
     project = models.ForeignKey('project.Project', on_delete=models.CASCADE, related_name='equipment_requirements_set')
-    name = models.CharField(max_length=50)
+    type = models.CharField(max_length=50)
     Specification_required = models.TextField(default="")
     location = models.CharField(max_length=50)
     number_needed = models.IntegerField()
