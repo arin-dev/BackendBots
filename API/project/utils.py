@@ -77,6 +77,7 @@ def short_wait():
     print("done")
 
 def complete_project_details(project_state, new_project):
+#     locations = result['locations']
     # Calling CrewGraph
     result = CrewGraph(State = State, state=project_state)
     # print("\n\n Fuction0 calling ",result, "type of ",type(result))
@@ -105,6 +106,9 @@ def complete_project_details(project_state, new_project):
    
     selected_equipments = result["selected_equipments"]
     createSelectedEquipments(selected_equipments, new_project)
+
+    new_project.status = "PENDING"
+    new_project.save()
     
 
 def createEquipmentRequirement(equip_req, new_project):
@@ -235,17 +239,17 @@ def complete_culture_details(locations, project):
 
 
 
-def complete_project_details(project_state, new_project):
-    result = CrewGraph(State=State, state=project_state)
-    locations = result['locations']
-    crew_req = result["crew_requirements"]
-    createCrewRequirement(crew_req, new_project)
-    selected_crews = result["selected_crews"]
-    createSelectedCrews(selected_crews, new_project)
+# def complete_project_details(project_state, new_project):
+#     result = CrewGraph(State=State, state=project_state)
+#     locations = result['locations']
+#     crew_req = result["crew_requirements"]
+#     createCrewRequirement(crew_req, new_project)
+#     selected_crews = result["selected_crews"]
+#     createSelectedCrews(selected_crews, new_project)
 
 
-    new_project.status = "PENDING"
-    new_project.save()
+#     new_project.status = "PENDING"
+#     new_project.save()
 
 
 def create_logistics_details(destination, start_date, end_date, new_project):
