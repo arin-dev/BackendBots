@@ -67,8 +67,9 @@ def State_printer(State):
 #     print("equipments:", State["equipments"])
 #     print("equipment_requirements:", State["equipment_requirements"])
 #     print("selected_equipments:", State["selected_equipments"])
-    print("\n\n ###### Equipment Project is finished! ###### \n\n")
-    return
+    # print("\n\n ###### Equipment Project is finished! ###### \n\n")
+    # return
+    pass
 
 def EquipmentGraph(State: dict, state):
     workflow = StateGraph(State)

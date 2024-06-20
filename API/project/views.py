@@ -9,7 +9,6 @@ from .serializers import ProjectsSerializer, ProjectDetailsSerializer
 
 from .utils import *
 
-# Create your views here.
 @api_view(['POST'])
 def create_project(request):
     project_state, location_details = get_form_data(request)
@@ -23,7 +22,7 @@ def create_project(request):
         ai_suggestions=project_state["ai_suggestions"],
     )
     new_project.save()
-    
+
     # Start threading tasks
     task2 = threading.Thread(target=complete_project_details, args=(project_state, new_project))
     task3 = threading.Thread(target=complete_culture_details, args=(project_state["locations"], new_project))
@@ -33,14 +32,21 @@ def create_project(request):
     task3.start()
     task4.start()
     task5.start()
-    
-    # Optionally join the threads if you want to wait for them to complete before returning the response
-    # task2.join()
-    # task3.join()
-    
+
+    # Create a new thread that waits for all threads to complete and then updates the project status
+    def update_project_status():
+        task2.join()
+        task3.join()
+        task4.join()
+        task5.join()
+        new_project.status = "COMPLETED"
+        new_project.save()
+
+    update_thread = threading.Thread(target=update_project_status)
+    update_thread.start()
+
     new_project_id = new_project.project_id
     return Response({"message": "Request successful", "project_id": new_project_id})
-    # return Response({"message": "Request successful", "trial":"True"})
 
 
 

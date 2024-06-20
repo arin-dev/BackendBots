@@ -76,19 +76,16 @@ def short_wait():
     time.sleep(2)
     print("done")
 
+
+
 def complete_project_details(project_state, new_project):
-#     locations = result['locations']
     # Calling CrewGraph
     result = CrewGraph(State = State, state=project_state)
     # print("\n\n Fuction0 calling ",result, "type of ",type(result))
-    
     crew_req = result["crew_requirements"]
-    
     if(type(crew_req)==dict):
         crew_req=crew_req["crew_requirements"]
-        
     createCrewRequirement(crew_req, new_project)
-    
     selected_crews = result["selected_crews"]
     createSelectedCrews(selected_crews, new_project)
     
@@ -98,17 +95,12 @@ def complete_project_details(project_state, new_project):
     # Calling EquipmentGraph
     result = EquipmentGraph(State=State, state=result)
     equip_req = result["equipment_requirements"]
-       
     if(type(equip_req)==dict):
         equip_req=equip_req["equipment_requirements"]
-        
     createEquipmentRequirement(equip_req, new_project)
-   
     selected_equipments = result["selected_equipments"]
     createSelectedEquipments(selected_equipments, new_project)
-
-    new_project.status = "PENDING"
-    new_project.save()
+    
     
 
 def createEquipmentRequirement(equip_req, new_project):
@@ -138,25 +130,26 @@ def createSelectedEquipments(selected_equipments, new_project):
     # print("\n\n\n ###########  \n\n\n")
     # print("\n\nselected_equipments", type(selected_equipments), selected_equipments)
     for equipment in selected_equipments:
-        
-         equipment_queryset = Equipment.objects.filter(name=equipment["name"], brand=equipment["brand"], model=equipment["model"])
-         equipment_instance = equipment_queryset.first()
+        equipment_queryset = Equipment.objects.filter(name=equipment["name"], brand=equipment["brand"], model=equipment["model"])
+        equipment_instance = equipment_queryset.first()
          
         #  location = equipment.get('location')
-         location = "Dubai"
+        location = "Dubai"
         #  if location is None:
         #      location="Dubai"
          
         #  equipment_requirements_instance = EquipmentRequirement.objects.get(project=new_project, name=equipment["name"], location=location)
         #  print("\n\n Last part ",new_project.project_id,"  ",equipment["name"],"\n\n")
-         
-         new_equip_selected = SelectedEquipments(
-             project = new_project,
-             equipment = equipment_instance,
-             equipment_requirements = EquipmentRequirement.objects.get(project=new_project, name=equipment["name"]),
-             preferred_because = equipment["preferred_because"],
+        print(equipment)
+        new_equip_selected = SelectedEquipments(
+            project = new_project,
+            equipment = equipment_instance,
+            equipment_requirements = EquipmentRequirement.objects.get(project=new_project, name=equipment["name"]),
+            preferred_because = equipment["preferred_because"],
          )
-         new_equip_selected.save()
+        new_equip_selected.save()
+
+
 
 def createCrewRequirement(crew_req, new_project):
     # print("\n\n Fuction1 calling ",crew_req, "type of ",type(crew_req))
@@ -179,9 +172,6 @@ def createCrewRequirement(crew_req, new_project):
         )
         new_equip.save()
 
-
-
- 
 def createSelectedCrews(selected_crews, new_project):
     # print("\n\n\n ###########  \n\n\n")
     # print("\n\nselected_crews", type(selected_crews), selected_crews)
@@ -222,6 +212,7 @@ def createSelectedCrews(selected_crews, new_project):
                 new_selected_crew.save()
 
 
+
 ### This portion is just to make code faster, make sure to remove this in upcoming versions so that i always gives latest trends and details.
 def create_culture_for_location(location, project):
     details = get_cultural_protocols(location)
@@ -237,19 +228,6 @@ def complete_culture_details(locations, project):
     for thread in threads:
         thread.join()
 
-
-
-# def complete_project_details(project_state, new_project):
-#     result = CrewGraph(State=State, state=project_state)
-#     locations = result['locations']
-#     crew_req = result["crew_requirements"]
-#     createCrewRequirement(crew_req, new_project)
-#     selected_crews = result["selected_crews"]
-#     createSelectedCrews(selected_crews, new_project)
-
-
-#     new_project.status = "PENDING"
-#     new_project.save()
 
 
 def create_logistics_details(destination, start_date, end_date, new_project):

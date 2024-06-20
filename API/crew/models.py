@@ -21,7 +21,7 @@ class CrewMember(models.Model):
         return self.name
 
 class CrewRequirement(models.Model):
-    project = models.ForeignKey('project.Project', on_delete=models.CASCADE, related_name='crew_requirements_set', default=1)
+    project = models.ForeignKey('project.Project', on_delete=models.CASCADE, related_name='crew_requirements_set')
     role = models.CharField(max_length=50)
     location = models.CharField(max_length=50)
     number_needed = models.IntegerField()
@@ -30,9 +30,9 @@ class CrewRequirement(models.Model):
         return self.role
 
 class SelectedCrew(models.Model):
-    project = models.ForeignKey('project.Project', on_delete=models.CASCADE, related_name='selected_crews_set', default=1)
+    project = models.ForeignKey('project.Project', on_delete=models.CASCADE, related_name='selected_crews_set')
     crew_member = models.ForeignKey('CrewMember', on_delete=models.CASCADE, default=1)
-    crew_requirements = models.ForeignKey('CrewRequirement', on_delete=models.CASCADE, related_name='selected_crews', default=1)
+    crew_requirements = models.ForeignKey('CrewRequirement', on_delete=models.CASCADE, related_name='selected_crews')
     preferred_because = models.TextField(default="Did not store the field") #remove this after deleting previous data
     
     def __str__(self):
