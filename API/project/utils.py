@@ -85,7 +85,7 @@ def createSelectedCrews(selected_crews, new_project):
             if isinstance(crews, list):
                 for crew in crews:
                     # print("\n\n\n ########### I want this : crew ########### \n ", "crew#",crew,"#crew")
-                    print(not crew)
+                    # print(not crew)
                     if not crew:
                         continue
                     # print("\n\n\n ########### crew ########### ")
@@ -137,6 +137,9 @@ def complete_project_details(project_state, new_project):
     selected_crews = result["selected_crews"]
     createSelectedCrews(selected_crews, new_project)
 
+
+    new_project.status = "PENDING"
+    new_project.save()
 
 
 def create_logistics_details(destination, start_date, end_date, new_project):

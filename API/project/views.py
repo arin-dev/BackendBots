@@ -46,9 +46,22 @@ def create_project(request):
 
 @api_view(['GET'])
 def list_projects(request):
-    projects = Project.objects.all()
+    if 'status' in request.GET:
+        projects = Project.objects.filter(status=request.GET['status'])
+    else:
+        projects = Project.objects.all()
     serializer = ProjectsSerializer(projects, many=True)
     return Response(serializer.data, status=200)
+
+@api_view(['POST'])
+def mark_project_as_completed(request):
+    project_id = request.GET.get('project_id')
+    if project_id is None:
+        return Response("Project id is required", status=400)
+    project = Project.objects.get(project_id=uuid.UUID(project_id))
+    project.status = "COMPLETED"
+    project.save()
+    return Response({"message": "Project marked as completed"}, status=200)
 
 
 

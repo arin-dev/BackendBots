@@ -16,7 +16,7 @@ class Project(models.Model):
     project_cultures = models.ManyToManyField('culture.Culture', through='culture.ProjectCulture', related_name='projects_set')
     logistics = models.ManyToManyField('logistics.Logistics', related_name='projects_set')
     compliance_report = models.ManyToManyField('compliance.Compliance', related_name='projects_set')
-
+    status = models.CharField(max_length=255, default='INITIATED')
     def delete(self, *args, **kwargs):
         self.crew_requirements.all().delete()
         self.selected_crews.all().delete()

@@ -9,7 +9,7 @@ from compliance.serializers import ComplianceSerializer
 class ProjectsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Project
-        fields = ['project_id', 'project_name', 'description']
+        fields = ['project_id', 'project_name', 'description', 'status']
         depth = 1
 
 class ProjectDetailsSerializer(serializers.ModelSerializer):
