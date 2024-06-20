@@ -84,8 +84,6 @@ def equipment_selection(state: State):
 
 
 workflow = StateGraph(State)
-
-
 workflow.add_node("unique_equipments_getter", unique_equipments_getter)
 workflow.add_node("equipment_requirement_getter", equipment_requirement_getter)
 workflow.add_node("equipment_selection", equipment_selection)

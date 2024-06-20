@@ -32,6 +32,8 @@ def crew_selection(State):
     budget = State["budget"]
     crew_requirements = State["crew_requirements"]
     # print("\n\n\n ############# \n",crew_requirements)
+    if(type(crew_requirements)==dict):
+        crew_requirements = crew_requirements["crew_requirements"]
 
     selected_crews = []
     if isinstance(crew_requirements, List):
