@@ -2,6 +2,7 @@ from .PromptFunctions import *
 from langgraph.graph import END, StateGraph
 from typing import TypedDict, List, Annotated
 from equipment.models import Equipment, Provider, Availability
+from Report.Report_Bot.ReportFunctions import equipment_report
 
 
 # Finding out all unique equipments

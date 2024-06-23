@@ -1,6 +1,6 @@
 import time
 import threading
-from typing import TypedDict, List
+from typing import TypedDict, List, Dict
 from Equipment_Bot.EquipmentWorkflow import unique_equipments_getter
 
 from culture.models import Culture
@@ -12,6 +12,7 @@ from equipment.models import Equipment, EquipmentRequirement, SelectedEquipments
 
 from Crew_Bot.CrewGraph import CrewGraph
 from Equipment_Bot.EquipmentWorkflow import EquipmentGraph
+from Report.Report_Bot.ReportGraph import ReportGraph
 from culture.functions import get_cultural_protocols
 from logistics.functions import get_logistics_details
 from compliance.functions import get_compliance_report
@@ -35,7 +36,26 @@ class State(TypedDict):
     equipment_requirements: List[dict]
     user_equipment_requirements: List[dict]
     selected_equipments: List[dict]
-    
+
+class ReportState(TypedDict):
+    selected_crews: List[dict]
+    selected_equipments: List[dict]
+    crew_report: List[dict]
+    equipment_report: List[dict]
+    compliance_report: List[dict]
+    logistic_report: List[dict]
+    culture_report: List[dict]
+
+# Create an instance of ReportState
+report_state: ReportState = {
+    "selected_crews": [],
+    "selected_equipments": [],
+    "crew_report": [],
+    "equipment_report": [],
+    "compliance_report": [],
+    "logistic_report": [],
+    "culture_report": []
+}
 
 
 def get_form_data(request):
@@ -55,7 +75,6 @@ def get_form_data(request):
     for location in location_details:
         locations.append(location["location"].replace("'", "").split(",")[0])
     
-    print(locations)
     my_state = State(project_name=project_name, content_type=content_type, budget=budget, description=description, additional_details=additional_details, locations=locations, ai_suggestions=ai_suggestions, unique_roles=[], user_crew_requirements=user_crew_requirements, crew_requirements=[], queries=[], selected_crews=[],equipments=[], equipment_requirements=[],user_equipment_requirements=user_equipment_requirements,selected_equipments=[])
     return my_state, location_details
 
@@ -71,11 +90,11 @@ def complete_project_details(project_state, new_project):
     selected_crews = result["selected_crews"]
     createSelectedCrews(selected_crews, new_project)
     
-    # print("\n\n\n result is ",result,"\n\n")
+   
     
     # Calling EquipmentGraph
     result = EquipmentGraph(State=State, state=result)
-
+    
     equip_req = result["equipment_requirements"]
 
     if(type(equip_req)==dict):
@@ -93,6 +112,16 @@ def complete_project_details(project_state, new_project):
     selected_equipments = result["selected_equipments"]
     print("\n\n\n ############# Entering into create selected equipment :", selected_equipments)
     createSelectedEquipments(selected_equipments, new_project)
+    
+    print("\n\n Selected crew is",type(result["selected_crews"]),"    ",type(report_state["selected_crews"]),"\n\n")
+    print("\n\n weeed euipmnsko2 is",result["selected_equipments"],"\n\n")
+    
+    report_state["selected_crews"]=result["selected_crews"]
+    
+    report_state["selected_equipments"]=result["selected_equipments"]
+    print("\n Before calling",report_state["selected_equipments"],"\n")
+    ReportGraph(report_state)
+    
     
     
 
@@ -141,6 +170,7 @@ def createSelectedEquipments(selected_equipments, new_project):
             preferred_because = equipment["Preferred_because"],
          )
         new_equip_selected.save()
+    print("\n------ Ready to call APIs -------- \n")
 
 
 
@@ -172,8 +202,8 @@ def createSelectedCrews(selected_crews, new_project):
         # print("\n\n\n ########### role_dict.items() #######  \n\n\n")
         # print("\n\n role_dict", type(role_dict), role_dict.items())
         for role, crews in role_dict.items():
-            print("\n\n\n ########### role and crews ########### ")
-            print("role", role, "crews", crews, "type", type(crews))
+            # print("\n\n\n ########### role and crews ########### ")
+            # print("role", role, "crews", crews, "type", type(crews))
             # print("length", len(crews))
             if isinstance(crews, list):
                 for crew in crews:

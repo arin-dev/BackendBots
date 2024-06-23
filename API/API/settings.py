@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'equipment',
     'culture',
     'logistics',
-    'compliance'
+    'compliance',
+    'Report'
 ]
 
 MIDDLEWARE = [
