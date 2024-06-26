@@ -21,8 +21,8 @@ llm_json = ChatOpenAI(model="gpt-4o", temperature=0.2, api_key=OPENAI_API_KEY).b
 
 
 def crew_report(crew_selected):
-        prompt_crew_report = f"""You are an experienced film production assistant and an expert in planning and organizing film crews. Here you are provided with some selected crew:{crew_selected}. Your task is to generate a crew report, which contain name, userid, age, gender, driving-licence(boolean value True or False) of the crew selected. The selected crew data already have name and userid, but age, gender, dridriving-licence are not present in the given data so you have to generate it. Value of driving licence should be in boolean format that is either True or False. gender should be based on their names.
-        Output must be in JSON format and should contain only the following fields :[name, userid, age,gender,driving-licence]"""
+        prompt_crew_report = f"""You are an experienced film production assistant and an expert in planning and organizing film crews. Here you are provided with some selected crew:{crew_selected}. Your task is to generate a crew report, which contain name, userid, age, gender, driving_licence(boolean value True or False) of the crew selected. The selected crew data already have name and userid, but age, gender, dridriving_licence are not present in the given data so you have to generate it. Value of driving licence should be in boolean format that is either True or False. gender should be based on their names.
+        Output must be in JSON format and should contain only the following fields :[name, userid, age,gender,driving_licence]"""
         messages = [
             ("system", prompt_crew_report),
             ("user", f"This is selected crew from user : {crew_selected}."),

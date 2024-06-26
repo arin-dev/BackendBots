@@ -9,6 +9,7 @@ from compliance.models import Compliance
 from culture.models import ProjectCulture
 from crew.models import CrewMember, CrewRequirement, SelectedCrew
 from equipment.models import Equipment, EquipmentRequirement, SelectedEquipments
+from Report.models import *
 
 from Crew_Bot.CrewGraph import CrewGraph
 from Equipment_Bot.EquipmentWorkflow import EquipmentGraph
@@ -114,15 +115,165 @@ def complete_project_details(project_state, new_project):
     createSelectedEquipments(selected_equipments, new_project)
     
     print("\n\n Selected crew is",type(result["selected_crews"]),"    ",type(report_state["selected_crews"]),"\n\n")
-    print("\n\n weeed euipmnsko2 is",result["selected_equipments"],"\n\n")
+    # print("\n\n weeed euipmnsko2 is",result["selected_equipments"],"\n\n")
     
+    # global report_state
     report_state["selected_crews"]=result["selected_crews"]
     
     report_state["selected_equipments"]=result["selected_equipments"]
-    print("\n Before calling",report_state["selected_equipments"],"\n")
-    ReportGraph(report_state)
+    # print("\n Before calling",report_state["selected_equipments"],"\n")
     
+
+def Crew_Equip_Report(project_state, new_project):
+    report_result=ReportGraph(report_state)
+    print("Report Result is",report_result)
     
+    crewrepo=report_result["crew_report"]
+    
+    if type(crewrepo)==dict:
+        if "crew" in crewrepo:
+            crewrepo=crewrepo["crew"]
+        elif "selected_crew" in crewrepo:
+            crewrepo=crewrepo["selected_crew"]
+            
+    CreateCrewReport(crewrepo, new_project)
+    
+    equiprepo=report_result["equipment_report"]
+    
+    if type(equiprepo)==dict:
+        if "equipment" in equiprepo:
+            equiprepo=equiprepo["equipment"]
+        elif "selected_equipment" in equiprepo:
+            equiprepo=equiprepo["selected_equipment"]
+            
+    CreateEquipmentReport(equiprepo, new_project)
+    
+    CreateCompleteReport(crewrepo,equiprepo,new_project)
+
+    
+def CreateCompleteReport(crewrepo,equiprepo,new_project):
+    # Handle crew reports
+    if isinstance(crewrepo, list):
+        crew_report_instances = []
+        for crew in crewrepo:
+            crew_report_instance = CrewReport.objects.create(
+                project=new_project,
+                name=crew["name"],
+                userid=crew["userid"],
+                gender=crew["gender"],
+                age=crew["age"],
+                driving_licence=crew["driving_licence"]
+            )
+            crew_report_instances.append(crew_report_instance)
+    else:
+        crew_report_instances = [crewrepo]  # If crewrepo is a single instance
+
+    # Handle equipment reports
+    if isinstance(equiprepo, list):
+        equipment_report_instances = []
+        for equip in equiprepo:
+            equipment_report_instance = EquipmentReport.objects.create(
+                project=new_project,
+                name=equip["name"],
+                brand=equip["brand"],
+                model=equip["model"],
+                cost=equip["cost"],
+                size=equip["size"],
+                sensitive=equip["sensitive"]
+            )
+            equipment_report_instances.append(equipment_report_instance)
+    else:
+        equipment_report_instances = [equiprepo]  # If equiprepo is a single instance
+
+    # Create complete reports
+    min_length = min(len(crew_report_instances), len(equipment_report_instances))
+
+    for i in range(min_length):
+        complete_report = CompleteReport(
+            project=new_project,
+            crew_report=crew_report_instances[i],
+            equipment_report=equipment_report_instances[i]
+        )
+        complete_report.save()
+
+    if len(crew_report_instances) > len(equipment_report_instances):
+        for i in range(min_length, len(crew_report_instances)):
+            complete_report = CompleteReport(
+                project=new_project,
+                crew_report=crew_report_instances[i],
+                equipment_report=None 
+            )
+            complete_report.save()
+    else:
+        for i in range(min_length, len(equipment_report_instances)):
+            complete_report = CompleteReport(
+                project=new_project,
+                crew_report=None, 
+                equipment_report=equipment_report_instances[i]
+            )
+            complete_report.save()
+
+def CreateCrewReport(crew_report,new_project):
+    # print("\nInside CreateCrewReport1 ",crew_report)
+    
+       
+    if isinstance(crew_report,List):
+        for crew in crew_report:
+            # print("\n Inside loop ",new_project)
+            new_report = CrewReport(
+                project=new_project,
+                name=crew["name"],
+                userid= crew["userid"],
+                age=crew["age"],
+                gender = crew["gender"],
+                driving_licence = crew["driving_licence"],
+            )
+            new_report.save()
+    else:
+        crew = crew_report
+        # print("\n Inside without loop ",new_project)
+        new_report = CrewReport(
+                project=new_project,
+                name=crew["name"],
+                userid= crew["userid"],
+                age=crew["age"],
+                gender = crew["gender"],
+                driving_licence = crew["driving_licence"],
+            )
+        new_report.save()
+
+def CreateEquipmentReport(equip_report,new_project):
+    
+    if type(equip_report)==dict:
+        if "equipment" in equip_report:
+            equip_report=equip_report["crew"]
+        elif "selected_equipment" in equip_report:
+            equip_report=equip_report["selected_equipment"]
+    
+    # print("\n Inside EquipmentCreating ",equip_report)
+    
+    if isinstance(equip_report,List):
+        for equip in equip_report:
+            new_report = EquipmentReport(
+                project=new_project,
+                name = equip["name"],
+                model = equip["model"],
+                cost = equip["cost"],
+                size = equip["size"],
+                sensitive = equip["sensitive"],
+            )
+            new_report.save()
+    else:
+        equip=equip_report
+        new_report = EquipmentReport(
+                project=new_project,
+                name = equip["name"],
+                model = equip["model"],
+                cost = equip["cost"],
+                size = equip["size"],
+                sensitive = equip["sensitive"],
+            )
+        new_report.save()
     
 
 def createEquipmentRequirement(equip_req, new_project):
@@ -299,3 +450,6 @@ def complete_compliance_reports(project_state, location_details, new_project):
         thread.start()
     for thread in threads:
         thread.join()
+        
+# --------------- Creating Reports ------------------#
+

@@ -25,10 +25,14 @@ def create_project(request):
 
     # Start threading tasks
     task2 = threading.Thread(target=complete_project_details, args=(project_state, new_project))
+    task2_1 = threading.Thread(target=Crew_Equip_Report, args=(project_state, new_project))
     task3 = threading.Thread(target=complete_culture_details, args=(project_state["locations"], new_project))
     task4 = threading.Thread(target=complete_logistics_details, args=(location_details, new_project))
     task5 = threading.Thread(target=complete_compliance_reports, args=(project_state, location_details, new_project))
     task2.start()
+    task2.join()
+    task2_1.start()
+    task2_1.join()
     task3.start()
     task4.start()
     task5.start()
